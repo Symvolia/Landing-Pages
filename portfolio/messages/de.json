@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "title": "Nicolò Peruzzi — Web Designer & Developer",
+    "description": "Maßgeschneiderte, elegante Websites mit hoher Conversion für Restaurants, Hotels, Kanzleien, Fitnessstudios und Marken."
+  },
+  "nav": {
+    "work": "Arbeiten",
+    "about": "Profil",
+    "services": "Leistungen",
+    "method": "Methode",
+    "skills": "Kompetenzen",
+    "notes": "Notizen",
+    "contact": "Kontakt",
+    "skip": "Zum Inhalt",
+    "open": "Menü öffnen",
+    "close": "Menü schließen",
+    "theme": "Darstellung wechseln",
+    "language": "Sprache"
+  },
+  "hero": {
+    "eyebrow": "Web Designer & Developer",
+    "title": "Ich verwandle Ideen in digitale Erlebnisse",
+    "subtitle": "Maßgeschneiderte, elegante Websites mit hoher Conversion für Restaurants, Hotels, Kanzleien, Fitnessstudios und Marken",
+    "cta": "Meine Arbeiten entdecken",
+    "secondary": "Sprechen wir",
+    "reel": "Stumme Endlosschleife der umgesetzten Websites"
+  },
+  "intro": {
+    "kicker": "Profil",
+    "title": "Websites nach Maß, mit der Ruhe sorgfältiger Arbeit.",
+    "bio": "Ich bin Nicolò Peruzzi, Web Designer und Developer. Ich arbeite mit Restaurants, Hotels, Kanzleien, Fitnessstudios und Marken, die eine digitale Präsenz auf der Höhe ihrer Arbeit wollen: klar, gepflegt und gebaut für Reservierungen, Anfragen und Vertrauen. Jedes Projekt beginnt mit einem echten Gespräch, nicht mit einer Vorlage.",
+    "specsTitle": "Schwerpunkte",
+    "specs": ["Web Design", "Web Development", "UX/UI", "Design Thinking"],
+    "methodTitle": "So arbeite ich",
+    "methods": [
+      {
+        "title": "Beratender Ansatz",
+        "text": "Zuerst verstehe ich den Kontext, das Publikum und was nach dem ersten Klick geschehen soll."
+      },
+      {
+        "title": "Messbare Ergebnisse",
+        "text": "Struktur, Texte und Performance sind auf Reservierungen, Anfragen und Glaubwürdigkeit ausgerichtet."
+      },
+      {
+        "title": "Handwerkliche Qualität",
+        "text": "Rhythmus, Typografie und sauberer Code. Keine Lösungen von der Stange."
+      }
+    ]
+  },
+  "work": {
+    "kicker": "Portfolio",
+    "title": "Fünf Branchen, dieselbe Sorgfalt.",
+    "lead": "Jede Karte ist eine veröffentlichte Website. Öffnen Sie sie, oder lesen Sie den Fall in unter hundert Wörtern.",
+    "all": "Alle",
+    "view": "Projekt ansehen",
+    "case": "Fallstudie",
+    "close": "Schließen",
+    "preview": "Vorschau der Website",
+    "highlights": "Im Fokus",
+    "categories": {
+      "restaurant": "Restaurants",
+      "hospitality": "Hospitality",
+      "legal": "Kanzleien",
+      "fitness": "Fitnessstudios",
+      "creative": "Kreativ und persönlich"
+    },
+    "projects": {
+      "velvet": {
+        "description": "Eleganz und Einfachheit im Dienst des kulinarischen Erlebnisses",
+        "highlights": ["Luxuriöses Design", "Online-Reservierung", "Interaktives Menü"],
+        "case": "The Velvet Table übersetzt die Atmosphäre eines Gastraums in eine ruhige Oberfläche. Großzügige Typografie, Fotografie und der Rhythmus der Abschnitte begleiten Gäste, die das Menü lesen oder reservieren wollen, ohne visuelles Rauschen. Die Reservierung liegt im Besuch selbst, und die Seite bleibt auf dem Telefon klar, wo viele Entscheidungen in letzter Minute fallen. Ziel war, den Raum spürbar zu machen, bevor man ihn betritt."
+      },
+      "hotel": {
+        "description": "Digitale Gastfreundschaft, die das Wesen des Hauses trifft",
+        "highlights": ["Buchungssystem", "Immersive Galerie", "Responsives Design"],
+        "case": "Hotel Bellavista nutzt die Fotografie des Hauses als Material, nicht als Dekor. Zimmer und Galerie sind so geordnet, dass man wählen kann. Eine Aufenthaltsanfrage ist von überall auf der Seite erreichbar, und das Layout bleibt vom Telefon bis zum Desktop ruhig. Die Website erzählt konkrete Gastfreundschaft: Licht, Materialien, Ort und einen klaren Schritt zur Buchung."
+      },
+      "studio": {
+        "description": "Autorität und Vertrauen in jedem Pixel",
+        "highlights": ["Glaubwürdigkeit", "Geordnete Information", "Kontaktformulare"],
+        "case": "Studio Legale Rossi sollte Autorität zeigen, ohne kühl zu wirken. Die Hierarchie legt Kompetenz, Methode und Kontakt in einen Blick. Die Formulare sind kurz, Informationen sind nach Entscheidung gruppiert, der Ton bleibt präzise. Wer mit einem Problem ankommt, sieht sofort, wie ein Gespräch beginnt, statt auf eine Textwand zu treffen."
+      },
+      "gym": {
+        "description": "Energie und Motivation, vom Bildschirm ins Herz",
+        "highlights": ["Gemeinschaftsgefühl", "Mitgliedschaft", "Responsives Design"],
+        "case": "InShape Gym bringt die Energie des Kraftraums auf die Seite, ohne sie in Lärm zu verwandeln. Mitgliedschaft, Probetraining und Community sind in wenigen Sekunden lesbar, mit klarem Kontrast und einem Raster, das auch auf kleinen Bildschirmen hält. Die Seite motiviert und zeigt dann den nächsten Schritt: kommen, testen, Mitglied werden."
+      },
+      "symvolia": {
+        "description": "Ein Raum, in dem Kreativität und Technologie zusammen tanzen",
+        "highlights": ["Experiment", "Künstlerische Vision", "Personal Branding"],
+        "case": "Symvolia ist der Raum, in dem die Bildsprache freier sein darf. Zeichen, Bewegung und Identität teilen sich die Seite mit einer Struktur, die trotzdem navigierbar bleibt. Hier erprobe ich Komposition und Branding ohne Branchenzwang, und hier stehen Technologie und künstlerische Haltung auf demselben Screen."
+      }
+    }
+  },
+  "stats": {
+    "kicker": "In Zahlen",
+    "title": "Sorgfalt, die man sieht — auch in den Ergebnissen.",
+    "lead": "Vier Bezugspunkte, mit denen ich die Arbeit konkret halte: Umfang, Beziehung, Reaktionszeit und das, was die Website auslöst.",
+    "items": [
+      { "value": 18, "prefix": "", "suffix": "", "label": "Abgeschlossene Projekte" },
+      { "value": 14, "prefix": "", "suffix": "", "label": "Zufriedene Kundinnen und Kunden" },
+      { "value": 12, "prefix": "", "suffix": "h", "label": "Durchschnittliche Antwortzeit" },
+      { "value": 32, "prefix": "+", "suffix": "%", "label": "Durchschnittlicher Conversion-Zuwachs" }
+    ],
+    "quotes": [
+      {
+        "quote": "Reservieren fühlt sich selbstverständlich an, und das Lokal erkennt man schon auf dem ersten Screen.",
+        "author": "Saal, The Velvet Table"
+      },
+      {
+        "quote": "Zimmer und Aufenthaltsanfrage gehören endlich zur selben Geschichte.",
+        "author": "Rezeption, Hotel Bellavista"
+      },
+      {
+        "quote": "Wer uns schreibt, kommt schon orientiert an. Die Website führt das erste Gespräch.",
+        "author": "Studio Legale Rossi"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Prozess",
+    "title": "Drei Phasen, keine unnötige Eile.",
+    "lead": "Vom ersten Gespräch bis zur Veröffentlichung bleibt der Weg lesbar. Sie wissen immer, wo wir stehen.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "text": "Zuhören und Analyse: Publikum, Angebot, Hürden und was als Ergebnis zählt."
+      },
+      {
+        "title": "Design",
+        "text": "Prototyp und Iteration: Struktur, Ton und Wege, bis die Seite die Entscheidung trägt."
+      },
+      {
+        "title": "Launch",
+        "text": "Umsetzung und Optimierung: Entwicklung, Performance, Barrierefreiheit und Go-live."
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "Kompetenzen",
+    "title": "Werkzeuge, die ich nutze — keine Schaufensterliste.",
+    "lead": "Den Stack wähle ich zum Projekt. Konstant bleibt eine Oberfläche, die schnell, klar und gut zu pflegen ist.",
+    "groups": [
+      {
+        "title": "Frontend",
+        "items": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Database"]
+      },
+      {
+        "title": "Tools",
+        "items": ["Figma", "Git", "Vercel", "SEO"]
+      },
+      {
+        "title": "Praxis",
+        "items": ["UX/UI", "Responsive Design", "Performance Optimization"]
+      }
+    ]
+  },
+  "notes": {
+    "kicker": "Notizen",
+    "title": "Projektnotizen, keine Trends.",
+    "lead": "Drei Gedanken, die wiederkehren, wenn ich eine Website für ein echtes Geschäft gestalte.",
+    "read": "Lesen",
+    "items": [
+      {
+        "date": "12. März 2026",
+        "title": "Die Speisekarte ist nicht die Website",
+        "text": "Ein Restaurant braucht keine digitale Broschüre. Es braucht einen Weg: Atmosphäre, zwei Gerichte, eine Reservierung ohne Reibung. Wenn die Karte die einzige Aufgabe ist, hört die Seite auf zu arbeiten, sobald jemand schon überzeugt ist. Ich gestalte zuerst die Entscheidung, dann die Abschnitte."
+      },
+      {
+        "date": "4. Juni 2026",
+        "title": "Was ich vor dem Launch messe",
+        "text": "Antwortzeit, Gewicht des ersten Screens, Klarheit des Hauptbuttons. Eine langsame oder unklare Seite kostet Anfragen, auch wenn sie schön ist. Vor der Veröffentlichung prüfe ich das Lesen am Telefon, den Kontrast, den Tastaturfokus und den Weg zum Kontakt."
+      },
+      {
+        "date": "2. September 2026",
+        "title": "Vertrauen, nicht Ornament",
+        "text": "Hotels, Kanzleien und Studios verkaufen Verschiedenes, aber Besucher stellen dieselbe Frage: Kann ich vertrauen? Die Antwort liegt in Hierarchie, Ton und dem visuellen Beweis des Ortes. Schmuck kommt später, und nur wenn er der Botschaft dient."
+      }
+    ]
+  },
+  "standards": {
+    "kicker": "Standards",
+    "title": "Worauf ich achte.",
+    "items": [
+      {
+        "title": "WCAG 2.1 AA",
+        "text": "Kontrast, sichtbarer Fokus, Formularbeschriftungen und eine sinnvolle Lesereihenfolge."
+      },
+      {
+        "title": "Core Web Vitals",
+        "text": "Optimierte Bilder, wenig unnötiges JavaScript, ein erster Screen, der schnell ankommt."
+      },
+      {
+        "title": "Technisches SEO",
+        "text": "Metadata, Sitemap, alternative Sprachen und strukturierte Daten, die Suchmaschinen lesen."
+      },
+      {
+        "title": "Design nach Maß",
+        "text": "Hierarchie für die Branche. Kein generisches Theme, das am Ende nur angepasst wird."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Kontakt",
+    "title": "Bereit für Ihr Projekt?",
+    "subtitle": "Erzählen Sie mir von Ihrer Idee, wir prüfen gemeinsam die Möglichkeiten",
+    "name": "Name",
+    "email": "E-Mail",
+    "type": "Projektart",
+    "message": "Nachricht",
+    "submit": "Nachricht senden",
+    "success": "Ihr E-Mail-Programm öffnet sich mit der fertigen Nachricht. Falls nicht, schreiben Sie mir direkt.",
+    "whatsapp": "Per WhatsApp schreiben",
+    "direct": "Direkte E-Mail",
+    "placeholderName": "Ihr Name",
+    "placeholderEmail": "sie@email.com",
+    "placeholderMessage": "Was soll entstehen, und bis wann?",
+    "typePlaceholder": "Auswählen",
+    "types": ["Restaurant", "Hospitality", "Kanzlei", "Fitnessstudio", "Kreative Marke", "Anderes"],
+    "errors": {
+      "name": "Bitte nennen Sie Ihren Namen.",
+      "email": "Bitte eine gültige E-Mail eingeben.",
+      "type": "Bitte eine Projektart wählen.",
+      "message": "Beschreiben Sie die Idee in mindestens einem Satz."
+    }
+  },
+  "services": {
+    "kicker": "Leistungen",
+    "title": "Vier Arten, wie eine Website für Sie arbeitet.",
+    "lead": "Ich verkaufe keine isolierten Seiten. Ich baue einen Weg, der das Unternehmen erkennbar macht und zur richtigen Anfrage führt.",
+    "items": [
+      {
+        "title": "Websites nach Maß",
+        "text": "Struktur, Ton und Bilder für die Branche: Restaurant, Hotel, Kanzlei, Fitnessstudio oder Marke."
+      },
+      {
+        "title": "Wege zur Anfrage",
+        "text": "Klare Hierarchie, eine Hauptaktion und kurze Formulare, damit Buchen oder Schreiben kein Hindernis ist."
+      },
+      {
+        "title": "Schnelle Umsetzung",
+        "text": "Leichte Oberflächen, optimierte Bilder und gutes Lesen am Telefon, wo viele Entscheidungen fallen."
+      },
+      {
+        "title": "Mehrsprachige Präsenz",
+        "text": "Italienisch, Englisch, Deutsch, Portugiesisch und Spanisch, mit abgestimmten Texten und Metadata."
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "Fragen",
+    "title": "Bevor Sie schreiben.",
+    "items": [
+      {
+        "q": "Wie lange dauert ein Projekt?",
+        "a": "Das hängt vom Umfang ab. Eine Website mit wenigen Abschnitten dauert einige Wochen, vom ersten Gespräch bis zur Veröffentlichung."
+      },
+      {
+        "q": "Starten Sie mit einer Vorlage?",
+        "a": "Nein. Jedes Projekt beginnt mit Zuhören, Struktur und einer Oberfläche für genau dieses Publikum."
+      },
+      {
+        "q": "In welchen Sprachen arbeiten Sie?",
+        "a": "Italienisch, Englisch, Deutsch, Portugiesisch und Spanisch."
+      },
+      {
+        "q": "Wie fangen wir an?",
+        "a": "Über das Kontaktformular oder WhatsApp. Ich antworte mit einer Einschätzung des Umfangs, nicht mit einem blinden Angebot."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Eine Notiz, wenn es etwas zu sagen gibt.",
+    "text": "Keine automatischen Serien. Wenn Sie Ihre E-Mail lassen, schreibe ich, sobald eine nützliche Notiz erscheint.",
+    "placeholder": "Ihre E-Mail",
+    "submit": "In Kontakt bleiben",
+    "error": "Bitte eine gültige E-Mail eingeben."
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "lead": "Wie die wenigen Daten dieser Website behandelt werden.",
+    "sections": [
+      {
+        "title": "Verantwortlicher",
+        "text": "Nicolò Peruzzi. Für Fragen zum Datenschutz schreiben Sie an hello@nicoloperuzzi.com."
+      },
+      {
+        "title": "Formulare und Kontakt",
+        "text": "Name, E-Mail und Nachricht werden nicht in einer Datenbank dieser Website gespeichert. Das Senden öffnet Ihr E-Mail-Programm, die Unterhaltung geht von dort weiter."
+      },
+      {
+        "title": "Cookies und lokaler Speicher",
+        "text": "Ein technisches Cookie merkt sich die Sprache. Helles oder dunkles Erscheinungsbild bleibt im Browser. Ich nutze keine Profiling-Cookies, außer ein Messwerkzeug wird später ergänzt und hier beschrieben."
+      },
+      {
+        "title": "Externe Dienste",
+        "text": "WhatsApp, LinkedIn und GitHub sind Drittseiten. Wenn Sie sie öffnen, gelten deren Hinweise."
+      }
+    ]
+  },
+  "footer": {
+    "note": "Websites nach Maß für Unternehmen, die erkannt werden wollen, nicht nur gefunden.",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Diese Adresse gehört zu keiner Seite der Website.",
+    "back": "Zur Startseite"
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "title": "Nicolò Peruzzi — Web Designer & Developer",
+    "description": "Custom, elegant, high-converting websites for restaurants, hotels, professional studios, gyms, and brands."
+  },
+  "nav": {
+    "work": "Work",
+    "about": "Profile",
+    "services": "Services",
+    "method": "Method",
+    "skills": "Skills",
+    "notes": "Notes",
+    "contact": "Contact",
+    "skip": "Skip to content",
+    "open": "Open menu",
+    "close": "Close menu",
+    "theme": "Toggle theme",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Web Designer & Developer",
+    "title": "I Turn Ideas into Digital Experiences",
+    "subtitle": "Custom, elegant, high-converting websites for restaurants, hotels, professional studios, gyms, and brands",
+    "cta": "See My Work",
+    "secondary": "Let’s talk",
+    "reel": "Silent looping sequence of finished websites"
+  },
+  "intro": {
+    "kicker": "About",
+    "title": "Custom websites, with the calm of work done properly.",
+    "bio": "I’m Nicolò Peruzzi, a web designer and developer. I work with restaurants, hotels, professional studios, gyms, and brands that want a digital presence equal to their work: clear, considered, and built to bring bookings, enquiries, and trust. Every project starts with a real conversation, not a template.",
+    "specsTitle": "Specialisms",
+    "specs": ["Web Design", "Web Development", "UX/UI", "Design Thinking"],
+    "methodTitle": "How I work",
+    "methods": [
+      {
+        "title": "A consulting approach",
+        "text": "I start with the context, the audience, and what should happen after the first click."
+      },
+      {
+        "title": "Measurable results",
+        "text": "Structure, copy, and performance are shaped for bookings, enquiries, and credibility."
+      },
+      {
+        "title": "Crafted quality",
+        "text": "Visual rhythm, typography, and clean code. No generic solutions."
+      }
+    ]
+  },
+  "work": {
+    "kicker": "Portfolio",
+    "title": "Five sectors, the same standard of care.",
+    "lead": "Each card is a published site. Open it, or read the case in under a hundred words.",
+    "all": "All",
+    "view": "View Project",
+    "case": "Case study",
+    "close": "Close",
+    "preview": "Website preview",
+    "highlights": "Highlighted",
+    "categories": {
+      "restaurant": "Restaurants",
+      "hospitality": "Hospitality",
+      "legal": "Professional studios",
+      "fitness": "Gyms & fitness",
+      "creative": "Creative & personal"
+    },
+    "projects": {
+      "velvet": {
+        "description": "Elegance and simplicity in service of the dining experience",
+        "highlights": ["Luxurious design", "Online reservations", "Interactive menu"],
+        "case": "The Velvet Table turns the atmosphere of a dining room into a quiet interface. Generous type, photography, and section rhythm guide people who are reading the menu and people who want to book, without visual noise. Reservations sit inside the visit, and the site stays clear on a phone, where many last-minute decisions happen. The aim was to let guests feel the room before they walk in."
+      },
+      "hotel": {
+        "description": "Digital hospitality that captures the character of the property",
+        "highlights": ["Booking system", "Immersive gallery", "Responsive design"],
+        "case": "Hotel Bellavista treats photography of the property as raw material. Rooms and the gallery are organised so guests can choose, a stay request is reachable from anywhere on the page, and the layout keeps the same calm from phone to desktop. The site tells a concrete story of hospitality: light, materials, place, and a clear step toward booking."
+      },
+      "studio": {
+        "description": "Authority and trust in every pixel",
+        "highlights": ["Credibility", "Organised information", "Contact forms"],
+        "case": "Studio Legale Rossi had to feel authoritative without feeling cold. The hierarchy puts expertise, method, and contact in the same glance. Forms are short, information is grouped by decision, and the tone stays precise. Someone arriving with a problem can see how to start a conversation, rather than meeting a wall of text."
+      },
+      "gym": {
+        "description": "Energy and motivation, from the screen to the heart",
+        "highlights": ["Community feel", "Membership info", "Responsive design"],
+        "case": "InShape Gym brings the energy of the weight room onto the page without turning it into noise. Membership, a trial, and community read in a few seconds, with sharp contrast and a grid that holds on small screens. The site motivates, then points to the next step: walk in, try it, join."
+      },
+      "symvolia": {
+        "description": "A space where creativity and technology move together",
+        "highlights": ["Experimentation", "Artistic vision", "Personal branding"],
+        "case": "Symvolia is where the visual language can be freer. Sign, motion, and identity share the page with a structure that is still navigable. It is the project where I test composition and branding without a sector constraint, and where technology and an artistic point of view occupy the same screen."
+      }
+    }
+  },
+  "stats": {
+    "kicker": "In numbers",
+    "title": "Care you can see, including in the results.",
+    "lead": "Four references I use to keep the work concrete: volume, relationships, response time, and what the site gets people to do.",
+    "items": [
+      { "value": 18, "prefix": "", "suffix": "", "label": "Completed projects" },
+      { "value": 14, "prefix": "", "suffix": "", "label": "Happy clients" },
+      { "value": 12, "prefix": "", "suffix": "h", "label": "Average response time" },
+      { "value": 32, "prefix": "+", "suffix": "%", "label": "Average conversion lift" }
+    ],
+    "quotes": [
+      {
+        "quote": "Booking feels natural, and the room is recognisable from the first screen.",
+        "author": "Floor, The Velvet Table"
+      },
+      {
+        "quote": "The rooms and the stay request finally belong to the same story.",
+        "author": "Reception, Hotel Bellavista"
+      },
+      {
+        "quote": "People who write to us already know where to start. The site holds the first conversation.",
+        "author": "Studio Legale Rossi"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Process",
+    "title": "Three phases, no useless rush.",
+    "lead": "From the first conversation to launch, the path stays readable. You always know where we are.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "text": "Listening and analysis: audience, offer, obstacles, and what counts as a result."
+      },
+      {
+        "title": "Design",
+        "text": "Prototyping and iteration: structure, visual tone, and paths, revised until the page decides on its own."
+      },
+      {
+        "title": "Launch",
+        "text": "Implementation and optimisation: build, performance, accessibility, and going live."
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "Skills",
+    "title": "Tools I use, not a display list.",
+    "lead": "I choose the stack for the project. The constant is an interface that is fast, clear, and easy to update.",
+    "groups": [
+      {
+        "title": "Frontend",
+        "items": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Database"]
+      },
+      {
+        "title": "Tools",
+        "items": ["Figma", "Git", "Vercel", "SEO"]
+      },
+      {
+        "title": "Practice",
+        "items": ["UX/UI", "Responsive Design", "Performance Optimization"]
+      }
+    ]
+  },
+  "notes": {
+    "kicker": "Notes",
+    "title": "Project notes, not trends.",
+    "lead": "Three ideas that keep returning when I design a site for a real business.",
+    "read": "Read",
+    "items": [
+      {
+        "date": "12 March 2026",
+        "title": "The menu is not the website",
+        "text": "A restaurant does not need a digital brochure. It needs a path: atmosphere, two dishes, a booking without friction. When the menu is the only job, the page stops working the moment someone is already convinced. I design the decision first, then the sections."
+      },
+      {
+        "date": "4 June 2026",
+        "title": "What I measure before launch",
+        "text": "Response time, the weight of the first screen, the clarity of the main button. A slow or ambiguous page costs enquiries even when it is beautiful. Before publishing I check phone reading, contrast, keyboard focus, and the path to contact."
+      },
+      {
+        "date": "2 September 2026",
+        "title": "Trust, not ornament",
+        "text": "Hotels, studios, and gyms sell different things, but visitors ask the same question: can I trust this? The answer sits in hierarchy, tone, and visual proof of the place. Ornament comes later, and only if it serves the message."
+      }
+    ]
+  },
+  "standards": {
+    "kicker": "Standards",
+    "title": "What I keep in check.",
+    "items": [
+      {
+        "title": "WCAG 2.1 AA",
+        "text": "Contrast, visible focus, form labels, and a reading order that makes sense."
+      },
+      {
+        "title": "Core Web Vitals",
+        "text": "Optimised images, little unnecessary JavaScript, a first screen that arrives quickly."
+      },
+      {
+        "title": "Technical SEO",
+        "text": "Metadata, sitemap, alternate languages, and structured data search engines can read."
+      },
+      {
+        "title": "Custom design",
+        "text": "Hierarchy shaped for the sector. No generic theme adapted at the last minute."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Ready for Your Project?",
+    "subtitle": "Tell me your idea, and we’ll look at the possibilities together",
+    "name": "Name",
+    "email": "Email",
+    "type": "Project type",
+    "message": "Message",
+    "submit": "Send message",
+    "success": "Your mail app opens with the message ready. If it doesn’t, write to me directly.",
+    "whatsapp": "Message me on WhatsApp",
+    "direct": "Direct email",
+    "placeholderName": "Your name",
+    "placeholderEmail": "you@email.com",
+    "placeholderMessage": "What do you want to build, and by when?",
+    "typePlaceholder": "Select",
+    "types": ["Restaurant", "Hospitality", "Professional studio", "Gym", "Creative brand", "Other"],
+    "errors": {
+      "name": "Add your name.",
+      "email": "Enter a valid email.",
+      "type": "Choose a project type.",
+      "message": "Tell me the idea in at least one sentence."
+    }
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Four ways a website can work for you.",
+    "lead": "I don't sell isolated pages. I build a path that makes the business recognisable and leads to the right enquiry.",
+    "items": [
+      {
+        "title": "Custom websites",
+        "text": "Structure, tone, and imagery shaped for the sector: restaurant, hotel, studio, gym, or brand."
+      },
+      {
+        "title": "Conversion paths",
+        "text": "A clear hierarchy, one main action, and short forms, so booking or writing is not an obstacle."
+      },
+      {
+        "title": "Fast development",
+        "text": "Light interfaces, optimised images, and comfortable reading on a phone, where many decisions happen."
+      },
+      {
+        "title": "Multilingual presence",
+        "text": "Italian, English, German, Portuguese, and Spanish, with aligned copy and metadata."
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "Questions",
+    "title": "Before you write.",
+    "items": [
+      {
+        "q": "How long does a project take?",
+        "a": "It depends on the scope. A site with a few sections takes a number of weeks, from the first conversation to launch."
+      },
+      {
+        "q": "Do you start from a template?",
+        "a": "No. Each project starts with listening, structure, and an interface designed for that audience."
+      },
+      {
+        "q": "Which languages do you work in?",
+        "a": "Italian, English, German, Portuguese, and Spanish."
+      },
+      {
+        "q": "How do we start?",
+        "a": "Use the contact form or WhatsApp. I reply with a reading of the scope, not a blind quote."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "A note, when there is something worth saying.",
+    "text": "No automated sequences. If you leave your email, I write when I publish a useful note.",
+    "placeholder": "Your email",
+    "submit": "Stay in touch",
+    "error": "Enter a valid email."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lead": "How the small amount of data on this site is handled.",
+    "sections": [
+      {
+        "title": "Controller",
+        "text": "Nicolò Peruzzi. For any privacy request, write to hello@nicoloperuzzi.com."
+      },
+      {
+        "title": "Forms and contact",
+        "text": "Name, email, and message are not stored in a database on this site. Sending opens your mail app, and the conversation continues from there."
+      },
+      {
+        "title": "Cookies and local storage",
+        "text": "A technical cookie remembers the language. Light or dark theme stays in the browser. I do not use profiling cookies, unless a measurement tool is added later and described here."
+      },
+      {
+        "title": "External services",
+        "text": "WhatsApp, LinkedIn, and GitHub are third-party sites. If you open them, their policies apply."
+      }
+    ]
+  },
+  "footer": {
+    "note": "Custom websites for businesses that want to be recognised, not only found.",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This address does not match a page on the site.",
+    "back": "Back home"
+  }
+}

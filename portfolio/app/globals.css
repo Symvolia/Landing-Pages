@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-outfit), Outfit, var(--font-sans);
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --color-navy: #0f172a;
+  --color-indigo: #1a1f3a;
+  --color-navy-2: #1a1f3a;
+  --color-cyan: #00d9ff;
+  --color-purple: #7c3aed;
+  --color-purple-light: #a78bfa;
+  --color-lime: #ccff00;
+  --color-gold: #ccff00;
+  --color-amber: #ccff00;
+  --color-paper: #ffffff;
+  --color-mist: #f8fafc;
+  --color-ink: #0f172a;
+  --color-muted: #64748b;
+  --color-line: #e2e8f0;
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: var(--color-mist);
+  color: var(--color-ink);
+  text-rendering: optimizeLegibility;
+}
+
+.dark body {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+::selection {
+  background: #ccff00;
+  color: #0f172a;
+}
+
+.rule-cyan {
+  display: inline;
+  background-image: linear-gradient(#00d9ff, #00d9ff);
+  background-repeat: no-repeat;
+  background-position: left calc(100% - 0.05em);
+  background-size: 3.25rem 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .hero-glow {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(0, 217, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 217, 255, 0.08) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+}
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(0, 217, 255, 0.45), transparent 68%);
+  animation: pulse-glow 7s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  50% {
+    opacity: 0.45;
+    transform: scale(1.08);
+  }
+}
+
+dialog.case {
+  width: min(40rem, calc(100% - 2rem));
+  margin: auto;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+
+dialog.case::backdrop {
+  background: rgba(15, 23, 42, 0.72);
+}

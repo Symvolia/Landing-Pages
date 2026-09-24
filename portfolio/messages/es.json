@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "title": "Nicolò Peruzzi — Web Designer & Developer",
+    "description": "Sitios a medida, elegantes y de alta conversión para restaurantes, hoteles, estudios profesionales, gimnasios y marcas."
+  },
+  "nav": {
+    "work": "Trabajos",
+    "about": "Perfil",
+    "services": "Servicios",
+    "method": "Método",
+    "skills": "Competencias",
+    "notes": "Notas",
+    "contact": "Contacto",
+    "skip": "Saltar al contenido",
+    "open": "Abrir menú",
+    "close": "Cerrar menú",
+    "theme": "Cambiar tema",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Web Designer & Developer",
+    "title": "Transformo ideas en experiencias digitales",
+    "subtitle": "Sitios a medida, elegantes y de alta conversión para restaurantes, hoteles, estudios profesionales, gimnasios y marcas",
+    "cta": "Descubre mis trabajos",
+    "secondary": "Hablemos",
+    "reel": "Secuencia silenciosa, en bucle, de los sitios realizados"
+  },
+  "intro": {
+    "kicker": "Quién soy",
+    "title": "Sitios a medida, con la calma de un trabajo bien hecho.",
+    "bio": "Soy Nicolò Peruzzi, web designer y developer. Acompaño a restaurantes, hoteles, estudios profesionales, gimnasios y marcas que quieren una presencia digital a la altura de su trabajo: clara, cuidada y pensada para reservas, consultas y confianza. Cada proyecto empieza con una conversación real, no con una plantilla.",
+    "specsTitle": "Especialidades",
+    "specs": ["Web Design", "Web Development", "UX/UI", "Design Thinking"],
+    "methodTitle": "Cómo trabajo",
+    "methods": [
+      {
+        "title": "Enfoque de consultoría",
+        "text": "Primero escucho el contexto, el público y lo que debe ocurrir después del primer clic."
+      },
+      {
+        "title": "Resultados medibles",
+        "text": "Estructura, textos y rendimiento están pensados para reservas, contactos y credibilidad."
+      },
+      {
+        "title": "Calidad artesanal",
+        "text": "Ritmo visual, tipografía y código limpio. Nada de soluciones genéricas."
+      }
+    ]
+  },
+  "work": {
+    "kicker": "Portafolio",
+    "title": "Cinco sectores, el mismo nivel de cuidado.",
+    "lead": "Cada ficha es un sitio publicado. Ábrelo, o lee el caso en menos de cien palabras.",
+    "all": "Todos",
+    "view": "Ver el proyecto",
+    "case": "Caso de estudio",
+    "close": "Cerrar",
+    "preview": "Vista previa del sitio",
+    "highlights": "Destacado",
+    "categories": {
+      "restaurant": "Restaurantes",
+      "hospitality": "Hospitalidad",
+      "legal": "Estudios profesionales",
+      "fitness": "Gimnasios y fitness",
+      "creative": "Creativo y personal"
+    },
+    "projects": {
+      "velvet": {
+        "description": "Elegancia y sencillez al servicio de la experiencia culinaria",
+        "highlights": ["Diseño lujoso", "Reservas online", "Menú interactivo"],
+        "case": "The Velvet Table traduce la atmósfera de una sala gastronómica a una interfaz serena. Tipografía amplia, fotografía y el ritmo de las secciones acompañan a quien lee el menú y a quien quiere reservar, sin ruido visual. Las reservas están en el flujo de la visita y el sitio sigue claro en el teléfono, donde llegan muchas decisiones de último momento. El objetivo era hacer sentir el local antes de cruzar la puerta."
+      },
+      "hotel": {
+        "description": "Hospitalidad digital que captura la esencia del lugar",
+        "highlights": ["Sistema de reservas", "Galería inmersiva", "Diseño responsive"],
+        "case": "Hotel Bellavista usa la fotografía del edificio como materia prima. Habitaciones y galería están organizadas para elegir, la solicitud de estancia se alcanza desde cualquier punto de la página y el diseño mantiene la misma calma del teléfono al escritorio. El sitio cuenta una hospitalidad concreta: luz, materiales, lugar y un paso claro hacia la reserva."
+      },
+      "studio": {
+        "description": "Autoridad y confianza en cada píxel",
+        "highlights": ["Credibilidad", "Información organizada", "Formularios de contacto"],
+        "case": "Studio Legale Rossi debía comunicar autoridad sin frialdad. La jerarquía pone competencia, método y contacto en la misma mirada. Los formularios son breves, la información se agrupa por decisión y el tono se mantiene preciso. Quien llega con un problema ve enseguida cómo empezar una conversación, no un muro de texto."
+      },
+      "gym": {
+        "description": "Energía y motivación, de la pantalla al corazón",
+        "highlights": ["Sentido de comunidad", "Información de membresía", "Diseño responsive"],
+        "case": "InShape Gym lleva la energía de la sala de pesas a la página sin convertirla en ruido. Membresía, prueba y comunidad se leen en pocos segundos, con un contraste nítido y una retícula que aguanta en pantallas pequeñas. El sitio motiva y después indica el siguiente paso: entrar, probar, inscribirse."
+      },
+      "symvolia": {
+        "description": "Un espacio donde creatividad y tecnología bailan juntas",
+        "highlights": ["Experimentación", "Visión artística", "Personal branding"],
+        "case": "Symvolia es el espacio donde el lenguaje visual puede ser más libre. Signo, movimiento e identidad conviven con una estructura que sigue siendo navegable. Es el proyecto en el que experimento composición y branding sin el límite de un sector, y donde tecnología y visión artística ocupan la misma página."
+      }
+    }
+  },
+  "stats": {
+    "kicker": "En cifras",
+    "title": "Cuidado visible, también en los resultados.",
+    "lead": "Cuatro referencias que uso para mantener el trabajo concreto: volumen, relación, tiempos y lo que el sitio hace hacer.",
+    "items": [
+      { "value": 18, "prefix": "", "suffix": "", "label": "Proyectos completados" },
+      { "value": 14, "prefix": "", "suffix": "", "label": "Clientes satisfechos" },
+      { "value": 12, "prefix": "", "suffix": "h", "label": "Tiempo medio de respuesta" },
+      { "value": 32, "prefix": "+", "suffix": "%", "label": "Aumento medio de las conversiones" }
+    ],
+    "quotes": [
+      {
+        "quote": "Reservar se ha vuelto natural, y el local se reconoce ya en la primera pantalla.",
+        "author": "Sala, The Velvet Table"
+      },
+      {
+        "quote": "Las habitaciones y la solicitud de estancia pertenecen por fin al mismo relato.",
+        "author": "Recepción, Hotel Bellavista"
+      },
+      {
+        "quote": "Quien nos escribe llega ya orientado. El sitio sostiene la primera conversación.",
+        "author": "Studio Legale Rossi"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Proceso",
+    "title": "Tres fases, sin prisa inútil.",
+    "lead": "De la primera conversación a la publicación, el recorrido sigue siendo legible. Siempre sabes en qué punto estamos.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "text": "Escucha y análisis de las necesidades: público, oferta, obstáculos y qué cuenta como resultado."
+      },
+      {
+        "title": "Design",
+        "text": "Prototipado e iteración: estructura, tono visual y recorridos, hasta que la página decide sola."
+      },
+      {
+        "title": "Launch",
+        "text": "Implementación y optimización: desarrollo, rendimiento, accesibilidad y publicación."
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "Competencias",
+    "title": "Herramientas que uso, no una lista de escaparate.",
+    "lead": "Elijo el stack según el proyecto. Lo constante es una interfaz rápida, clara y fácil de actualizar.",
+    "groups": [
+      {
+        "title": "Frontend",
+        "items": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Database"]
+      },
+      {
+        "title": "Tools",
+        "items": ["Figma", "Git", "Vercel", "SEO"]
+      },
+      {
+        "title": "Práctica",
+        "items": ["UX/UI", "Responsive Design", "Performance Optimization"]
+      }
+    ]
+  },
+  "notes": {
+    "kicker": "Notas",
+    "title": "Notas de proyecto, no tendencias.",
+    "lead": "Tres ideas que vuelven cuando diseño un sitio para un negocio real.",
+    "read": "Leer",
+    "items": [
+      {
+        "date": "12 de marzo de 2026",
+        "title": "El menú no es el sitio",
+        "text": "Un restaurante no necesita un folleto digital. Necesita un recorrido: atmósfera, dos platos, una reserva sin fricción. Cuando el menú es la única función, la página deja de trabajar en el momento en que la persona ya está convencida. Diseño primero la decisión, luego las secciones."
+      },
+      {
+        "date": "4 de junio de 2026",
+        "title": "Qué mido antes del lanzamiento",
+        "text": "Tiempo de respuesta, peso de la primera pantalla, claridad del botón principal. Una página lenta o ambigua cuesta consultas aunque sea bella. Antes de publicar reviso la lectura en el teléfono, el contraste, el foco con teclado y el camino hasta el contacto."
+      },
+      {
+        "date": "2 de septiembre de 2026",
+        "title": "Confianza, no ornamento",
+        "text": "Hoteles, estudios y gimnasios venden cosas distintas, pero quien visita hace la misma pregunta: ¿puedo confiar? La respuesta está en la jerarquía, el tono y la prueba visual del lugar. El ornamento llega después, y solo si sirve al mensaje."
+      }
+    ]
+  },
+  "standards": {
+    "kicker": "Estándares",
+    "title": "Lo que mantengo bajo control.",
+    "items": [
+      {
+        "title": "WCAG 2.1 AA",
+        "text": "Contraste, foco visible, etiquetas de formulario y un orden de lectura sensato."
+      },
+      {
+        "title": "Core Web Vitals",
+        "text": "Imágenes optimizadas, poco JavaScript innecesario y una primera pantalla que llega pronto."
+      },
+      {
+        "title": "SEO técnico",
+        "text": "Metadata, sitemap, idiomas alternativos y datos estructurados que los buscadores pueden leer."
+      },
+      {
+        "title": "Diseño a medida",
+        "text": "Jerarquía pensada para el sector. Ningún tema genérico adaptado a última hora."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "¿Listo para tu proyecto?",
+    "subtitle": "Cuéntame tu idea, analizamos juntos las posibilidades",
+    "name": "Nombre",
+    "email": "Email",
+    "type": "Tipo de proyecto",
+    "message": "Mensaje",
+    "submit": "Enviar mensaje",
+    "success": "Se abre tu programa de correo con el mensaje listo. Si no se abre, escríbeme directamente.",
+    "whatsapp": "Escríbeme por WhatsApp",
+    "direct": "Email directo",
+    "placeholderName": "Tu nombre",
+    "placeholderEmail": "tu@email.com",
+    "placeholderMessage": "Qué quieres crear, y para cuándo?",
+    "typePlaceholder": "Selecciona",
+    "types": ["Restaurante", "Hospitalidad", "Estudio profesional", "Gimnasio", "Marca creativa", "Otro"],
+    "errors": {
+      "name": "Escribe tu nombre.",
+      "email": "Introduce un email válido.",
+      "type": "Elige un tipo de proyecto.",
+      "message": "Cuenta la idea en al menos una frase."
+    }
+  },
+  "services": {
+    "kicker": "Servicios",
+    "title": "Cuatro formas en que un sitio trabaja para ti.",
+    "lead": "No vendo páginas aisladas. Construyo un recorrido que hace reconocible el negocio y lleva a la consulta correcta.",
+    "items": [
+      {
+        "title": "Sitios a medida",
+        "text": "Estructura, tono e imágenes pensados para el sector: restaurante, hotel, estudio, gimnasio o marca."
+      },
+      {
+        "title": "Recorridos de conversión",
+        "text": "Jerarquía clara, una acción principal y formularios breves, para reservar o escribir sin fricción."
+      },
+      {
+        "title": "Desarrollo rápido",
+        "text": "Interfaces ligeras, imágenes optimizadas y lectura cómoda en el teléfono, donde llegan muchas decisiones."
+      },
+      {
+        "title": "Presencia multilingüe",
+        "text": "Italiano, inglés, alemán, portugués y español, con textos y metadata alineados."
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "Preguntas",
+    "title": "Antes de escribirme.",
+    "items": [
+      {
+        "q": "¿Cuánto dura un proyecto?",
+        "a": "Depende del alcance. Un sitio con pocas secciones lleva algunas semanas, de la primera conversación a la publicación."
+      },
+      {
+        "q": "¿Partes de una plantilla?",
+        "a": "No. Cada proyecto empieza por la escucha, la estructura y una interfaz pensada para ese público."
+      },
+      {
+        "q": "¿En qué idiomas trabajas?",
+        "a": "Italiano, inglés, alemán, portugués y español."
+      },
+      {
+        "q": "¿Cómo empezamos?",
+        "a": "Por el formulario o por WhatsApp. Respondo con una lectura del alcance, no con un presupuesto a ciegas."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Una nota, cuando hay algo que decir.",
+    "text": "Sin secuencias automáticas. Si dejas el email, te escribo cuando publique una nota útil.",
+    "placeholder": "Tu email",
+    "submit": "Seguir en contacto",
+    "error": "Introduce un email válido."
+  },
+  "privacy": {
+    "title": "Privacidad",
+    "lead": "Cómo se tratan los pocos datos de este sitio.",
+    "sections": [
+      {
+        "title": "Responsable",
+        "text": "Nicolò Peruzzi. Para cualquier solicitud de privacidad, escribe a hello@nicoloperuzzi.com."
+      },
+      {
+        "title": "Formularios y contacto",
+        "text": "Nombre, email y mensaje no se guardan en una base de datos de este sitio. El envío abre el programa de correo y la conversación sigue desde ahí."
+      },
+      {
+        "title": "Cookies y memoria local",
+        "text": "Una cookie técnica recuerda el idioma. El tema claro u oscuro queda en el navegador. No uso cookies de perfil, salvo una herramienta de medición que se añada más adelante y se describa aquí."
+      },
+      {
+        "title": "Servicios externos",
+        "text": "WhatsApp, LinkedIn y GitHub son sitios de terceros. Si los abres, se aplican sus políticas."
+      }
+    ]
+  },
+  "footer": {
+    "note": "Sitios a medida para negocios que quieren ser reconocidos, no solo encontrados.",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Privacidad"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "Esta dirección no corresponde a una página del sitio.",
+    "back": "Volver al inicio"
+  }
+}
