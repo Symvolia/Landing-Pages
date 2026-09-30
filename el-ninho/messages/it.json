@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "homeTitle": "Eccellenza gastronomica",
+    "homeDescription": "The Velvet Table è un ristorante gastronomico nel Chiado, a Lisbona. Cucina di stagione, sala raccolta e una stella Michelin.",
+    "menuTitle": "Menu",
+    "menuDescription": "Menu degustazione, à la carte e una cantina scelta da The Velvet Table, a Lisbona.",
+    "experiencesTitle": "Esperienze",
+    "experiencesDescription": "Cene private, menu di stagione e wine pairing nella sala di The Velvet Table.",
+    "aboutTitle": "La casa",
+    "aboutDescription": "La storia di The Velvet Table, la cucina di Mateo Alves e la sala del Chiado.",
+    "galleryTitle": "Galleria",
+    "galleryDescription": "Piatti, sala e dettagli di The Velvet Table, ristorante a Lisbona.",
+    "reservationsTitle": "Prenotazioni",
+    "reservationsDescription": "Prenota un tavolo da The Velvet Table. Servizio serale dal martedì al sabato.",
+    "contactTitle": "Contatti",
+    "contactDescription": "Indirizzo, orari e contatti di The Velvet Table, Rua Garrett 88, Lisbona.",
+    "privacyTitle": "Privacy",
+    "privacyDescription": "Informativa privacy di The Velvet Table sul trattamento dei dati di prenotazione e newsletter.",
+    "termsTitle": "Condizioni",
+    "termsDescription": "Condizioni di prenotazione e di visita di The Velvet Table."
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "experiences": "Esperienze",
+    "about": "La casa",
+    "gallery": "Galleria",
+    "reservations": "Prenotazioni",
+    "contact": "Contatti",
+    "open": "Apri il menu",
+    "close": "Chiudi il menu",
+    "primary": "Navigazione principale",
+    "book": "Prenota",
+    "language": "Lingua",
+    "skip": "Vai al contenuto"
+  },
+  "hero": {
+    "kicker": "Chiado, Lisboa",
+    "title": "The Velvet Table",
+    "headline": "Eccellenza gastronomica",
+    "subtitle": "Una cucina di territorio, raccontata con pochi gesti. Nel cuore del Chiado.",
+    "book": "Prenota ora",
+    "discover": "Scopri il menu",
+    "scroll": "Scorri"
+  },
+  "about": {
+    "kicker": "La casa",
+    "title": "Velluto nel Chiado",
+    "p1": "The Velvet Table apre a Lisbona nel 2016, in una casa del Chiado dove la luce resta bassa e il servizio discreto. Il nome è quello della sala: una tavola quieta, dove ogni piatto è costruito attorno a pochi ingredienti, scelti per stagione e per mano.",
+    "p2": "La cucina di Mateo Alves unisce la memoria portoghese al rigore della grande sala europea. Pesce dell’Atlantico, orto dell’entroterra, fermentazioni lente. Niente ornamento che non serva al sapore.",
+    "p3": "Nel 2023 la Guida Michelin ha assegnato al ristorante una stella. Il riconoscimento non ha cambiato il ritmo della casa: due servizi, pochi coperti, una cantina costruita insieme al sommelier.",
+    "awardTitle": "Una stella Michelin",
+    "awardText": "Guida Michelin, 2023. Una sala di ventotto coperti e un menu che cambia con il mare.",
+    "imageChef": "Lo chef Mateo Alves in cucina",
+    "imageKitchen": "La cucina di The Velvet Table durante il servizio",
+    "imageRoom": "La sala del ristorante, con tavoli distanziati e luce calda",
+    "more": "Leggi la storia"
+  },
+  "signature": {
+    "kicker": "Dal menu",
+    "title": "Tre gesti della casa",
+    "text": "Un assaggio del menu degustazione e della carta. Il percorso completo cambia con la settimana.",
+    "link": "Vedi il menu"
+  },
+  "experiences": {
+    "kicker": "Esperienze",
+    "title": "Come si cena da noi",
+    "intro": "La sala principale, una stanza privata e una cantina pensata per accompagnare, non per coprire.",
+    "more": "Tutte le esperienze",
+    "private": {
+      "title": "Cene private",
+      "text": "Una stanza per tavoli fino a quattordici ospiti. Menu concordato in anticipo, servizio dedicato, orario vostro.",
+      "long": "La stanza privata guarda sul cortile interno. Si prenota con almeno dieci giorni di anticipo e si costruisce un menu insieme alla cucina: degustazione della casa, oppure una sequenza pensata per l’occasione. Il sommelier può preparare un abbinamento oppure lavorare sulla vostra cantina."
+    },
+    "seasonal": {
+      "title": "Menu speciale",
+      "text": "Un percorso breve che segue l’orto e le maree. Resta in carta poche settimane, poi lascia il posto al successivo.",
+      "long": "Ogni stagione pubblichiamo un menu di cinque tempi, accanto al percorso lungo. È il modo più diretto per leggere ciò che entra in cucina quella settimana: crostacei di costa, verdure di un solo produttore, un dolce che usa un solo frutto."
+    },
+    "wine": {
+      "title": "Wine pairing",
+      "text": "Cinque calici sul menu degustazione. Vini atlantici, qualche bottiglia italiana, niente sequenza rigida.",
+      "long": "Rafael Costa costruisce l’abbinamento sul menu del giorno, non su una lista fissa. Si parte spesso da uno spumante della Bairrada e si chiude su un vino dolce piccolo. Il pairing è facoltativo e si indica al momento della prenotazione."
+    }
+  },
+  "gallery": {
+    "kicker": "Galleria",
+    "title": "Luce, sala, piatto",
+    "intro": "Alcune immagini della casa. Le fotografie grandi si aprono a schermo intero.",
+    "close": "Chiudi",
+    "prev": "Immagine precedente",
+    "next": "Immagine successiva",
+    "open": "Apri l’immagine: {label}",
+    "alts": {
+      "g1": "Tavolo apparecchiato nella sala di The Velvet Table",
+      "g2": "Piatto del menu degustazione",
+      "g3": "Calici di vino sulla tavola",
+      "g4": "Sala serale con luce bassa",
+      "g5": "Pesce di costa, appena impiattato",
+      "g6": "Dettaglio della tavola, vetro e lino",
+      "g7": "Dolce al cioccolato della casa",
+      "g8": "Passaggio in cucina durante il servizio"
+    }
+  },
+  "team": {
+    "kicker": "Le persone",
+    "title": "Chi tiene la casa",
+    "instagram": "Instagram di {name}",
+    "linkedin": "LinkedIn di {name}",
+    "mateo": {
+      "name": "Mateo Alves",
+      "role": "Chef patron",
+      "bio": "Cresciuto tra Lisbona e il Piemonte. Guida la cucina dal giorno dell’apertura, con una brigata di otto."
+    },
+    "ines": {
+      "name": "Inês Carvalho",
+      "role": "Chef de cuisine",
+      "bio": "Responsabile dei secondi e della pasticceria salata. Ha lavorato a Porto prima di entrare in casa nel 2019."
+    },
+    "rafael": {
+      "name": "Rafael Costa",
+      "role": "Sommelier",
+      "bio": "Costruisce una cantina corta, centrata sull’Atlantico e su poche regioni italiane e francesi."
+    },
+    "sofia": {
+      "name": "Sofia Mendes",
+      "role": "Maître",
+      "bio": "Accoglie in sala e tiene le prenotazioni. Il ritmo del servizio è il suo, dal primo aperitivo al caffè."
+    }
+  },
+  "menu": {
+    "kicker": "Menu",
+    "title": "La carta di questa stagione",
+    "intro": "Tre letture della stessa cucina. Il menu degustazione è il percorso della casa; la carta è più breve; i vini seguono il piatto.",
+    "tasting": "Menu degustazione",
+    "carte": "Menu à la carte",
+    "wines": "Vini",
+    "tastingNote": "Sette tempi. Bevande escluse. Il menu è servito per tutto il tavolo.",
+    "tastingPrice": "195",
+    "perPerson": "a persona",
+    "wineNote": "Prezzo al calice e alla bottiglia. Chiedete in sala la carta completa.",
+    "close": "Chiudi i dettagli",
+    "details": "Dettagli del piatto",
+    "allergens": "Allergeni",
+    "none": "Nessun allergene principale indicato",
+    "tabs": "Categorie del menu"
+  },
+  "dishes": {
+    "oyster": {
+      "name": "Cristallo di ostrica",
+      "description": "Ostrica, cetriolo, aneto e un brodo freddo di mela verde.",
+      "detail": "Apre il percorso. L’ostrica resta cruda; il cetriolo è pressato e servito quasi trasparente."
+    },
+    "egg": {
+      "name": "Uovo della casa",
+      "description": "Uovo a bassa temperatura, tartufo di stagione e brodo chiaro di pollo.",
+      "detail": "Un solo uovo, cotto per un’ora. Il tartufo entra solo quando è davvero in stagione."
+    },
+    "urchin": {
+      "name": "Riccio e cavolfiore",
+      "description": "Riccio di mare, crema di cavolfiore e scorza di limone.",
+      "detail": "Il riccio arriva la mattina da Sesimbra. Il cavolfiore addolcisce senza coprire il mare."
+    },
+    "turbot": {
+      "name": "Rombo",
+      "description": "Rombo arrosto, vongole e burro nocciola.",
+      "detail": "Cotto sulla pelle, condito all’ultimo. Le vongole sono aperte nel loro fondo."
+    },
+    "lamb": {
+      "name": "Agnello e carciofo",
+      "description": "Spalla di agnello, carciofo, olive e succo di cottura.",
+      "detail": "La spalla cuoce a lungo. Il carciofo è crudo al centro e brasato sul bordo."
+    },
+    "chocolate": {
+      "name": "Cioccolato e olio",
+      "description": "Cioccolato al settanta percento, olio nuovo e sale.",
+      "detail": "Un dolce piccolo. L’olio è di un frantoio dell’Alentejo, aggiunto a freddo."
+    },
+    "prawn": {
+      "name": "Gambero rosso",
+      "description": "Crudo di gambero rosso, citrus e olio delicato.",
+      "detail": "Servito freddo, con una vinaigrette appena acida. Chiedete la provenienza del giorno."
+    },
+    "burrata": {
+      "name": "Burrata e pomodoro",
+      "description": "Burrata, pomodoro tardivo e basilico, quando l’orto lo consente.",
+      "detail": "Fuori stagione il pomodoro diventa un brodo chiaro. La burrata resta."
+    },
+    "risotto": {
+      "name": "Risotto allo zafferano",
+      "description": "Riso, zafferano, midollo e un fondo ristretto.",
+      "detail": "Mantecato lento. Lo zafferano è in pistilli, non in polvere."
+    },
+    "octopus": {
+      "name": "Polpo",
+      "description": "Polpo arrostito, patata affumicata e prezzemolo.",
+      "detail": "Cotto a bassa temperatura e finito sulla brace. La patata è schiacciata, non fritta."
+    },
+    "duck": {
+      "name": "Anatra",
+      "description": "Petto d’anatra, prugna e cicoria.",
+      "detail": "Il petto resta rosato. La prugna è cotta nel fondo, senza zucchero aggiunto."
+    },
+    "lemon": {
+      "name": "Torta al limone",
+      "description": "Crema al limone, pasta frolla e meringa sottile.",
+      "detail": "Un dolce della casa, più acido che dolce. Si prepara al mattino."
+    },
+    "bairrada": {
+      "name": "Espumante Bairrada",
+      "description": "Bollicine secche, da uve Baga. Aperitivo della casa.",
+      "detail": "Metodo classico, dosage basso. È il calice con cui apriamo quasi ogni tavolo."
+    },
+    "encruzado": {
+      "name": "Encruzado, Dão",
+      "description": "Bianco fermo, agrume e pietra. Per crudi e primi.",
+      "detail": "Una bottiglia giovane, volutamente semplice. Sta bene sul rombo e sul risotto."
+    },
+    "douro": {
+      "name": "Tinto Douro",
+      "description": "Rosso di media struttura, frutta scura e un tannino gentile.",
+      "detail": "Scelto per l’agnello e l’anatra. Non copre il succo di cottura."
+    },
+    "barolo": {
+      "name": "Barolo",
+      "description": "Una selezione italiana, per chi vuole restare a tavola.",
+      "detail": "L’annata in sala cambia. Chiedete a Rafael prima di ordinare la bottiglia."
+    },
+    "champagne": {
+      "name": "Champagne Blanc de Blancs",
+      "description": "Chardonnay, bollicina fine, finale lungo.",
+      "detail": "Una bottiglia da condividere all’inizio o sul dolce, se preferite non chiudere sul vino dolce."
+    }
+  },
+  "allergens": {
+    "legend": "Allergeni",
+    "gluten": "Glutine",
+    "crustaceans": "Crostacei",
+    "eggs": "Uova",
+    "fish": "Pesce",
+    "milk": "Latte",
+    "nuts": "Frutta a guscio",
+    "molluscs": "Molluschi",
+    "sulphites": "Solfiti"
+  },
+  "reservations": {
+    "kicker": "Prenotazioni",
+    "title": "Un tavolo per la sera",
+    "intro": "Il servizio della sera è dal martedì al sabato. La domenica apriamo solo a pranzo. Vi rispondiamo per confermare.",
+    "name": "Nome",
+    "email": "Email",
+    "date": "Data",
+    "time": "Ora",
+    "guests": "Persone",
+    "guestCount": "{count, plural, one {# persona} other {# persone}}",
+    "notes": "Richieste speciali",
+    "notesHint": "Allergie, occasioni, preferenza di sala.",
+    "consent": "Acconsento al trattamento dei dati per gestire questa prenotazione.",
+    "privacy": "Leggi l’informativa",
+    "submit": "Invia la richiesta",
+    "sending": "Invio in corso",
+    "successTitle": "Richiesta ricevuta",
+    "success": "Grazie, {name}. Abbiamo registrato il tavolo per {guests}, il {date} alle {time}. Vi scriviamo per confermare.",
+    "another": "Invia un’altra richiesta",
+    "error": "Non siamo riusciti a inviare la richiesta. Riprovate tra un momento o chiamate la sala.",
+    "honeypot": "Azienda"
+  },
+  "errors": {
+    "name": "Scrivete nome e cognome.",
+    "email": "Inserite un indirizzo email valido.",
+    "date": "Scegliete una data.",
+    "datePast": "La data è già passata.",
+    "time": "Scegliete un orario.",
+    "guests": "Indicate da 1 a 12 persone.",
+    "notes": "Il messaggio è troppo lungo.",
+    "consent": "Serve il consenso per inviare la richiesta."
+  },
+  "contact": {
+    "kicker": "Contatti",
+    "title": "Dove siamo",
+    "intro": "La porta è su Rua Garrett, poco dopo il largo. Se arrivate in anticipo, la sala apre quindici minuti prima del servizio.",
+    "address": "Indirizzo",
+    "hours": "Orari",
+    "phone": "Telefono",
+    "email": "Email",
+    "visit": "Apri in Google Maps",
+    "map": "Mappa di The Velvet Table, Rua Garrett 88, Lisbona",
+    "tue": "Martedì — sabato",
+    "tueHours": "19:00 – 23:30",
+    "sun": "Domenica",
+    "sunHours": "12:30 – 15:30",
+    "mon": "Lunedì",
+    "monHours": "Chiuso"
+  },
+  "footer": {
+    "newsletterTitle": "Lettera della casa",
+    "newsletterText": "Poche note all’anno: il menu di stagione e le date in cui la sala chiude.",
+    "email": "La vostra email",
+    "subscribe": "Iscriviti",
+    "sending": "Invio",
+    "subscribed": "Iscrizione registrata. A presto.",
+    "error": "Iscrizione non riuscita. Riprovate.",
+    "privacy": "Privacy",
+    "terms": "Condizioni",
+    "credits": "Progetto dimostrativo. Fotografie da Unsplash.",
+    "rights": "Tutti i diritti riservati.",
+    "follow": "Seguiteci",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "tripadvisor": "Tripadvisor"
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "text": "Questo indirizzo non corrisponde a una pagina della casa.",
+    "back": "Torna alla home"
+  },
+  "legal": {
+    "privacy": [
+      "Questo testo è un’informativa di esempio per il sito dimostrativo di The Velvet Table. Non sostituisce un documento legale redatto per l’attività reale.",
+      "I dati inviati dal modulo di prenotazione — nome, email, data, orario, numero di persone e note — sono usati solo per rispondere alla richiesta di tavolo. L’indirizzo della newsletter è usato per le comunicazioni indicate nel modulo.",
+      "Potete chiedere accesso, rettifica o cancellazione scrivendo a reservas@thevelvettable.pt. Il sito non vende dati a terzi. Se sono configurati strumenti di misura dell’audience, i relativi identificatori sono indicati nella configurazione del progetto."
+    ],
+    "terms": [
+      "La richiesta inviata dal sito non è una prenotazione confermata. Il tavolo è tenuto solo dopo la risposta della sala.",
+      "Per disdire, scrivete o chiamate entro le 15:00 del giorno precedente. I tavoli numerosi e le cene private possono richiedere condizioni diverse, comunicate in anticipo.",
+      "Il menu può cambiare in base al mercato del giorno. Segnalate allergie e intolleranze nel modulo e di nuovo in sala: la cucina lavora con frutta a guscio, crostacei e farine."
+    ]
+  },
+  "email": {
+    "bookingSubject": "Nuova richiesta di tavolo — The Velvet Table",
+    "bookingGuestSubject": "Abbiamo ricevuto la vostra richiesta — The Velvet Table",
+    "bookingGuestBody": "Gentile {name},\n\nabbiamo ricevuto la richiesta per {guests} persone, il {date} alle {time}.\n\nQuesta email non conferma ancora il tavolo: la sala vi risponde a breve.\n\nThe Velvet Table\nRua Garrett 88, Lisboa\n+351 21 342 1180",
+    "newsletterSubject": "Nuova iscrizione alla lettera — The Velvet Table"
+  }
+}

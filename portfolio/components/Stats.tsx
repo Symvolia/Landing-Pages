@@ -2,14 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Reviews } from "@/components/Reviews";
 
 type Stat = { value: number; prefix: string; suffix: string; label: string };
-type Quote = { quote: string; author: string };
 
 export function Stats() {
   const t = useTranslations("stats");
   const items = t.raw("items") as Stat[];
-  const quotes = t.raw("quotes") as Quote[];
   const ref = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(false);
 
@@ -52,20 +51,7 @@ export function Stats() {
           ))}
         </div>
 
-        <div className="mt-8 grid gap-4 lg:grid-cols-3">
-          {quotes.map((quote) => (
-            <blockquote
-              key={quote.author}
-              className="rounded-3xl border border-line bg-paper p-6 dark:border-white/10 dark:bg-[#0e1728]"
-            >
-              <p className="font-display text-5xl leading-none text-purple" aria-hidden>
-                “
-              </p>
-              <p className="mt-2 text-lg leading-relaxed text-ink dark:text-slate-100">{quote.quote}</p>
-              <footer className="mt-4 font-mono text-xs uppercase tracking-[0.14em] text-purple">{quote.author}</footer>
-            </blockquote>
-          ))}
-        </div>
+        <Reviews />
       </div>
     </section>
   );

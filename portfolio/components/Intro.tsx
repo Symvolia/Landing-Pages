@@ -14,7 +14,22 @@ export async function Intro() {
           <h2 className="rule-cyan mt-4 max-w-3xl font-display text-3xl font-semibold tracking-tight text-navy dark:text-white sm:text-5xl">
             {t("title")}
           </h2>
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted dark:text-slate-300">{t("bio")}</p>
+          <div className="mt-6 max-w-3xl space-y-5 text-lg leading-relaxed text-muted dark:text-slate-300">
+            {(t.raw("bio") as string[]).map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+            <p>
+              <span className="font-semibold text-navy dark:text-white">{t("togetherTitle")}</span> {t("together")}
+            </p>
+            <div className="pt-2">
+              <a
+                href="#contact"
+                className="inline-flex h-12 min-h-11 items-center rounded-full bg-lime px-6 text-sm font-semibold text-navy transition duration-300 hover:scale-105"
+              >
+                {t("formCta")}
+              </a>
+            </div>
+          </div>
         </Reveal>
 
         <Reveal className="mt-12" delay={80}>

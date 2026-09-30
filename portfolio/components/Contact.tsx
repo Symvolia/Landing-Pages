@@ -11,16 +11,16 @@ export function Contact() {
   const types = t.raw("types") as string[];
   const [errors, setErrors] = useState<Errors>({});
   const [sent, setSent] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  const whatsappText = encodeURIComponent("Ciao Nicolò, vorrei parlarti di un progetto.");
-  const whatsappHref = `https://wa.me/${site.whatsapp}?text=${whatsappText}`;
-
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     const data = new FormData(form);
     if (String(data.get("company") ?? "").trim()) {
       setSent(true);
+      setFailed(false);
       return;
     }
 
@@ -36,14 +36,41 @@ export function Contact() {
     setErrors(next);
     if (Object.keys(next).length) {
       setSent(false);
+      setFailed(false);
       return;
     }
 
-    const subject = encodeURIComponent(`${type} — ${name}`);
-    const body = encodeURIComponent(`${message}\n\n${name}\n${email}`);
-    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
-    setSent(true);
-    form.reset();
+    setSending(true);
+    setSent(false);
+    setFailed(false);
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${site.email}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          message: `${type}\n\n${message}`,
+          _subject: `${type} - ${name}`,
+          _replyto: email,
+          _captcha: "false",
+          _template: "box",
+        }),
+      });
+      const result = (await response.json()) as { success?: string | boolean };
+      if (!response.ok || (result.success !== "true" && result.success !== true)) {
+        setFailed(true);
+        return;
+      }
+      setSent(true);
+      form.reset();
+      const gtag = (window as Window & { gtag?: (...args: unknown[]) => void }).gtag;
+      gtag?.("event", "contact_submit");
+    } catch {
+      setFailed(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -56,15 +83,6 @@ export function Contact() {
           <div className="mt-8 flex flex-col items-start gap-3">
             <a href={`mailto:${site.email}`} className="text-cyan underline-offset-4 hover:underline">
               {site.email}
-            </a>
-            <a
-              href={whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center gap-2 rounded-full bg-[#25D366] px-5 text-sm font-semibold text-[#06210f] transition hover:-translate-y-0.5"
-            >
-              <WhatsAppIcon />
-              {t("whatsapp")}
             </a>
             <div className="mt-4 flex gap-4 text-sm">
               <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-cyan">
@@ -146,12 +164,16 @@ export function Contact() {
           </div>
           <button
             type="submit"
-            className="mt-6 inline-flex h-12 items-center rounded-full bg-lime px-6 text-sm font-semibold text-navy transition duration-300 hover:scale-105"
+            disabled={sending}
+            className="mt-6 inline-flex h-12 items-center rounded-full bg-lime px-6 text-sm font-semibold text-navy transition duration-300 hover:scale-105 disabled:opacity-60"
           >
-            {t("submit")}
+            {sending ? t("sending") : t("submit")}
           </button>
           <p className="mt-4 min-h-6 text-sm text-success" aria-live="polite">
             {sent ? t("success") : ""}
+          </p>
+          <p className="min-h-6 text-sm text-danger" aria-live="polite">
+            {failed ? t("errors.send") : ""}
           </p>
         </form>
       </div>
@@ -197,16 +219,5 @@ function Field({
         </p>
       ) : null}
     </div>
-  );
-}
-
-function WhatsAppIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden>
-      <path
-        fill="currentColor"
-        d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10 10 0 0 0 4.65 1.18h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2Zm5.76 14.05c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.11-.42-.14-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.27.64-.39 1.02-.39.12 0 .23 0 .33.01.3.01.45-.07.7.54.26.63.89 2.18.97 2.34.08.16.13.35.03.56-.1.22-.15.35-.3.54-.14.18-.3.41-.43.55-.14.14-.29.3-.12.58.16.27.73 1.2 1.57 1.94 1.08.96 1.99 1.26 2.27 1.4.28.14.44.12.61-.07.16-.19.7-.81.89-1.09.19-.27.38-.23.64-.14.26.08 1.66.78 1.94.92.28.15.47.22.54.34.07.12.07.7-.17 1.38Z"
-      />
-    </svg>
   );
 }

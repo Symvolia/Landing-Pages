@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-cormorant), "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --font-sans: var(--font-inter), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-ink: #1a1a1a;
+  --color-ink-soft: #2d2d2d;
+  --color-cream: #f6f3ee;
+  --color-paper: #fffcf8;
+  --color-muted: #5c564e;
+  --color-line: #e4dcd0;
+  --color-copper: #9a6230;
+  --color-gold: #c4a35a;
+  --color-text: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-text);
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #e7d3b4;
+  color: #1a1a1a;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 3px;
+}
+
+.reveal {
+  animation: rise 700ms ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 22%;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes loadbar {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+
+.menu-dialog,
+.lightbox-dialog {
+  width: min(720px, calc(100% - 2rem));
+  max-height: min(86vh, 860px);
+  margin: auto;
+  border: 0;
+  padding: 0;
+  background: var(--color-paper);
+  color: var(--color-text);
+}
+
+.lightbox-dialog {
+  width: min(1100px, calc(100% - 1.5rem));
+  background: transparent;
+}
+
+.menu-dialog::backdrop,
+.lightbox-dialog::backdrop {
+  background: rgba(20, 20, 20, 0.72);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    animation: none;
+  }
+}

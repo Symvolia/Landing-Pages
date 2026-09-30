@@ -20,6 +20,7 @@
   "hero": {
     "eyebrow": "Web Designer & Developer",
     "title": "Ich verwandle Ideen in digitale Erlebnisse",
+    "mantra": "Vision. Strategie. Digitale Dominanz.",
     "subtitle": "Maßgeschneiderte, elegante Websites mit hoher Conversion für Restaurants, Hotels, Kanzleien, Fitnessstudios und Marken",
     "cta": "Meine Arbeiten entdecken",
     "secondary": "Sprechen wir",
@@ -28,9 +29,21 @@
   "intro": {
     "kicker": "Profil",
     "title": "Websites nach Maß, mit der Ruhe sorgfältiger Arbeit.",
-    "bio": "Ich bin Nicolò Peruzzi, Web Designer und Developer. Ich arbeite mit Restaurants, Hotels, Kanzleien, Fitnessstudios und Marken, die eine digitale Präsenz auf der Höhe ihrer Arbeit wollen: klar, gepflegt und gebaut für Reservierungen, Anfragen und Vertrauen. Jedes Projekt beginnt mit einem echten Gespräch, nicht mit einer Vorlage.",
+    "bio": [
+      "Ich bin Nicolò Peruzzi, Web Designer und Developer. Ich arbeite mit Restaurants, Hotels, Kanzleien, Fitnessstudios und Marken, die etwas Echtes zu sagen haben, aber nicht wissen, wie sie es online sagen sollen.",
+      "Die meisten Websites, die ich sehe, sind austauschbar, auf Vorlagen gebaut, gemacht, um allen zu gefallen, und niemandem nützlich. Ich mache das Gegenteil: Ich beginne immer mit einem echten Gespräch mit dir. Ich verstehe, wie du arbeitest, was dich unterscheidet und was passieren soll, wenn jemand dich online findet.",
+      "Dann baue ich eine Website, die wirklich etwas sagt. Sie ist nicht schön, um schön zu sein: Sie ist dafür gemacht, Reservierungen, konkrete Anfragen und Vertrauen zu bringen. Eine schöne Website, die nicht funktioniert, ist nur eine Ausgabe."
+    ],
+    "togetherTitle": "So arbeiten wir:",
+    "together": "Du fängst nicht mit einem Formular oder einer Präsentation an. Wir reden. Du erzählst mir von deiner Arbeit, deinen Kunden und dem, was du nicht schaffst zu kommunizieren. Daraus entwerfe ich eine Strategie, die zu dir passt, und baue sie mit Sorgfalt.",
+    "formCta": "Formular ausfüllen",
     "specsTitle": "Schwerpunkte",
-    "specs": ["Web Design", "Web Development", "UX/UI", "Design Thinking"],
+    "specs": [
+      "Web Design",
+      "Web Development",
+      "UX/UI",
+      "Design Thinking"
+    ],
     "methodTitle": "So arbeite ich",
     "methods": [
       {
@@ -50,7 +63,7 @@
   "work": {
     "kicker": "Portfolio",
     "title": "Fünf Branchen, dieselbe Sorgfalt.",
-    "lead": "Jede Karte ist eine veröffentlichte Website. Öffnen Sie sie, oder lesen Sie den Fall in unter hundert Wörtern.",
+    "lead": "Jede Karte ist eine veröffentlichte Website. Öffnen Sie sie, oder lesen Sie den Fall.",
     "all": "Alle",
     "view": "Projekt ansehen",
     "case": "Fallstudie",
@@ -67,27 +80,47 @@
     "projects": {
       "velvet": {
         "description": "Eleganz und Einfachheit im Dienst des kulinarischen Erlebnisses",
-        "highlights": ["Luxuriöses Design", "Online-Reservierung", "Interaktives Menü"],
+        "highlights": [
+          "Luxuriöses Design",
+          "Online-Reservierung",
+          "Interaktives Menü"
+        ],
         "case": "The Velvet Table übersetzt die Atmosphäre eines Gastraums in eine ruhige Oberfläche. Großzügige Typografie, Fotografie und der Rhythmus der Abschnitte begleiten Gäste, die das Menü lesen oder reservieren wollen, ohne visuelles Rauschen. Die Reservierung liegt im Besuch selbst, und die Seite bleibt auf dem Telefon klar, wo viele Entscheidungen in letzter Minute fallen. Ziel war, den Raum spürbar zu machen, bevor man ihn betritt."
       },
       "hotel": {
         "description": "Digitale Gastfreundschaft, die das Wesen des Hauses trifft",
-        "highlights": ["Buchungssystem", "Immersive Galerie", "Responsives Design"],
+        "highlights": [
+          "Buchungssystem",
+          "Immersive Galerie",
+          "Responsives Design"
+        ],
         "case": "Hotel Bellavista nutzt die Fotografie des Hauses als Material, nicht als Dekor. Zimmer und Galerie sind so geordnet, dass man wählen kann. Eine Aufenthaltsanfrage ist von überall auf der Seite erreichbar, und das Layout bleibt vom Telefon bis zum Desktop ruhig. Die Website erzählt konkrete Gastfreundschaft: Licht, Materialien, Ort und einen klaren Schritt zur Buchung."
       },
       "studio": {
         "description": "Autorität und Vertrauen in jedem Pixel",
-        "highlights": ["Glaubwürdigkeit", "Geordnete Information", "Kontaktformulare"],
+        "highlights": [
+          "Glaubwürdigkeit",
+          "Geordnete Information",
+          "Kontaktformulare"
+        ],
         "case": "Studio Legale Rossi sollte Autorität zeigen, ohne kühl zu wirken. Die Hierarchie legt Kompetenz, Methode und Kontakt in einen Blick. Die Formulare sind kurz, Informationen sind nach Entscheidung gruppiert, der Ton bleibt präzise. Wer mit einem Problem ankommt, sieht sofort, wie ein Gespräch beginnt, statt auf eine Textwand zu treffen."
       },
       "gym": {
         "description": "Energie und Motivation, vom Bildschirm ins Herz",
-        "highlights": ["Gemeinschaftsgefühl", "Mitgliedschaft", "Responsives Design"],
+        "highlights": [
+          "Gemeinschaftsgefühl",
+          "Mitgliedschaft",
+          "Responsives Design"
+        ],
         "case": "InShape Gym bringt die Energie des Kraftraums auf die Seite, ohne sie in Lärm zu verwandeln. Mitgliedschaft, Probetraining und Community sind in wenigen Sekunden lesbar, mit klarem Kontrast und einem Raster, das auch auf kleinen Bildschirmen hält. Die Seite motiviert und zeigt dann den nächsten Schritt: kommen, testen, Mitglied werden."
       },
       "symvolia": {
         "description": "Ein Raum, in dem Kreativität und Technologie zusammen tanzen",
-        "highlights": ["Experiment", "Künstlerische Vision", "Personal Branding"],
+        "highlights": [
+          "Experiment",
+          "Künstlerische Vision",
+          "Personal Branding"
+        ],
         "case": "Symvolia ist der Raum, in dem die Bildsprache freier sein darf. Zeichen, Bewegung und Identität teilen sich die Seite mit einer Struktur, die trotzdem navigierbar bleibt. Hier erprobe ich Komposition und Branding ohne Branchenzwang, und hier stehen Technologie und künstlerische Haltung auf demselben Screen."
       }
     }
@@ -97,23 +130,29 @@
     "title": "Sorgfalt, die man sieht — auch in den Ergebnissen.",
     "lead": "Vier Bezugspunkte, mit denen ich die Arbeit konkret halte: Umfang, Beziehung, Reaktionszeit und das, was die Website auslöst.",
     "items": [
-      { "value": 18, "prefix": "", "suffix": "", "label": "Abgeschlossene Projekte" },
-      { "value": 14, "prefix": "", "suffix": "", "label": "Zufriedene Kundinnen und Kunden" },
-      { "value": 12, "prefix": "", "suffix": "h", "label": "Durchschnittliche Antwortzeit" },
-      { "value": 32, "prefix": "+", "suffix": "%", "label": "Durchschnittlicher Conversion-Zuwachs" }
-    ],
-    "quotes": [
       {
-        "quote": "Reservieren fühlt sich selbstverständlich an, und das Lokal erkennt man schon auf dem ersten Screen.",
-        "author": "Saal, The Velvet Table"
+        "value": 5,
+        "prefix": "",
+        "suffix": "",
+        "label": "Abgeschlossene Projekte"
       },
       {
-        "quote": "Zimmer und Aufenthaltsanfrage gehören endlich zur selben Geschichte.",
-        "author": "Rezeption, Hotel Bellavista"
+        "value": 5,
+        "prefix": "",
+        "suffix": "",
+        "label": "Zufriedene Kundinnen und Kunden"
       },
       {
-        "quote": "Wer uns schreibt, kommt schon orientiert an. Die Website führt das erste Gespräch.",
-        "author": "Studio Legale Rossi"
+        "value": 12,
+        "prefix": "",
+        "suffix": "h",
+        "label": "Durchschnittliche Antwortzeit"
+      },
+      {
+        "value": 32,
+        "prefix": "+",
+        "suffix": "%",
+        "label": "Durchschnittlicher Conversion-Zuwachs"
       }
     ]
   },
@@ -143,19 +182,38 @@
     "groups": [
       {
         "title": "Frontend",
-        "items": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"]
+        "items": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "Tailwind CSS"
+        ]
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "Database"]
+        "items": [
+          "Node.js",
+          "Database"
+        ]
       },
       {
         "title": "Tools",
-        "items": ["Figma", "Git", "Vercel", "SEO"]
+        "items": [
+          "Figma",
+          "Git",
+          "Vercel",
+          "SEO"
+        ]
       },
       {
         "title": "Praxis",
-        "items": ["UX/UI", "Responsive Design", "Performance Optimization"]
+        "items": [
+          "UX/UI",
+          "Responsive Design",
+          "Performance Optimization"
+        ]
       }
     ]
   },
@@ -213,20 +271,28 @@
     "type": "Projektart",
     "message": "Nachricht",
     "submit": "Nachricht senden",
-    "success": "Ihr E-Mail-Programm öffnet sich mit der fertigen Nachricht. Falls nicht, schreiben Sie mir direkt.",
-    "whatsapp": "Per WhatsApp schreiben",
+    "success": "Nachricht gesendet. Ich antworte an diese E-Mail.",
     "direct": "Direkte E-Mail",
     "placeholderName": "Ihr Name",
     "placeholderEmail": "sie@email.com",
     "placeholderMessage": "Was soll entstehen, und bis wann?",
     "typePlaceholder": "Auswählen",
-    "types": ["Restaurant", "Hospitality", "Kanzlei", "Fitnessstudio", "Kreative Marke", "Anderes"],
+    "types": [
+      "Restaurant",
+      "Hospitality",
+      "Kanzlei",
+      "Fitnessstudio",
+      "Kreative Marke",
+      "Anderes"
+    ],
     "errors": {
       "name": "Bitte nennen Sie Ihren Namen.",
       "email": "Bitte eine gültige E-Mail eingeben.",
       "type": "Bitte eine Projektart wählen.",
-      "message": "Beschreiben Sie die Idee in mindestens einem Satz."
-    }
+      "message": "Beschreiben Sie die Idee in mindestens einem Satz.",
+      "send": "Senden nicht möglich. Schreiben Sie mir direkt."
+    },
+    "sending": "Senden…"
   },
   "services": {
     "kicker": "Leistungen",
@@ -269,7 +335,7 @@
       },
       {
         "q": "Wie fangen wir an?",
-        "a": "Über das Kontaktformular oder WhatsApp. Ich antworte mit einer Einschätzung des Umfangs, nicht mit einem blinden Angebot."
+        "a": "Über das Kontaktformular. Ich antworte mit einer Einschätzung des Umfangs, nicht mit einem blinden Angebot."
       }
     ]
   },
@@ -286,11 +352,11 @@
     "sections": [
       {
         "title": "Verantwortlicher",
-        "text": "Nicolò Peruzzi. Für Fragen zum Datenschutz schreiben Sie an hello@nicoloperuzzi.com."
+        "text": "Nicolò Peruzzi. Für Fragen zum Datenschutz schreiben Sie an neecoproduction@gmail.com."
       },
       {
         "title": "Formulare und Kontakt",
-        "text": "Name, E-Mail und Nachricht werden nicht in einer Datenbank dieser Website gespeichert. Das Senden öffnet Ihr E-Mail-Programm, die Unterhaltung geht von dort weiter."
+        "text": "Name, E-Mail, Projektart und Nachricht werden über einen E-Mail-Dienst an neecoproduction@gmail.com gesendet. Sie bleiben nicht in einer Datenbank dieser Website."
       },
       {
         "title": "Cookies und lokaler Speicher",
@@ -298,7 +364,11 @@
       },
       {
         "title": "Externe Dienste",
-        "text": "WhatsApp, LinkedIn und GitHub sind Drittseiten. Wenn Sie sie öffnen, gelten deren Hinweise."
+        "text": "LinkedIn und GitHub sind Drittseiten. Wenn Sie sie öffnen, gelten deren Hinweise."
+      },
+      {
+        "title": "Rezensionen",
+        "text": "Name, E-Mail, Bewertung, Text und Projekt werden gespeichert. Die E-Mail erscheint nicht auf der Website. Eine neue Rezension bleibt ausstehend, bis ich sie veröffentliche oder verwerfe."
       }
     ]
   },
@@ -311,5 +381,32 @@
     "title": "Seite nicht gefunden",
     "text": "Diese Adresse gehört zu keiner Seite der Website.",
     "back": "Zur Startseite"
+  },
+  "reviews": {
+    "kicker": "Rezensionen",
+    "title": "Erzählen Sie, wie es gelaufen ist.",
+    "lead": "Eine Rezension bleibt ausstehend, bis ich sie gelesen habe. Danach erscheint sie hier, mit Name, Bewertung und Projekt.",
+    "name": "Name",
+    "email": "E-Mail",
+    "project": "Projekt",
+    "rating": "Bewertung",
+    "content": "Rezension",
+    "submit": "Rezension senden",
+    "sending": "Senden…",
+    "placeholderName": "Ihr Name",
+    "placeholderEmail": "sie@email.com",
+    "placeholderContent": "Was funktioniert hat, und was bleibt.",
+    "projectPlaceholder": "Projekt wählen",
+    "empty": "Noch keine veröffentlichte Rezension.",
+    "success": "Danke. Ich veröffentliche sie nach dem Lesen.",
+    "unavailable": "Das Speichern ist noch nicht verbunden. Schreiben Sie mir per E-Mail.",
+    "errors": {
+      "name": "Bitte nennen Sie Ihren Namen.",
+      "email": "Bitte eine gültige E-Mail eingeben.",
+      "project": "Bitte ein Projekt wählen.",
+      "rating": "Bitte eine Bewertung von 1 bis 5 wählen.",
+      "content": "Bitte mindestens einen Satz schreiben.",
+      "limit": "Zu viele Rezensionen in kurzer Zeit. Bitte später erneut versuchen."
+    }
   }
 }

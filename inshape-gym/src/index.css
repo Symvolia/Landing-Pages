@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --header: 4.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #070708;
+  color: #f4f1ec;
+  font-family: Outfit, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #ff3b12;
+  color: #070708;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--header) + 0.75rem);
+}
+
+.grain {
+  background-image: theme('backgroundImage.grain');
+  background-size: 180px 180px;
+  mix-blend-mode: overlay;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.kenburns {
+  animation: kenburns 28s ease-in-out infinite alternate;
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+.motion-lines {
+  background: repeating-linear-gradient(
+    -18deg,
+    transparent,
+    transparent 22px,
+    rgba(255, 59, 18, 0.16) 22px,
+    rgba(255, 59, 18, 0.16) 23px
+  );
+  animation: drift 22s linear infinite;
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1.05) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.16) translate3d(-2%, -1%, 0);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes drift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 240px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .kenburns,
+  .marquee-track,
+  .motion-lines {
+    animation: none;
+  }
+}

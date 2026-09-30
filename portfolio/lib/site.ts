@@ -1,9 +1,7 @@
 export const site = {
   name: "Nicolò Peruzzi",
   role: "Web Designer & Developer",
-  email: "hello@nicoloperuzzi.com",
-  /** E.164 digits, no plus sign. Replace before publishing. */
-  whatsapp: "390000000000",
+  email: "neecoproduction@gmail.com",
   linkedin: "https://www.linkedin.com/in/nicolo-peruzzi",
   github: "https://github.com/nicoloperuzzi",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nicoloperuzzidevelopment.vercel.app",

@@ -19,7 +19,8 @@
   },
   "hero": {
     "eyebrow": "Web Designer & Developer",
-    "title": "Trasformo Idee in Esperienze Digitali",
+    "title": "Trasforma Idee in Esperienze Digitali",
+    "mantra": "Visione. Strategia. Dominio digitale.",
     "subtitle": "Siti web custom, eleganti e ad alta conversione per ristoranti, hotel, studi professionali, palestre e brand",
     "cta": "Scopri i Miei Lavori",
     "secondary": "Parliamone",
@@ -28,9 +29,21 @@
   "intro": {
     "kicker": "Chi sono",
     "title": "Siti su misura, con la calma di un lavoro fatto bene.",
-    "bio": "Sono Nicolò Peruzzi, web designer e developer. Affianco ristoranti, hotel, studi professionali, palestre e brand che vogliono una presenza digitale all'altezza del loro lavoro: chiara, curata, costruita per portare prenotazioni, richieste e fiducia. Ogni progetto parte da un confronto vero, non da un template.",
+    "bio": [
+      "Sono Nicolò Peruzzi, web designer e developer. Lavoro con ristoranti, hotel, studi professionali, palestre e brand che hanno qualcosa di vero da dire, ma non sanno come dirlo online.",
+      "La maggior parte dei siti che vedo sono generici, costruiti su template, pensati per piacere a chiunque e utili a nessuno. Io faccio il contrario: parto sempre da una conversazione vera con te, capisco come lavori, cosa ti rende diverso dagli altri, cosa vuoi che succeda quando qualcuno ti trova online.",
+      "Poi costruisco un sito che comunica davvero. Non è bello per essere bello: è progettato per portare prenotazioni, richieste concrete, fiducia. Perché un bel sito che non funziona è solo una spesa."
+    ],
+    "togetherTitle": "Come lavoriamo:",
+    "together": "Non parti da un modulo o da una presentazione. Parliamo. Mi racconti il tuo lavoro, i tuoi clienti, cosa non stai riuscendo a comunicare. Da lì disegno una strategia che ha senso per te, e la costruisco con cura.",
+    "formCta": "Compila il modulo",
     "specsTitle": "Specializzazioni",
-    "specs": ["Web Design", "Web Development", "UX/UI", "Design Thinking"],
+    "specs": [
+      "Web Design",
+      "Web Development",
+      "UX/UI",
+      "Design Thinking"
+    ],
     "methodTitle": "Come lavoro",
     "methods": [
       {
@@ -50,7 +63,7 @@
   "work": {
     "kicker": "Portfolio",
     "title": "Cinque settori, lo stesso livello di cura.",
-    "lead": "Ogni scheda è un sito pubblicato. Aprilo, oppure leggi il caso in meno di cento parole.",
+    "lead": "Ogni scheda è un sito pubblicato. Aprilo, oppure leggi il caso.",
     "all": "Tutti",
     "view": "Vedi il Progetto",
     "case": "Caso studio",
@@ -67,27 +80,47 @@
     "projects": {
       "velvet": {
         "description": "Eleganza e semplicità a servizio dell'esperienza culinaria",
-        "highlights": ["Design lussuoso", "Prenotazioni online", "Menu interattivo"],
+        "highlights": [
+          "Design lussuoso",
+          "Prenotazioni online",
+          "Menu interattivo"
+        ],
         "case": "The Velvet Table traduce l'atmosfera di una sala gastronomica in un'interfaccia quieta. Tipografia ampia, fotografia e ritmo delle sezioni accompagnano chi legge il menu e chi vuole prenotare, senza rumore visivo. Le prenotazioni stanno nel flusso della visita e il sito resta chiaro sul telefono, dove arrivano molte decisioni dell'ultimo momento. L'obiettivo era far sentire il locale prima ancora di varcare la porta."
       },
       "hotel": {
         "description": "Ospitalità digitale che cattura l'essenza della struttura",
-        "highlights": ["Sistema di prenotazione", "Gallery immersiva", "Design responsive"],
+        "highlights": [
+          "Sistema di prenotazione",
+          "Gallery immersiva",
+          "Design responsive"
+        ],
         "case": "Hotel Bellavista usa la fotografia della struttura come materia prima. Camere e gallery sono organizzate per far scegliere, la richiesta di soggiorno è raggiungibile da ogni punto della pagina e il layout tiene la stessa calma dal telefono al desktop. Il sito racconta ospitalità concreta: luce, materiali, posizione, e un passo chiaro verso la prenotazione."
       },
       "studio": {
         "description": "Autorevolezza e fiducia in ogni pixel",
-        "highlights": ["Credibilità", "Informazioni organizzate", "Moduli di contatto"],
+        "highlights": [
+          "Credibilità",
+          "Informazioni organizzate",
+          "Moduli di contatto"
+        ],
         "case": "Studio Legale Rossi doveva comunicare autorevolezza senza freddezza. La gerarchia mette competenze, metodo e contatto nello stesso sguardo. I moduli sono brevi, le informazioni sono raggruppate per decisione e il tono resta preciso. Chi arriva con un problema trova subito come iniziare una conversazione, non un muro di testo."
       },
       "gym": {
         "description": "Energia e motivazione, dirette dallo schermo al cuore",
-        "highlights": ["Senso di community", "Informazioni membership", "Design responsive"],
+        "highlights": [
+          "Senso di community",
+          "Informazioni membership",
+          "Design responsive"
+        ],
         "case": "InShape Gym porta in pagina l'energia della sala pesi senza trasformarla in rumore. Membership, prova e community si leggono in pochi secondi, con un contrasto netto e una griglia che regge anche su schermi piccoli. Il sito motiva, poi indica il passo successivo: entrare, provare, iscriversi."
       },
       "symvolia": {
         "description": "Uno spazio dove creatività e tecnologia danzano insieme",
-        "highlights": ["Sperimentazione", "Visione artistica", "Personal branding"],
+        "highlights": [
+          "Sperimentazione",
+          "Visione artistica",
+          "Personal branding"
+        ],
         "case": "Symvolia è lo spazio in cui il linguaggio visivo può essere più libero. Segno, movimento e identità convivono con una struttura comunque navigabile. È il progetto in cui sperimento composizione e branding senza il vincolo di un settore, e dove tecnologia e visione artistica stanno nella stessa pagina."
       }
     }
@@ -97,23 +130,29 @@
     "title": "Cura visibile, anche nei risultati.",
     "lead": "Quattro riferimenti che uso per tenere il lavoro concreto: volume, relazione, tempi e ciò che il sito fa fare.",
     "items": [
-      { "value": 18, "prefix": "", "suffix": "", "label": "Progetti completati" },
-      { "value": 14, "prefix": "", "suffix": "", "label": "Clienti soddisfatti" },
-      { "value": 12, "prefix": "", "suffix": "h", "label": "Tempo medio di risposta" },
-      { "value": 32, "prefix": "+", "suffix": "%", "label": "Aumento medio delle conversioni" }
-    ],
-    "quotes": [
       {
-        "quote": "Prenotare è diventato naturale, e il locale si riconosce già dalla prima schermata.",
-        "author": "Sala, The Velvet Table"
+        "value": 5,
+        "prefix": "",
+        "suffix": "",
+        "label": "Progetti completati"
       },
       {
-        "quote": "Le camere e la richiesta di soggiorno stanno finalmente nello stesso racconto.",
-        "author": "Reception, Hotel Bellavista"
+        "value": 5,
+        "prefix": "",
+        "suffix": "",
+        "label": "Clienti soddisfatti"
       },
       {
-        "quote": "Chi ci scrive arriva già orientato. Il sito fa il primo colloquio.",
-        "author": "Studio Legale Rossi"
+        "value": 12,
+        "prefix": "",
+        "suffix": "h",
+        "label": "Tempo medio di risposta"
+      },
+      {
+        "value": 32,
+        "prefix": "+",
+        "suffix": "%",
+        "label": "Aumento medio delle conversioni"
       }
     ]
   },
@@ -143,19 +182,38 @@
     "groups": [
       {
         "title": "Frontend",
-        "items": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"]
+        "items": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "Tailwind CSS"
+        ]
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "Database"]
+        "items": [
+          "Node.js",
+          "Database"
+        ]
       },
       {
         "title": "Tools",
-        "items": ["Figma", "Git", "Vercel", "SEO"]
+        "items": [
+          "Figma",
+          "Git",
+          "Vercel",
+          "SEO"
+        ]
       },
       {
         "title": "Competenze",
-        "items": ["UX/UI", "Responsive Design", "Performance Optimization"]
+        "items": [
+          "UX/UI",
+          "Responsive Design",
+          "Performance Optimization"
+        ]
       }
     ]
   },
@@ -213,20 +271,28 @@
     "type": "Tipo di progetto",
     "message": "Messaggio",
     "submit": "Invia il messaggio",
-    "success": "Si apre il tuo programma di posta con il messaggio pronto. Se non parte, scrivimi direttamente.",
-    "whatsapp": "Scrivimi su WhatsApp",
+    "success": "Messaggio inviato. Ti rispondo a questa email.",
     "direct": "Email diretta",
     "placeholderName": "Il tuo nome",
     "placeholderEmail": "tu@email.com",
     "placeholderMessage": "Cosa vuoi realizzare, e per quando?",
     "typePlaceholder": "Seleziona",
-    "types": ["Ristorante", "Hospitality", "Studio professionale", "Palestra", "Brand creativo", "Altro"],
+    "types": [
+      "Ristorante",
+      "Hospitality",
+      "Studio professionale",
+      "Palestra",
+      "Brand creativo",
+      "Altro"
+    ],
     "errors": {
       "name": "Scrivi il tuo nome.",
       "email": "Inserisci un'email valida.",
       "type": "Scegli un tipo di progetto.",
-      "message": "Racconta l'idea in almeno una frase."
-    }
+      "message": "Racconta l'idea in almeno una frase.",
+      "send": "Non sono riuscito a inviarlo. Scrivimi direttamente."
+    },
+    "sending": "Invio…"
   },
   "services": {
     "kicker": "Servizi",
@@ -269,7 +335,7 @@
       },
       {
         "q": "Come si inizia?",
-        "a": "Dal modulo contatti o da WhatsApp. Rispondo con una lettura del perimetro, non con un preventivo cieco."
+        "a": "Dal modulo contatti. Rispondo con una lettura del perimetro, non con un preventivo cieco."
       }
     ]
   },
@@ -286,11 +352,11 @@
     "sections": [
       {
         "title": "Titolare",
-        "text": "Nicolò Peruzzi. Per qualsiasi richiesta sulla privacy scrivi a hello@nicoloperuzzi.com."
+        "text": "Nicolò Peruzzi. Per qualsiasi richiesta sulla privacy scrivi a neecoproduction@gmail.com."
       },
       {
         "title": "Modulo e contatti",
-        "text": "Nome, email e messaggio non vengono salvati su un database di questo sito. L'invio apre il programma di posta e la conversazione prosegue da lì."
+        "text": "Nome, email, tipo di progetto e messaggio vengono inviati a neecoproduction@gmail.com tramite un servizio di posta. Non restano in un database di questo sito."
       },
       {
         "title": "Cookie e memoria locale",
@@ -298,7 +364,11 @@
       },
       {
         "title": "Servizi esterni",
-        "text": "WhatsApp, LinkedIn e GitHub sono siti di terzi. Se li apri, valgono le loro informative."
+        "text": "LinkedIn e GitHub sono siti di terzi. Se li apri, valgono le loro informative."
+      },
+      {
+        "title": "Recensioni",
+        "text": "Nome, email, voto, testo e progetto della recensione vengono salvati. L'email non compare sul sito. Una recensione nuova resta in attesa finché non la pubblico o la scarto."
       }
     ]
   },
@@ -311,5 +381,32 @@
     "title": "Pagina non trovata",
     "text": "Questo indirizzo non corrisponde a una pagina del sito.",
     "back": "Torna alla home"
+  },
+  "reviews": {
+    "kicker": "Recensioni",
+    "title": "Racconta com'è andata.",
+    "lead": "La recensione resta in attesa finché non la leggo. Poi compare qui, con nome, voto e progetto.",
+    "name": "Nome",
+    "email": "Email",
+    "project": "Progetto",
+    "rating": "Voto",
+    "content": "Recensione",
+    "submit": "Invia la recensione",
+    "sending": "Invio…",
+    "placeholderName": "Il tuo nome",
+    "placeholderEmail": "tu@email.com",
+    "placeholderContent": "Cosa ha funzionato, e cosa resterà.",
+    "projectPlaceholder": "Seleziona un progetto",
+    "empty": "Ancora nessuna recensione pubblicata.",
+    "success": "Grazie. La pubblico dopo averla letta.",
+    "unavailable": "Il salvataggio non è ancora collegato. Scrivimi via email.",
+    "errors": {
+      "name": "Scrivi il tuo nome.",
+      "email": "Inserisci un'email valida.",
+      "project": "Scegli il progetto.",
+      "rating": "Scegli un voto da 1 a 5.",
+      "content": "Scrivi almeno una frase.",
+      "limit": "Troppe recensioni in poco tempo. Riprova più tardi."
+    }
   }
 }

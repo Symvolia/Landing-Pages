@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #3a342c;
+  line-height: 1.7;
+  background: #f6f3ee;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+section {
+  scroll-margin-top: 5.5rem;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-playfair text-ink mb-16 text-center font-medium;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 2.75rem;
+  height: 1px;
+  margin: 1.15rem auto 0;
+  background: #a68445;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center px-7 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] transition-colors duration-300;
+}
+
+.btn-gold {
+  @apply btn bg-gold text-ink hover:bg-ink hover:text-cream;
+}
+
+.btn-ink {
+  @apply btn bg-ink text-cream hover:bg-gold hover:text-ink;
+}
+
+.btn-line {
+  @apply btn border border-white/80 text-white hover:bg-white hover:text-ink;
+}
+
+.field {
+  @apply mt-1.5 w-full border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-gold;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+.hover-lift {
+  @apply transition-transform duration-500 hover:-translate-y-1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #a68445 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #a68445 !important;
+}

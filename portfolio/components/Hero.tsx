@@ -68,6 +68,7 @@ export function Hero() {
         <h1 className="mt-5 max-w-4xl bg-gradient-to-r from-white via-cyan to-purple-light bg-clip-text font-display text-4xl font-semibold leading-[1.05] tracking-tight text-transparent sm:text-6xl lg:text-7xl">
           {t("title")}
         </h1>
+        <p className="mt-4 font-display text-lg font-medium tracking-wide text-lime sm:text-2xl">{t("mantra")}</p>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-200 sm:text-xl">{t("subtitle")}</p>
         <div className="mt-10 flex flex-wrap gap-3">
           <a

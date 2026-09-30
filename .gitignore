@@ -1,0 +1,33 @@
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Env (keep examples)
+.env
+.env.*
+!.env.example
+
+# Dependencies & build outputs (also covered per-project)
+**/node_modules/
+**/.next/
+**/dist/
+**/out/
+**/.vercel/
+**/*.tsbuildinfo
+
+# Local tooling
+**/.agents/
+**/skills-lock.json
+**/supabase/.temp/

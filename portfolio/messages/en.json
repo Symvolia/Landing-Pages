@@ -20,6 +20,7 @@
   "hero": {
     "eyebrow": "Web Designer & Developer",
     "title": "I Turn Ideas into Digital Experiences",
+    "mantra": "Vision. Strategy. Digital command.",
     "subtitle": "Custom, elegant, high-converting websites for restaurants, hotels, professional studios, gyms, and brands",
     "cta": "See My Work",
     "secondary": "Let’s talk",
@@ -28,9 +29,21 @@
   "intro": {
     "kicker": "About",
     "title": "Custom websites, with the calm of work done properly.",
-    "bio": "I’m Nicolò Peruzzi, a web designer and developer. I work with restaurants, hotels, professional studios, gyms, and brands that want a digital presence equal to their work: clear, considered, and built to bring bookings, enquiries, and trust. Every project starts with a real conversation, not a template.",
+    "bio": [
+      "I’m Nicolò Peruzzi, a web designer and developer. I work with restaurants, hotels, professional studios, gyms, and brands that have something real to say, but don’t know how to say it online.",
+      "Most of the sites I see are generic, built on templates, made to please everyone and useful to no one. I do the opposite: I always start with a real conversation with you. I learn how you work, what sets you apart, and what you want to happen when someone finds you online.",
+      "Then I build a site that actually communicates. It isn’t beautiful for the sake of being beautiful: it’s designed to bring bookings, concrete enquiries, and trust. A beautiful site that doesn’t work is just an expense."
+    ],
+    "togetherTitle": "How we work:",
+    "together": "You don’t start with a form or a presentation. We talk. You tell me about your work, your clients, and what you aren’t managing to communicate. From there I design a strategy that makes sense for you, and I build it with care.",
+    "formCta": "Fill in the form",
     "specsTitle": "Specialisms",
-    "specs": ["Web Design", "Web Development", "UX/UI", "Design Thinking"],
+    "specs": [
+      "Web Design",
+      "Web Development",
+      "UX/UI",
+      "Design Thinking"
+    ],
     "methodTitle": "How I work",
     "methods": [
       {
@@ -50,7 +63,7 @@
   "work": {
     "kicker": "Portfolio",
     "title": "Five sectors, the same standard of care.",
-    "lead": "Each card is a published site. Open it, or read the case in under a hundred words.",
+    "lead": "Each card is a published site. Open it, or read the case.",
     "all": "All",
     "view": "View Project",
     "case": "Case study",
@@ -67,27 +80,47 @@
     "projects": {
       "velvet": {
         "description": "Elegance and simplicity in service of the dining experience",
-        "highlights": ["Luxurious design", "Online reservations", "Interactive menu"],
+        "highlights": [
+          "Luxurious design",
+          "Online reservations",
+          "Interactive menu"
+        ],
         "case": "The Velvet Table turns the atmosphere of a dining room into a quiet interface. Generous type, photography, and section rhythm guide people who are reading the menu and people who want to book, without visual noise. Reservations sit inside the visit, and the site stays clear on a phone, where many last-minute decisions happen. The aim was to let guests feel the room before they walk in."
       },
       "hotel": {
         "description": "Digital hospitality that captures the character of the property",
-        "highlights": ["Booking system", "Immersive gallery", "Responsive design"],
+        "highlights": [
+          "Booking system",
+          "Immersive gallery",
+          "Responsive design"
+        ],
         "case": "Hotel Bellavista treats photography of the property as raw material. Rooms and the gallery are organised so guests can choose, a stay request is reachable from anywhere on the page, and the layout keeps the same calm from phone to desktop. The site tells a concrete story of hospitality: light, materials, place, and a clear step toward booking."
       },
       "studio": {
         "description": "Authority and trust in every pixel",
-        "highlights": ["Credibility", "Organised information", "Contact forms"],
+        "highlights": [
+          "Credibility",
+          "Organised information",
+          "Contact forms"
+        ],
         "case": "Studio Legale Rossi had to feel authoritative without feeling cold. The hierarchy puts expertise, method, and contact in the same glance. Forms are short, information is grouped by decision, and the tone stays precise. Someone arriving with a problem can see how to start a conversation, rather than meeting a wall of text."
       },
       "gym": {
         "description": "Energy and motivation, from the screen to the heart",
-        "highlights": ["Community feel", "Membership info", "Responsive design"],
+        "highlights": [
+          "Community feel",
+          "Membership info",
+          "Responsive design"
+        ],
         "case": "InShape Gym brings the energy of the weight room onto the page without turning it into noise. Membership, a trial, and community read in a few seconds, with sharp contrast and a grid that holds on small screens. The site motivates, then points to the next step: walk in, try it, join."
       },
       "symvolia": {
         "description": "A space where creativity and technology move together",
-        "highlights": ["Experimentation", "Artistic vision", "Personal branding"],
+        "highlights": [
+          "Experimentation",
+          "Artistic vision",
+          "Personal branding"
+        ],
         "case": "Symvolia is where the visual language can be freer. Sign, motion, and identity share the page with a structure that is still navigable. It is the project where I test composition and branding without a sector constraint, and where technology and an artistic point of view occupy the same screen."
       }
     }
@@ -97,23 +130,29 @@
     "title": "Care you can see, including in the results.",
     "lead": "Four references I use to keep the work concrete: volume, relationships, response time, and what the site gets people to do.",
     "items": [
-      { "value": 18, "prefix": "", "suffix": "", "label": "Completed projects" },
-      { "value": 14, "prefix": "", "suffix": "", "label": "Happy clients" },
-      { "value": 12, "prefix": "", "suffix": "h", "label": "Average response time" },
-      { "value": 32, "prefix": "+", "suffix": "%", "label": "Average conversion lift" }
-    ],
-    "quotes": [
       {
-        "quote": "Booking feels natural, and the room is recognisable from the first screen.",
-        "author": "Floor, The Velvet Table"
+        "value": 5,
+        "prefix": "",
+        "suffix": "",
+        "label": "Completed projects"
       },
       {
-        "quote": "The rooms and the stay request finally belong to the same story.",
-        "author": "Reception, Hotel Bellavista"
+        "value": 5,
+        "prefix": "",
+        "suffix": "",
+        "label": "Happy clients"
       },
       {
-        "quote": "People who write to us already know where to start. The site holds the first conversation.",
-        "author": "Studio Legale Rossi"
+        "value": 12,
+        "prefix": "",
+        "suffix": "h",
+        "label": "Average response time"
+      },
+      {
+        "value": 32,
+        "prefix": "+",
+        "suffix": "%",
+        "label": "Average conversion lift"
       }
     ]
   },
@@ -143,19 +182,38 @@
     "groups": [
       {
         "title": "Frontend",
-        "items": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"]
+        "items": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "Tailwind CSS"
+        ]
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "Database"]
+        "items": [
+          "Node.js",
+          "Database"
+        ]
       },
       {
         "title": "Tools",
-        "items": ["Figma", "Git", "Vercel", "SEO"]
+        "items": [
+          "Figma",
+          "Git",
+          "Vercel",
+          "SEO"
+        ]
       },
       {
         "title": "Practice",
-        "items": ["UX/UI", "Responsive Design", "Performance Optimization"]
+        "items": [
+          "UX/UI",
+          "Responsive Design",
+          "Performance Optimization"
+        ]
       }
     ]
   },
@@ -213,20 +271,28 @@
     "type": "Project type",
     "message": "Message",
     "submit": "Send message",
-    "success": "Your mail app opens with the message ready. If it doesn’t, write to me directly.",
-    "whatsapp": "Message me on WhatsApp",
+    "success": "Message sent. I'll reply to this email.",
     "direct": "Direct email",
     "placeholderName": "Your name",
     "placeholderEmail": "you@email.com",
     "placeholderMessage": "What do you want to build, and by when?",
     "typePlaceholder": "Select",
-    "types": ["Restaurant", "Hospitality", "Professional studio", "Gym", "Creative brand", "Other"],
+    "types": [
+      "Restaurant",
+      "Hospitality",
+      "Professional studio",
+      "Gym",
+      "Creative brand",
+      "Other"
+    ],
     "errors": {
       "name": "Add your name.",
       "email": "Enter a valid email.",
       "type": "Choose a project type.",
-      "message": "Tell me the idea in at least one sentence."
-    }
+      "message": "Tell me the idea in at least one sentence.",
+      "send": "I couldn't send it. Write to me directly."
+    },
+    "sending": "Sending…"
   },
   "services": {
     "kicker": "Services",
@@ -269,7 +335,7 @@
       },
       {
         "q": "How do we start?",
-        "a": "Use the contact form or WhatsApp. I reply with a reading of the scope, not a blind quote."
+        "a": "Use the contact form. I reply with a reading of the scope, not a blind quote."
       }
     ]
   },
@@ -286,11 +352,11 @@
     "sections": [
       {
         "title": "Controller",
-        "text": "Nicolò Peruzzi. For any privacy request, write to hello@nicoloperuzzi.com."
+        "text": "Nicolò Peruzzi. For any privacy request, write to neecoproduction@gmail.com."
       },
       {
         "title": "Forms and contact",
-        "text": "Name, email, and message are not stored in a database on this site. Sending opens your mail app, and the conversation continues from there."
+        "text": "Name, email, project type, and message are sent to neecoproduction@gmail.com through an email service. They are not stored in a database on this site."
       },
       {
         "title": "Cookies and local storage",
@@ -298,7 +364,11 @@
       },
       {
         "title": "External services",
-        "text": "WhatsApp, LinkedIn, and GitHub are third-party sites. If you open them, their policies apply."
+        "text": "LinkedIn and GitHub are third-party sites. If you open them, their policies apply."
+      },
+      {
+        "title": "Reviews",
+        "text": "Name, email, rating, text, and project are stored. The email is not shown on the site. A new review stays pending until I publish or discard it."
       }
     ]
   },
@@ -311,5 +381,32 @@
     "title": "Page not found",
     "text": "This address does not match a page on the site.",
     "back": "Back home"
+  },
+  "reviews": {
+    "kicker": "Reviews",
+    "title": "Tell me how it went.",
+    "lead": "A review stays pending until I read it. Then it appears here, with name, rating, and project.",
+    "name": "Name",
+    "email": "Email",
+    "project": "Project",
+    "rating": "Rating",
+    "content": "Review",
+    "submit": "Send review",
+    "sending": "Sending…",
+    "placeholderName": "Your name",
+    "placeholderEmail": "you@email.com",
+    "placeholderContent": "What worked, and what will stay with you.",
+    "projectPlaceholder": "Select a project",
+    "empty": "No published reviews yet.",
+    "success": "Thank you. I'll publish it after reading it.",
+    "unavailable": "Saving is not connected yet. Write to me by email.",
+    "errors": {
+      "name": "Add your name.",
+      "email": "Enter a valid email.",
+      "project": "Choose a project.",
+      "rating": "Choose a rating from 1 to 5.",
+      "content": "Write at least one sentence.",
+      "limit": "Too many reviews in a short time. Try again later."
+    }
   }
 }

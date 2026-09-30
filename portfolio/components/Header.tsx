@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { Logo } from "@/components/Logo";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 
@@ -29,6 +30,15 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(false);
   const [active, setActive] = useState("");
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
@@ -62,12 +72,10 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-navy/80 text-white backdrop-blur-md">
+    <header className={`sticky top-0 border-b border-white/10 bg-navy/80 text-white backdrop-blur-md ${open ? "z-[70]" : "z-40"}`}>
       <div className="mx-auto flex h-[4.5rem] w-full max-w-[1200px] items-center justify-between gap-4 px-6">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid h-11 w-11 place-items-center rounded-lg bg-cyan font-display text-sm font-semibold text-navy">
-            NP
-          </span>
+          <Logo className="h-11 w-11 shrink-0" />
           <span className="bg-gradient-to-r from-cyan to-purple-light bg-clip-text font-display text-sm font-semibold tracking-tight text-transparent">
             Nicolò Peruzzi
           </span>
@@ -135,19 +143,28 @@ export function Header() {
         </div>
       </div>
       {open ? (
-        <div className="fixed inset-0 z-50 lg:hidden">
-          <button type="button" className="absolute inset-0 bg-navy/60 backdrop-blur-sm" aria-label={t("close")} onClick={() => setOpen(false)} />
-          <nav className="absolute inset-y-0 right-0 flex w-[min(20rem,88vw)] flex-col gap-2 bg-indigo/95 p-6 shadow-2xl" aria-label="Mobile">
-            {links.map(([key, href]) => (
-              <a key={key} href={href} className="flex min-h-11 items-center text-lg text-white hover:text-cyan" onClick={() => setOpen(false)}>
-                {t(key)}
-              </a>
-            ))}
-            <a href="#contact" className="mt-4 inline-flex h-12 items-center justify-center rounded-full bg-lime font-semibold text-navy" onClick={() => setOpen(false)}>
-              {t("contact")}
+        <nav
+          className="absolute inset-x-0 top-full z-[70] max-h-[min(22rem,70vh)] overflow-y-auto border-b border-white/10 bg-navy px-4 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.45)] lg:hidden"
+          aria-label="Mobile"
+        >
+          {links.map(([key, href]) => (
+            <a
+              key={key}
+              href={href}
+              className="flex min-h-12 items-center rounded-xl px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-cyan"
+              onClick={() => setOpen(false)}
+            >
+              {t(key)}
             </a>
-          </nav>
-        </div>
+          ))}
+          <a
+            href="#contact"
+            className="mt-2 inline-flex h-12 w-full items-center justify-center rounded-full bg-lime px-4 font-semibold text-navy"
+            onClick={() => setOpen(false)}
+          >
+            {t("contact")}
+          </a>
+        </nav>
       ) : null}
     </header>
   );

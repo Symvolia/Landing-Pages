@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Logo } from "@/components/Logo";
 import { Newsletter } from "@/components/Newsletter";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
@@ -11,7 +12,10 @@ export async function Footer() {
     <footer className="border-t border-white/10 bg-navy text-slate-300">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-6 px-6 py-10 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="font-display text-lg font-semibold text-white">{site.name}</p>
+          <p className="flex items-center gap-3 font-display text-lg font-semibold text-white">
+            <Logo className="h-10 w-10 shrink-0" />
+            {site.name}
+          </p>
           <p className="mt-2 max-w-md text-sm leading-relaxed">{t("note")}</p>
           <Newsletter />
         </div>
