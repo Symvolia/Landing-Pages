@@ -144,13 +144,35 @@
         "case": "A fitness concept: bring the energy of the weight room onto the page without turning it into noise. Membership, a trial, and community read in a few seconds, with sharp contrast and a grid that holds on small screens. Motivate, then point to the next step: walk in, try it, join."
       },
       "symvolia": {
-        "description": "A space where creativity and technology move together",
+        "description": "Immersive artist site: cinematic threshold, Latin orbit nav, sound archive.",
         "highlights": [
-          "Experimentation",
-          "Artistic vision",
-          "Personal branding"
+          "Three.js + GSAP",
+          "Web Audio",
+          "prefers-reduced-motion",
+          "GitHub Pages"
         ],
-        "case": "Symvolia is where the visual language can be freer. Sign, motion, and identity share the page with a structure that is still navigable. It is the project where I test composition and branding without a sector constraint, and where technology and an artistic point of view occupy the same screen."
+        "case": "Symvolia.xyz is a personal artist site for a sound designer / producer / DJ, built as an immersive experience rather than a brochure.",
+        "what": "Symvolia.xyz is the artist site for Symvolia (sound designer, producer, DJ): a static platform designed as an immersive experience — cinematic threshold, esoteric identity, sound archive — not a generic brochure. Live: https://symvolia.xyz/",
+        "why": "To give the artistic project a space that matches the language of sound and symbol: entering the site should feel like crossing a door, not opening a menu. It is also a personal lab for motion, WebGL, and branding without a commercial brief.",
+        "role": "Personal project: concept, UX, visual design, front-end (HTML/CSS/JS), threshold audio, and GitHub Pages publishing. [TO COMPLETE: any collaboration on copy, 3D assets, or mastering]",
+        "stack": "Static HTML/CSS/JS (no build step). Opening portal: Three.js (WebGL, post-processing, GLTF), GSAP timeline, Web Audio (`portal-audio.js`). Ambient and SFX via `<audio>` elements. Deployed on GitHub Pages with custom domain symvolia.xyz.",
+        "techChoices": [
+          "UX — narrative threshold: the cinematic intro (eye → seal, ~8–10s, no hard black cuts) is the door; only after that do you reach the stage and archive. Returning with `?from=archive` skips the intro and lands in the library.",
+          "UX — Latin as identity: on the home orbit, links are Latin phrases (e.g. QUOD SUPERIUS / SICUT INFERIUS → Vision). Inside the archive, primary nav is English (Bio, Vision, Archive, Contact) and «Enter the Archive» has an English `aria-label` — so non-Latin readers can orient after the threshold. Today the Latin orbit items still lack per-link `aria-label`, tooltip, or secondary gloss: that is an open improvement.",
+          "Motion and performance: Three.js + vortex shader + particles, driven by GSAP; documented targets ~60 fps desktop (pixel ratio cap 2, ~90 particles) and 30+ on mobile/coarse pointer (pixel ratio 1.25, ~48 particles). Cost is concentrated on the threshold, not the whole session.",
+          "Assets: `rel=preload` on critical threshold images (emblem, seal, corona desktop/mobile via media queries); ambient and enter sounds with `preload=\"auto\"`. Reveals and environments use IntersectionObserver where needed.",
+          "prefers-reduced-motion: with `reduce`, the portal is skipped and `symvolia:intro-complete` fires immediately; the same flag simplifies or disables motion across environment, archive, serpents, and related modules.",
+          "SEO for a highly visual site: title, meta description, and canonical are in place. Open Graph / Twitter Card and JSON-LD are missing — a known weakness for an image-led experience."
+        ],
+        "challenges": [
+          "Keeping the threshold continuous (eye → gold → seal) without black flashes, with audio handoff into stage ambient.",
+          "Balancing immersion and accessibility: reduced-motion is covered; Latin orbit orientation is not yet (see above).",
+          "Loading heavy audio/visual assets on Pages without a bundler: targeted preloads + skipping the portal under reduced-motion."
+        ],
+        "wouldRedo": [
+          "Add an `aria-label` (and/or gloss / tooltip) on every Latin orbit item in the page’s primary language, so identity stays but screen readers and non-Latin readers know the destination before entering.",
+          "Finish social SEO: Open Graph, Twitter Card, and maybe Person/MusicGroup JSON-LD — today sharing leans almost only on title + description."
+        ]
       }
     },
     "caseWhat": "What it is",
@@ -158,7 +180,8 @@
     "caseRole": "My role",
     "caseStack": "Stack",
     "caseTech": "Technical choices",
-    "caseChallenges": "Challenges and solutions"
+    "caseChallenges": "Challenges and solutions",
+    "caseWouldRedo": "What I would redo"
   },
   "process": {
     "kicker": "Process",

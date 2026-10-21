@@ -18,6 +18,7 @@ type ProjectCopy = {
   stack?: string;
   techChoices?: string[];
   challenges?: string[];
+  wouldRedo?: string[];
 };
 
 type WorkT = ReturnType<typeof useTranslations<"work">>;
@@ -32,7 +33,7 @@ function CaseBody({
   onClose: () => void;
 }) {
   const copy = t.raw(`projects.${project.id}`) as ProjectCopy;
-  const structured = Boolean(copy.what || copy.why || copy.role || copy.stack);
+  const structured = Boolean(copy.what || copy.why || copy.role || copy.stack || copy.wouldRedo?.length);
   const viewLabel = project.type === "concept" || project.id === "synth" ? t("viewDemo") : t("view");
 
   return (
@@ -92,6 +93,16 @@ function CaseBody({
               <p className="font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("caseChallenges")}</p>
               <ul className="mt-2 list-disc space-y-2 pl-5 leading-relaxed">
                 {copy.challenges.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+          {copy.wouldRedo?.length ? (
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("caseWouldRedo")}</p>
+              <ul className="mt-2 list-disc space-y-2 pl-5 leading-relaxed">
+                {copy.wouldRedo.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>

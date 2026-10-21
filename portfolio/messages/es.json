@@ -144,13 +144,35 @@
         "case": "Concept para fitness: llevar la energía de la sala de pesas a la página sin convertirla en ruido. Membresía, prueba y comunidad se leen en pocos segundos, con un contraste nítido y una retícula que aguanta en pantallas pequeñas. Motivar y después indicar el siguiente paso: entrar, probar, inscribirse."
       },
       "symvolia": {
-        "description": "Un espacio donde creatividad y tecnología bailan juntas",
+        "description": "Sitio de artista inmersivo: umbral cinematográfico, nav en latín, archivo sonoro.",
         "highlights": [
-          "Experimentación",
-          "Visión artística",
-          "Personal branding"
+          "Three.js + GSAP",
+          "Web Audio",
+          "prefers-reduced-motion",
+          "GitHub Pages"
         ],
-        "case": "Symvolia es el espacio donde el lenguaje visual puede ser más libre. Signo, movimiento e identidad conviven con una estructura que sigue siendo navegable. Es el proyecto en el que experimento composición y branding sin el límite de un sector, y donde tecnología y visión artística ocupan la misma página."
+        "case": "Symvolia.xyz es el sitio personal de un sound designer / producer / DJ, pensado como experiencia inmersiva y no como brochure.",
+        "what": "Symvolia.xyz es el sitio de artista de Symvolia (sound designer, producer, DJ): una plataforma estática pensada como experiencia inmersiva — umbral cinematográfico, identidad esotérica, archivo sonoro — no como brochure genérica. Live: https://symvolia.xyz/",
+        "why": "Dar al proyecto artístico un espacio que coincida con el lenguaje del sonido y el símbolo: entrar al sitio debe sentirse como cruzar una puerta, no como abrir un menú. También es un laboratorio personal de motion, WebGL y branding sin brief comercial.",
+        "role": "Proyecto personal: concepto, UX, diseño visual, front-end (HTML/CSS/JS), audio del umbral y publicación en GitHub Pages. [POR COMPLETAR: posible colaboración en copy, assets 3D o mastering]",
+        "stack": "HTML/CSS/JS estático (sin build). Portal de entrada: Three.js (WebGL, post-procesado, GLTF), timeline GSAP, Web Audio (`portal-audio.js`). Ambient y SFX vía `<audio>`. Deploy en GitHub Pages con dominio custom symvolia.xyz.",
+        "techChoices": [
+          "UX — umbral narrativo: la intro cinematográfica (ojo → sello, ~8–10s, sin cortes a negro) es la puerta; solo después se llega al stage y al archivo. Volver con `?from=archive` salta la intro y aterriza en la library.",
+          "UX — latín como identidad: en la órbita de home los enlaces son frases latinas (p. ej. QUOD SUPERIUS / SICUT INFERIUS → Vision). Dentro del archivo la nav primaria está en inglés (Bio, Vision, Archive, Contact) y «Enter the Archive» tiene `aria-label` en inglés — orientación tras el umbral. Hoy en las voces latinas de la órbita faltan `aria-label`, tooltip o glosa secundaria: mejora pendiente.",
+          "Motion y rendimiento: Three.js + shader vortex + partículas, orquestados con GSAP; objetivos documentados ~60 fps desktop (pixel ratio máx. 2, ~90 partículas) y 30+ en móvil/coarse pointer (pixel ratio 1.25, ~48 partículas). El coste se concentra en el umbral.",
+          "Assets: `rel=preload` en imágenes críticas del umbral (emblem, seal, corona desktop/móvil con media query); ambient y sonidos de entrada con `preload=\"auto\"`. Reveals y entornos usan IntersectionObserver.",
+          "prefers-reduced-motion: con `reduce` se salta el portal y se dispara de inmediato `symvolia:intro-complete`; el mismo flag simplifica o desactiva motion en environment, archive, serpents y módulos afines.",
+          "SEO de un sitio muy visual: hay title, meta description y canonical. Faltan Open Graph / Twitter Card y JSON-LD — debilidad conocida para una experiencia guiada por la imagen."
+        ],
+        "challenges": [
+          "Mantener el umbral continuo (ojo → oro → sello) sin flashes negros, con handoff de audio al ambient del stage.",
+          "Equilibrar inmersión y accesibilidad: reduced-motion está cubierto; la orientación del latín en la órbita aún no (ver arriba).",
+          "Cargar assets de audio/visuales pesados en Pages sin bundler: preloads selectivos + saltar el portal con reduced-motion."
+        ],
+        "wouldRedo": [
+          "Añadir en cada voz latina de la órbita un `aria-label` (y/o glosa / tooltip) en el idioma primario de la página, para que la identidad se mantenga pero lectores de pantalla y quienes no leen latín sepan el destino antes de entrar.",
+          "Completar el SEO social: Open Graph, Twitter Card y quizá JSON-LD Person/MusicGroup — hoy el share depende casi solo de title + description."
+        ]
       }
     },
     "caseWhat": "Qué es",
@@ -158,7 +180,8 @@
     "caseRole": "Mi rol",
     "caseStack": "Stack",
     "caseTech": "Decisiones técnicas",
-    "caseChallenges": "Retos y soluciones"
+    "caseChallenges": "Retos y soluciones",
+    "caseWouldRedo": "Qué haría distinto"
   },
   "process": {
     "kicker": "Proceso",

@@ -144,13 +144,35 @@
         "case": "Ein Fitness-Konzept: die Energie des Kraftraums auf die Seite bringen, ohne sie in Lärm zu verwandeln. Mitgliedschaft, Probetraining und Community sind in wenigen Sekunden lesbar, mit klarem Kontrast und einem Raster, das auch auf kleinen Bildschirmen hält. Motivieren und dann den nächsten Schritt zeigen: kommen, testen, Mitglied werden."
       },
       "symvolia": {
-        "description": "Ein Raum, in dem Kreativität und Technologie zusammen tanzen",
+        "description": "Immersive Künstlerseite: filmische Schwelle, lateinische Orbit-Nav, Sound-Archiv.",
         "highlights": [
-          "Experiment",
-          "Künstlerische Vision",
-          "Personal Branding"
+          "Three.js + GSAP",
+          "Web Audio",
+          "prefers-reduced-motion",
+          "GitHub Pages"
         ],
-        "case": "Symvolia ist der Raum, in dem die Bildsprache freier sein darf. Zeichen, Bewegung und Identität teilen sich die Seite mit einer Struktur, die trotzdem navigierbar bleibt. Hier erprobe ich Komposition und Branding ohne Branchenzwang, und hier stehen Technologie und künstlerische Haltung auf demselben Screen."
+        "case": "Symvolia.xyz ist die persönliche Künstlerseite eines Sound Designers / Producers / DJs — als immersive Erfahrung, nicht als Broschüre.",
+        "what": "Symvolia.xyz ist die Künstlerseite von Symvolia (Sound Designer, Producer, DJ): eine statische Plattform als immersive Erfahrung — filmische Schwelle, esoterische Identität, Sound-Archiv — keine generische Broschüre. Live: https://symvolia.xyz/",
+        "why": "Dem künstlerischen Projekt einen Raum geben, der zur Sprache von Klang und Symbol passt: die Seite zu betreten soll sich wie eine Schwelle anfühlen, nicht wie ein Menü. Zugleich persönliches Labor für Motion, WebGL und Branding ohne kommerzielles Briefing.",
+        "role": "Persönliches Projekt: Konzept, UX, Visual Design, Front-end (HTML/CSS/JS), Schwellen-Audio und Veröffentlichung auf GitHub Pages. [ZU ERGÄNZEN: eventuelle Zusammenarbeit an Copy, 3D-Assets oder Mastering]",
+        "stack": "Statisches HTML/CSS/JS (kein Build-Schritt). Eingangsportal: Three.js (WebGL, Post-Processing, GLTF), GSAP-Timeline, Web Audio (`portal-audio.js`). Ambient und SFX über `<audio>`. Deploy auf GitHub Pages mit Custom Domain symvolia.xyz.",
+        "techChoices": [
+          "UX — narrative Schwelle: das filmische Intro (Auge → Siegel, ~8–10s, ohne harte Schwarzschnitte) ist die Tür; erst danach kommen Stage und Archiv. Rückkehr mit `?from=archive` überspringt das Intro und landet in der Library.",
+          "UX — Latein als Identität: auf dem Home-Orbit sind die Links lateinische Phrasen (z. B. QUOD SUPERIUS / SICUT INFERIUS → Vision). Im Archiv ist die Primary-Nav englisch (Bio, Vision, Archive, Contact) und «Enter the Archive» hat ein englisches `aria-label` — Orientierung nach der Schwelle. Auf den lateinischen Orbit-Links fehlen heute noch `aria-label`, Tooltip oder Gloss: offene Verbesserung.",
+          "Motion und Performance: Three.js + Vortex-Shader + Partikel, gesteuert von GSAP; dokumentierte Ziele ~60 fps Desktop (Pixel-Ratio max. 2, ~90 Partikel) und 30+ auf Mobile/coarse Pointer (Pixel-Ratio 1.25, ~48 Partikel). Kosten konzentrieren sich auf die Schwelle.",
+          "Assets: `rel=preload` für kritische Schwellenbilder (Emblem, Seal, Corona Desktop/Mobile per Media Query); Ambient und Enter-Sounds mit `preload=\"auto\"`. Reveals und Environments nutzen IntersectionObserver.",
+          "prefers-reduced-motion: bei `reduce` wird das Portal übersprungen und `symvolia:intro-complete` sofort gefeuert; dasselbe Flag vereinfacht Motion in Environment, Archive, Serpents u. a.",
+          "SEO für eine stark visuelle Seite: Title, Meta-Description und Canonical sind da. Open Graph / Twitter Card und JSON-LD fehlen — bekannte Schwäche für ein bildgeführtes Erlebnis."
+        ],
+        "challenges": [
+          "Die Schwelle kontinuierlich halten (Auge → Gold → Siegel) ohne Schwarzblitze, mit Audio-Handoff zum Stage-Ambient.",
+          "Immersion und Accessibility balancieren: Reduced Motion ist abgedeckt; lateinische Orbit-Orientierung noch nicht (siehe oben).",
+          "Schwere Audio-/Visual-Assets auf Pages ohne Bundler laden: gezielte Preloads + Portal-Skip bei Reduced Motion."
+        ],
+        "wouldRedo": [
+          "Auf jedem lateinischen Orbit-Link ein `aria-label` (und/oder Gloss / Tooltip) in der Primärsprache der Seite — Identität bleibt, Screenreader und Nicht-Latein-Leser kennen das Ziel vor dem Eintritt.",
+          "Social-SEO vervollständigen: Open Graph, Twitter Card und ggf. Person/MusicGroup JSON-LD — Sharing stützt sich heute fast nur auf Title + Description."
+        ]
       }
     },
     "caseWhat": "Was es ist",
@@ -158,7 +180,8 @@
     "caseRole": "Meine Rolle",
     "caseStack": "Stack",
     "caseTech": "Technische Entscheidungen",
-    "caseChallenges": "Herausforderungen und Lösungen"
+    "caseChallenges": "Herausforderungen und Lösungen",
+    "caseWouldRedo": "Was ich anders machen würde"
   },
   "process": {
     "kicker": "Prozess",

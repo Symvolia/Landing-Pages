@@ -144,13 +144,35 @@
         "case": "Concept para fitness: levar a energia da sala de pesos para a página sem a transformar em ruído. Membership, aula experimental e comunidade leem-se em poucos segundos, com contraste nítido e uma grelha que aguenta em ecrãs pequenos. Motivar e depois indicar o passo seguinte: entrar, experimentar, inscrever-se."
       },
       "symvolia": {
-        "description": "Um espaço onde criatividade e tecnologia dançam juntas",
+        "description": "Site de artista imersivo: limiar cinematográfico, nav em latim, arquivo sonoro.",
         "highlights": [
-          "Experimentação",
-          "Visão artística",
-          "Personal branding"
+          "Three.js + GSAP",
+          "Web Audio",
+          "prefers-reduced-motion",
+          "GitHub Pages"
         ],
-        "case": "A Symvolia é o espaço onde a linguagem visual pode ser mais livre. Signo, movimento e identidade convivem com uma estrutura que continua navegável. É o projeto em que experimento composição e branding sem o limite de um setor, e onde tecnologia e visão artística ocupam a mesma página."
+        "case": "Symvolia.xyz é o site pessoal de um sound designer / producer / DJ, pensado como experiência imersiva e não como brochure.",
+        "what": "Symvolia.xyz é o site de artista da Symvolia (sound designer, producer, DJ): uma plataforma estática pensada como experiência imersiva — limiar cinematográfico, identidade esotérica, arquivo sonoro — não uma brochure genérica. Live: https://symvolia.xyz/",
+        "why": "Dar ao projeto artístico um espaço alinhado com a linguagem do som e do símbolo: entrar no site deve sentir-se como atravessar uma porta, não como abrir um menu. É também um laboratório pessoal de motion, WebGL e branding sem brief comercial.",
+        "role": "Projeto pessoal: conceito, UX, design visual, front-end (HTML/CSS/JS), áudio do limiar e publicação no GitHub Pages. [A COMPLETAR: eventual colaboração em copy, assets 3D ou mastering]",
+        "stack": "HTML/CSS/JS estático (sem build). Portal de entrada: Three.js (WebGL, pós-processamento, GLTF), timeline GSAP, Web Audio (`portal-audio.js`). Ambient e SFX via `<audio>`. Deploy no GitHub Pages com domínio custom symvolia.xyz.",
+        "techChoices": [
+          "UX — limiar narrativo: a intro cinematográfica (olho → selo, ~8–10s, sem cortes a preto) é a porta; só depois se chega ao stage e ao arquivo. Voltar com `?from=archive` salta a intro e aterra na library.",
+          "UX — latim como identidade: na órbita da home os links são frases latinas (ex. QUOD SUPERIUS / SICUT INFERIUS → Vision). Dentro do arquivo a nav primária está em inglês (Bio, Vision, Archive, Contact) e «Enter the Archive» tem `aria-label` em inglês — orientação após o limiar. Hoje nas vozes latinas da órbita faltam `aria-label`, tooltip ou glosa secundária: melhoria em aberto.",
+          "Motion e performance: Three.js + shader vortex + partículas, orquestrados com GSAP; alvos documentados ~60 fps desktop (pixel ratio máx. 2, ~90 partículas) e 30+ em mobile/coarse pointer (pixel ratio 1.25, ~48 partículas). O custo concentra-se no limiar.",
+          "Assets: `rel=preload` nas imagens críticas do limiar (emblem, seal, corona desktop/mobile com media query); ambient e sons de entrada com `preload=\"auto\"`. Reveals e ambientes usam IntersectionObserver.",
+          "prefers-reduced-motion: com `reduce` o portal é saltado e dispara-se de imediato `symvolia:intro-complete`; o mesmo flag simplifica ou desativa motion em environment, archive, serpents e módulos afins.",
+          "SEO de um site muito visual: há title, meta description e canonical. Faltam Open Graph / Twitter Card e JSON-LD — fraqueza conhecida para uma experiência guiada pela imagem."
+        ],
+        "challenges": [
+          "Manter o limiar contínuo (olho → ouro → selo) sem flashes pretos, com handoff de áudio para o ambient do stage.",
+          "Equilibrar imersão e acessibilidade: reduced-motion está coberto; a orientação do latim na órbita ainda não (ver acima).",
+          "Carregar assets de áudio/visuais pesados no Pages sem bundler: preloads seletivos + saltar o portal com reduced-motion."
+        ],
+        "wouldRedo": [
+          "Adicionar em cada voz latina da órbita um `aria-label` (e/ou glosa / tooltip) no idioma primário da página, para a identidade permanecer mas leitores de ecrã e quem não lê latim saberem o destino antes de entrar.",
+          "Completar o SEO social: Open Graph, Twitter Card e talvez JSON-LD Person/MusicGroup — hoje o share depende quase só de title + description."
+        ]
       }
     },
     "caseWhat": "O que é",
@@ -158,7 +180,8 @@
     "caseRole": "O meu papel",
     "caseStack": "Stack",
     "caseTech": "Escolhas técnicas",
-    "caseChallenges": "Desafios e soluções"
+    "caseChallenges": "Desafios e soluções",
+    "caseWouldRedo": "O que faria de diferente"
   },
   "process": {
     "kicker": "Processo",
