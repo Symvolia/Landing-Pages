@@ -44,7 +44,7 @@ export const projects = [
     title: "Symvolia",
     href: "https://symvolia.xyz",
     image: "/work/symvolia.jpg",
-    tech: ["JavaScript", "Motion", "Branding"],
+    tech: ["HTML/CSS/JS", "Three.js", "GSAP", "Web Audio"],
   },
   {
     id: "synth",

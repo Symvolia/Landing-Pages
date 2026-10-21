@@ -17,8 +17,8 @@ export function Reveal({
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
+    // Reduced motion: globals.css already forces .reveal visible — skip JS.
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisible(true);
       return;
     }
     const observer = new IntersectionObserver(

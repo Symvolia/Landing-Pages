@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RootNotFound() {
   return (
     <html lang="it">
@@ -17,9 +19,9 @@ export default function RootNotFound() {
             Nicolò Peruzzi
           </p>
           <h1 style={{ fontSize: "2.5rem", margin: "0.5rem 0 1rem" }}>Pagina non trovata</h1>
-          <a href="/it" style={{ color: "#1a365d" }}>
+          <Link href="/it" style={{ color: "#1a365d" }}>
             Torna alla home
-          </a>
+          </Link>
         </main>
       </body>
     </html>
