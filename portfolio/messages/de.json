@@ -92,7 +92,7 @@
         "case": "Into the Void ist ein persönlicher Spatial-Synthesizer im Browser.",
         "what": "Into the Void ist ein räumlicher Wavetable-Synth im Browser: er erzeugt Klang, positioniert ihn im 3D-Raum, spielt ihn binaural (HRTF) und zeichnet eine Cymatics-Ansicht. Demo: spatial-synth-symvolia.vercel.app/synth.",
         "why": "Um Synthese, Raum und Interaktion in einem Instrument zu verbinden — über Broschüren-Websites hinaus — und eine öffentliche Demo desselben Motors zu haben, der auch als Plug-in existiert (CLAP/AU/VST).",
-        "role": "Persönliches Projekt: Interface (UI/UX), Sound Design (Presets und Motorverhalten) und Entwicklung (Audio-Engine + Web-UI). [ZU ERGÄNZEN: mögliche Zusammenarbeit]",
+        "role": "Persönliches Projekt: Interface (UI/UX), Sound Design (Presets und Motorverhalten) und Entwicklung (Audio-Engine + Web-UI).",
         "stack": "React-18-UI (UMD). Audio über Web Audio API mit AudioWorklet (`ssc-synth`); ScriptProcessor-Fallback. Spatialisierung mit HRTF-Modell (Brown & Duda) und Ambisonics zusätzlich zu Stereo. Feld und Cymatics auf Canvas/WebGL. DSP-Core auch in portablem C++20 mit WASM-Pfad. Separater Next.js-Host für die Patch-Bibliothek.",
         "techChoices": [
           "AudioWorklet hält DSP vom Main Thread fern, mit stabilem Nachrichtenprotokoll zur UI.",
@@ -102,7 +102,7 @@
         ],
         "challenges": [
           "Autoplay-Politik: Audio bleibt aus bis zur Interaktion; Start audio / M schalten den Context frei.",
-          "Performance: Worklet entlastet den Main Thread; Visuals nutzen requestAnimationFrame. [ZU ERGÄNZEN: konkrete CPU-/Latenzwerte]",
+          "Performance: Worklet entlastet den Main Thread; Visuals nutzen requestAnimationFrame.",
           "Kompatibilität: ohne Worklet Fallback auf ScriptProcessor (im Core-README dokumentiert).",
           "Zugängliches Mute/Stop: Stop audio und Taste M; Escape / All notes off beendet gehaltene Noten."
         ]
@@ -154,7 +154,7 @@
         "case": "Symvolia.xyz ist die persönliche Künstlerseite eines Sound Designers / Producers / DJs — als immersive Erfahrung, nicht als Broschüre.",
         "what": "Symvolia.xyz ist die Künstlerseite von Symvolia (Sound Designer, Producer, DJ): eine statische Plattform als immersive Erfahrung — filmische Schwelle, esoterische Identität, Sound-Archiv — keine generische Broschüre. Live: https://symvolia.xyz/",
         "why": "Dem künstlerischen Projekt einen Raum geben, der zur Sprache von Klang und Symbol passt: die Seite zu betreten soll sich wie eine Schwelle anfühlen, nicht wie ein Menü. Zugleich persönliches Labor für Motion, WebGL und Branding ohne kommerzielles Briefing.",
-        "role": "Persönliches Projekt: Konzept, UX, Visual Design, Front-end (HTML/CSS/JS), Schwellen-Audio und Veröffentlichung auf GitHub Pages. [ZU ERGÄNZEN: eventuelle Zusammenarbeit an Copy, 3D-Assets oder Mastering]",
+        "role": "Persönliches Projekt: Konzept, UX, Visual Design, Front-end (HTML/CSS/JS), Schwellen-Audio und Veröffentlichung auf GitHub Pages.",
         "stack": "Statisches HTML/CSS/JS (kein Build-Schritt). Eingangsportal: Three.js (WebGL, Post-Processing, GLTF), GSAP-Timeline, Web Audio (`portal-audio.js`). Ambient und SFX über `<audio>`. Deploy auf GitHub Pages mit Custom Domain symvolia.xyz.",
         "techChoices": [
           "UX — narrative Schwelle: das filmische Intro (Auge → Siegel, ~8–10s, ohne harte Schwarzschnitte) ist die Tür; erst danach kommen Stage und Archiv. Rückkehr mit `?from=archive` überspringt das Intro und landet in der Library.",

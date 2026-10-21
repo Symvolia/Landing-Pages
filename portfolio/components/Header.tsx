@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Logo } from "@/components/Logo";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
@@ -22,13 +22,27 @@ const labels: Record<Locale, string> = {
   es: "ES",
 };
 
+function subscribeDark(onStoreChange: () => void) {
+  const observer = new MutationObserver(onStoreChange);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  return () => observer.disconnect();
+}
+
+function getDarkSnapshot() {
+  return document.documentElement.classList.contains("dark");
+}
+
+function getDarkServerSnapshot() {
+  return false;
+}
+
 export function Header() {
   const t = useTranslations("nav");
   const locale = useLocale() as Locale;
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
-  const [dark, setDark] = useState(false);
+  const dark = useSyncExternalStore(subscribeDark, getDarkSnapshot, getDarkServerSnapshot);
   const [active, setActive] = useState("");
 
   useEffect(() => {
@@ -41,7 +55,6 @@ export function Header() {
   }, [open]);
 
   useEffect(() => {
-    setDark(document.documentElement.classList.contains("dark"));
     const ids = links.map(([key]) => key);
     const observer = new IntersectionObserver(
       (entries) => {
@@ -63,7 +76,6 @@ export function Header() {
     const next = !document.documentElement.classList.contains("dark");
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("np-theme", next ? "dark" : "light");
-    setDark(next);
   }
 
   function changeLocale(next: string) {

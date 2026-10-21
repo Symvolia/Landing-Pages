@@ -92,7 +92,7 @@
         "case": "Into the Void is a personal spatial synthesizer in the browser.",
         "what": "Into the Void is a spatial wavetable synth that runs in the browser: it generates sound, places it in 3D space, plays it back binaurally (HRTF), and draws a cymatics view of the signal. The live demo is at spatial-synth-symvolia.vercel.app/synth.",
         "why": "To explore synthesis, space, and interaction in one instrument — beyond brochure sites — and to ship a public demo of the same engine that also exists as a plug-in (CLAP/AU/VST, macOS builds in Downloads).",
-        "role": "Personal project: interface (UI/UX), sound design (presets and engine behaviour), and engineering (audio engine + web UI). [TO COMPLETE: any collaboration or parts owned by others]",
+        "role": "Personal project: interface (UI/UX), sound design (presets and engine behaviour), and engineering (audio engine + web UI).",
         "stack": "React 18 UI (UMD). Audio via the Web Audio API with an AudioWorklet (`ssc-synth`); ScriptProcessor fallback if the worklet is unavailable. Spatialisation with an HRTF model (Brown & Duda) and Ambisonics output (1st/3rd order) plus stereo. Field and cymatics on Canvas/WebGL (no Three.js in the analysed bundle). DSP core also in portable C++20 with a WASM path. A separate Next.js host covers the patch library site (Auth.js, Neon, Vercel Blob).",
         "techChoices": [
           "AudioWorklet keeps DSP off the main thread, with a stable message protocol to the UI (params, notes, telemetry).",
@@ -102,7 +102,7 @@
         ],
         "challenges": [
           "Browser autoplay policy: audio stays off until interaction; Start audio / M unlock the context.",
-          "Performance: the worklet avoids saturating the main thread; visuals use requestAnimationFrame. [TO COMPLETE: concrete CPU/latency figures on reference devices]",
+          "Performance: the worklet avoids saturating the main thread; visuals use requestAnimationFrame.",
           "Compatibility: from file:// or without a worklet the engine can fall back to ScriptProcessor on the main thread (documented in the core README).",
           "Accessible mute/stop: Stop audio and the M shortcut; Escape / All notes off clears held notes."
         ]
@@ -154,7 +154,7 @@
         "case": "Symvolia.xyz is a personal artist site for a sound designer / producer / DJ, built as an immersive experience rather than a brochure.",
         "what": "Symvolia.xyz is the artist site for Symvolia (sound designer, producer, DJ): a static platform designed as an immersive experience — cinematic threshold, esoteric identity, sound archive — not a generic brochure. Live: https://symvolia.xyz/",
         "why": "To give the artistic project a space that matches the language of sound and symbol: entering the site should feel like crossing a door, not opening a menu. It is also a personal lab for motion, WebGL, and branding without a commercial brief.",
-        "role": "Personal project: concept, UX, visual design, front-end (HTML/CSS/JS), threshold audio, and GitHub Pages publishing. [TO COMPLETE: any collaboration on copy, 3D assets, or mastering]",
+        "role": "Personal project: concept, UX, visual design, front-end (HTML/CSS/JS), threshold audio, and GitHub Pages publishing.",
         "stack": "Static HTML/CSS/JS (no build step). Opening portal: Three.js (WebGL, post-processing, GLTF), GSAP timeline, Web Audio (`portal-audio.js`). Ambient and SFX via `<audio>` elements. Deployed on GitHub Pages with custom domain symvolia.xyz.",
         "techChoices": [
           "UX — narrative threshold: the cinematic intro (eye → seal, ~8–10s, no hard black cuts) is the door; only after that do you reach the stage and archive. Returning with `?from=archive` skips the intro and lands in the library.",
