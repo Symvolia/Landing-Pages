@@ -9,7 +9,7 @@ import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { isLocale, routing } from "@/i18n/routing";
 import { inter, jetbrains, outfit } from "@/lib/fonts";
-import { localeTags, site } from "@/lib/site";
+import { languageAlternates, localePath, localeTags, site } from "@/lib/site";
 
 const themeScript = `(function(){try{var t=localStorage.getItem("np-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.classList.add("dark");}catch(e){}})();`;
 
@@ -26,23 +26,29 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  const languages = Object.fromEntries(routing.locales.map((code) => [code, `/${code}`]));
+  const pageUrl = localePath(locale);
 
   return {
     title: t("title"),
     description: t("description"),
     alternates: {
-      canonical: `/${locale}`,
-      languages: { ...languages, "x-default": "/it" },
+      canonical: pageUrl,
+      languages: languageAlternates(),
     },
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: `/${locale}`,
+      url: pageUrl,
       siteName: site.name,
       locale: localeTags[locale] ?? "it_IT",
       type: "website",
       images: [{ url: "/work/velvet.jpg", width: 1400, height: 1050, alt: site.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["/work/velvet.jpg"],
     },
   };
 }
