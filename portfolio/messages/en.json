@@ -81,6 +81,32 @@
       "creative": "Creative & personal"
     },
     "projects": {
+      "synth": {
+        "description": "A spatial wavetable synth in the browser: 3D sound, binaural listening, and cymatics.",
+        "highlights": [
+          "Web Audio API",
+          "AudioWorklet",
+          "HRTF / Ambisonics",
+          "Canvas / WebGL"
+        ],
+        "case": "Into the Void is a personal spatial synthesizer in the browser.",
+        "what": "Into the Void is a spatial wavetable synth that runs in the browser: it generates sound, places it in 3D space, plays it back binaurally (HRTF), and draws a cymatics view of the signal. The live demo is at spatial-synth-symvolia.vercel.app/synth.",
+        "why": "To explore synthesis, space, and interaction in one instrument — beyond brochure sites — and to ship a public demo of the same engine that also exists as a plug-in (CLAP/AU/VST, macOS builds in Downloads).",
+        "role": "Personal project: interface (UI/UX), sound design (presets and engine behaviour), and engineering (audio engine + web UI). [TO COMPLETE: any collaboration or parts owned by others]",
+        "stack": "React 18 UI (UMD). Audio via the Web Audio API with an AudioWorklet (`ssc-synth`); ScriptProcessor fallback if the worklet is unavailable. Spatialisation with an HRTF model (Brown & Duda) and Ambisonics output (1st/3rd order) plus stereo. Field and cymatics on Canvas/WebGL (no Three.js in the analysed bundle). DSP core also in portable C++20 with a WASM path. A separate Next.js host covers the patch library site (Auth.js, Neon, Vercel Blob).",
+        "techChoices": [
+          "AudioWorklet keeps DSP off the main thread, with a stable message protocol to the UI (params, notes, telemetry).",
+          "HRTF model and MagLS decoder aligned with the C++ core so web and plug-in share the same spatial idea.",
+          "3D field and cymatics on canvas: the Orbit layout keeps controls and the field on one screen; on mobile, tabs and clusters collapse.",
+          "No autoplay: `ensureAudio` / Start audio resume the AudioContext only after a user gesture (tap, click, or M)."
+        ],
+        "challenges": [
+          "Browser autoplay policy: audio stays off until interaction; Start audio / M unlock the context.",
+          "Performance: the worklet avoids saturating the main thread; visuals use requestAnimationFrame. [TO COMPLETE: concrete CPU/latency figures on reference devices]",
+          "Compatibility: from file:// or without a worklet the engine can fall back to ScriptProcessor on the main thread (documented in the core README).",
+          "Accessible mute/stop: Stop audio and the M shortcut; Escape / All notes off clears held notes."
+        ]
+      },
       "velvet": {
         "description": "Elegance and simplicity in service of the dining experience",
         "highlights": [
@@ -126,7 +152,13 @@
         ],
         "case": "Symvolia is where the visual language can be freer. Sign, motion, and identity share the page with a structure that is still navigable. It is the project where I test composition and branding without a sector constraint, and where technology and an artistic point of view occupy the same screen."
       }
-    }
+    },
+    "caseWhat": "What it is",
+    "caseWhy": "Why I built it",
+    "caseRole": "My role",
+    "caseStack": "Stack",
+    "caseTech": "Technical choices",
+    "caseChallenges": "Challenges and solutions"
   },
   "process": {
     "kicker": "Process",

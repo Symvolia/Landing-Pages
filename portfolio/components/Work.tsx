@@ -8,6 +8,129 @@ import { Reveal } from "@/components/Reveal";
 
 const filters = ["all", "restaurant", "hospitality", "legal", "fitness", "creative"] as const;
 
+type ProjectCopy = {
+  description: string;
+  highlights: string[];
+  case: string;
+  what?: string;
+  why?: string;
+  role?: string;
+  stack?: string;
+  techChoices?: string[];
+  challenges?: string[];
+};
+
+type WorkT = ReturnType<typeof useTranslations<"work">>;
+
+function CaseBody({
+  project,
+  t,
+  onClose,
+}: {
+  project: (typeof projects)[number];
+  t: WorkT;
+  onClose: () => void;
+}) {
+  const copy = t.raw(`projects.${project.id}`) as ProjectCopy;
+  const structured = Boolean(copy.what || copy.why || copy.role || copy.stack);
+  const viewLabel = project.type === "concept" || project.id === "synth" ? t("viewDemo") : t("view");
+
+  return (
+    <div className="max-h-[min(90vh,840px)] overflow-y-auto rounded-3xl bg-paper p-6 text-ink shadow-2xl sm:p-8 dark:bg-[#111c31] dark:text-slate-100">
+      <div className="flex flex-wrap items-center gap-2">
+        <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan">{t(`categories.${project.category}`)}</p>
+        {project.type === "concept" ? (
+          <span className="rounded-full bg-lime px-3 py-1 text-xs font-semibold text-navy">{t("badgeConcept")}</span>
+        ) : null}
+      </div>
+      <h3 id="case-title" className="mt-3 font-display text-3xl font-semibold text-navy dark:text-white">
+        {project.title}
+      </h3>
+
+      {project.type === "concept" ? (
+        <p className="mt-5 font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("conceptGoal")}</p>
+      ) : null}
+
+      {structured ? (
+        <div className="mt-4 space-y-5">
+          {copy.what ? (
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("caseWhat")}</p>
+              <p className="mt-2 leading-relaxed">{copy.what}</p>
+            </div>
+          ) : null}
+          {copy.why ? (
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("caseWhy")}</p>
+              <p className="mt-2 leading-relaxed">{copy.why}</p>
+            </div>
+          ) : null}
+          {copy.role ? (
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("caseRole")}</p>
+              <p className="mt-2 leading-relaxed">{copy.role}</p>
+            </div>
+          ) : null}
+          {copy.stack ? (
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("caseStack")}</p>
+              <p className="mt-2 leading-relaxed">{copy.stack}</p>
+            </div>
+          ) : null}
+          {copy.techChoices?.length ? (
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("caseTech")}</p>
+              <ul className="mt-2 list-disc space-y-2 pl-5 leading-relaxed">
+                {copy.techChoices.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+          {copy.challenges?.length ? (
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("caseChallenges")}</p>
+              <ul className="mt-2 list-disc space-y-2 pl-5 leading-relaxed">
+                {copy.challenges.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      ) : (
+        <p className={`leading-relaxed ${project.type === "concept" ? "mt-3" : "mt-4"}`}>{copy.case}</p>
+      )}
+
+      <p className="mt-5 font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("highlights")}</p>
+      <ul className="mt-3 flex flex-wrap gap-2">
+        {copy.highlights.map((item) => (
+          <li key={item} className="rounded-full bg-mist px-3 py-1 text-sm dark:bg-white/10">
+            {item}
+          </li>
+        ))}
+      </ul>
+      <div className="mt-8 flex flex-wrap gap-3">
+        <a
+          href={project.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex h-11 items-center rounded-full bg-lime px-5 text-sm font-semibold text-navy"
+        >
+          {viewLabel}
+        </a>
+        <button
+          type="button"
+          onClick={onClose}
+          className="inline-flex h-11 items-center rounded-full border border-line px-5 text-sm font-semibold dark:border-white/15"
+        >
+          {t("close")}
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export function Work() {
   const t = useTranslations("work");
   const [filter, setFilter] = useState<(typeof filters)[number]>("all");
@@ -60,7 +183,7 @@ export function Work() {
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {visible.map((project, index) => {
             const isConcept = project.type === "concept";
-            const viewLabel = isConcept ? t("viewDemo") : t("view");
+            const viewLabel = isConcept || project.id === "synth" ? t("viewDemo") : t("view");
 
             return (
               <Reveal key={project.id} delay={index * 60}>
@@ -131,52 +254,11 @@ export function Work() {
         aria-labelledby="case-title"
       >
         {openProject ? (
-          <div className="rounded-3xl bg-paper p-6 text-ink shadow-2xl sm:p-8 dark:bg-[#111c31] dark:text-slate-100">
-            <div className="flex flex-wrap items-center gap-2">
-              <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan">
-                {t(`categories.${openProject.category}`)}
-              </p>
-              {openProject.type === "concept" ? (
-                <span className="rounded-full bg-lime px-3 py-1 text-xs font-semibold text-navy">
-                  {t("badgeConcept")}
-                </span>
-              ) : null}
-            </div>
-            <h3 id="case-title" className="mt-3 font-display text-3xl font-semibold text-navy dark:text-white">
-              {openProject.title}
-            </h3>
-            {openProject.type === "concept" ? (
-              <p className="mt-5 font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("conceptGoal")}</p>
-            ) : null}
-            <p className={`leading-relaxed ${openProject.type === "concept" ? "mt-3" : "mt-4"}`}>
-              {t(`projects.${openProject.id}.case`)}
-            </p>
-            <p className="mt-5 font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("highlights")}</p>
-            <ul className="mt-3 flex flex-wrap gap-2">
-              {(t.raw(`projects.${openProject.id}.highlights`) as string[]).map((item) => (
-                <li key={item} className="rounded-full bg-mist px-3 py-1 text-sm dark:bg-white/10">
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href={openProject.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex h-11 items-center rounded-full bg-lime px-5 text-sm font-semibold text-navy"
-              >
-                {openProject.type === "concept" ? t("viewDemo") : t("view")}
-              </a>
-              <button
-                type="button"
-                onClick={() => dialogRef.current?.close()}
-                className="inline-flex h-11 items-center rounded-full border border-line px-5 text-sm font-semibold dark:border-white/15"
-              >
-                {t("close")}
-              </button>
-            </div>
-          </div>
+          <CaseBody
+            project={openProject}
+            t={t}
+            onClose={() => dialogRef.current?.close()}
+          />
         ) : null}
       </dialog>
     </section>

@@ -46,6 +46,15 @@ export const projects = [
     image: "/work/symvolia.jpg",
     tech: ["JavaScript", "Motion", "Branding"],
   },
+  {
+    id: "synth",
+    category: "creative",
+    type: "personal",
+    title: "Into the Void",
+    href: "https://spatial-synth-symvolia.vercel.app/synth",
+    image: "/work/synth.png",
+    tech: ["Web Audio", "AudioWorklet", "Canvas", "React"],
+  },
 ] as const satisfies ReadonlyArray<{
   id: string;
   category: string;

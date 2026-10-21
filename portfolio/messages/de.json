@@ -81,6 +81,32 @@
       "creative": "Kreativ und persönlich"
     },
     "projects": {
+      "synth": {
+        "description": "Räumlicher Wavetable-Synth im Browser: 3D-Klang, binaurales Hören und Cymatics.",
+        "highlights": [
+          "Web Audio API",
+          "AudioWorklet",
+          "HRTF / Ambisonics",
+          "Canvas / WebGL"
+        ],
+        "case": "Into the Void ist ein persönlicher Spatial-Synthesizer im Browser.",
+        "what": "Into the Void ist ein räumlicher Wavetable-Synth im Browser: er erzeugt Klang, positioniert ihn im 3D-Raum, spielt ihn binaural (HRTF) und zeichnet eine Cymatics-Ansicht. Demo: spatial-synth-symvolia.vercel.app/synth.",
+        "why": "Um Synthese, Raum und Interaktion in einem Instrument zu verbinden — über Broschüren-Websites hinaus — und eine öffentliche Demo desselben Motors zu haben, der auch als Plug-in existiert (CLAP/AU/VST).",
+        "role": "Persönliches Projekt: Interface (UI/UX), Sound Design (Presets und Motorverhalten) und Entwicklung (Audio-Engine + Web-UI). [ZU ERGÄNZEN: mögliche Zusammenarbeit]",
+        "stack": "React-18-UI (UMD). Audio über Web Audio API mit AudioWorklet (`ssc-synth`); ScriptProcessor-Fallback. Spatialisierung mit HRTF-Modell (Brown & Duda) und Ambisonics zusätzlich zu Stereo. Feld und Cymatics auf Canvas/WebGL. DSP-Core auch in portablem C++20 mit WASM-Pfad. Separater Next.js-Host für die Patch-Bibliothek.",
+        "techChoices": [
+          "AudioWorklet hält DSP vom Main Thread fern, mit stabilem Nachrichtenprotokoll zur UI.",
+          "HRTF-Modell und MagLS-Decoder am C++-Core ausgerichtet — Web und Plug-in teilen dieselbe Raumidee.",
+          "3D-Feld und Cymatics auf Canvas; mobil klappen Tabs und Cluster zusammen.",
+          "Kein Autoplay: Start audio / M setzen den AudioContext erst nach einer Nutzeraktion fort."
+        ],
+        "challenges": [
+          "Autoplay-Politik: Audio bleibt aus bis zur Interaktion; Start audio / M schalten den Context frei.",
+          "Performance: Worklet entlastet den Main Thread; Visuals nutzen requestAnimationFrame. [ZU ERGÄNZEN: konkrete CPU-/Latenzwerte]",
+          "Kompatibilität: ohne Worklet Fallback auf ScriptProcessor (im Core-README dokumentiert).",
+          "Zugängliches Mute/Stop: Stop audio und Taste M; Escape / All notes off beendet gehaltene Noten."
+        ]
+      },
       "velvet": {
         "description": "Eleganz und Einfachheit im Dienst des kulinarischen Erlebnisses",
         "highlights": [
@@ -126,7 +152,13 @@
         ],
         "case": "Symvolia ist der Raum, in dem die Bildsprache freier sein darf. Zeichen, Bewegung und Identität teilen sich die Seite mit einer Struktur, die trotzdem navigierbar bleibt. Hier erprobe ich Komposition und Branding ohne Branchenzwang, und hier stehen Technologie und künstlerische Haltung auf demselben Screen."
       }
-    }
+    },
+    "caseWhat": "Was es ist",
+    "caseWhy": "Warum ich es gebaut habe",
+    "caseRole": "Meine Rolle",
+    "caseStack": "Stack",
+    "caseTech": "Technische Entscheidungen",
+    "caseChallenges": "Herausforderungen und Lösungen"
   },
   "process": {
     "kicker": "Prozess",
