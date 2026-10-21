@@ -128,37 +128,6 @@
       }
     }
   },
-  "stats": {
-    "kicker": "In numbers",
-    "title": "Care you can see, including in the results.",
-    "lead": "Four references I use to keep the work concrete: volume, relationships, response time, and what the site gets people to do.",
-    "items": [
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Completed projects"
-      },
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Happy clients"
-      },
-      {
-        "value": 12,
-        "prefix": "",
-        "suffix": "h",
-        "label": "Average response time"
-      },
-      {
-        "value": 32,
-        "prefix": "+",
-        "suffix": "%",
-        "label": "Average conversion lift"
-      }
-    ]
-  },
   "process": {
     "kicker": "Process",
     "title": "Three phases, no useless rush.",
@@ -368,10 +337,6 @@
       {
         "title": "External services",
         "text": "LinkedIn and GitHub are third-party sites. If you open them, their policies apply."
-      },
-      {
-        "title": "Reviews",
-        "text": "Name, email, rating, text, and project are stored. The email is not shown on the site. A new review stays pending until I publish or discard it."
       }
     ]
   },
@@ -384,32 +349,5 @@
     "title": "Page not found",
     "text": "This address does not match a page on the site.",
     "back": "Back home"
-  },
-  "reviews": {
-    "kicker": "Reviews",
-    "title": "Tell me how it went.",
-    "lead": "A review stays pending until I read it. Then it appears here, with name, rating, and project.",
-    "name": "Name",
-    "email": "Email",
-    "project": "Project",
-    "rating": "Rating",
-    "content": "Review",
-    "submit": "Send review",
-    "sending": "Sending…",
-    "placeholderName": "Your name",
-    "placeholderEmail": "you@email.com",
-    "placeholderContent": "What worked, and what will stay with you.",
-    "projectPlaceholder": "Select a project",
-    "empty": "No published reviews yet.",
-    "success": "Thank you. I'll publish it after reading it.",
-    "unavailable": "Saving is not connected yet. Write to me by email.",
-    "errors": {
-      "name": "Add your name.",
-      "email": "Enter a valid email.",
-      "project": "Choose a project.",
-      "rating": "Choose a rating from 1 to 5.",
-      "content": "Write at least one sentence.",
-      "limit": "Too many reviews in a short time. Try again later."
-    }
   }
 }

@@ -128,37 +128,6 @@
       }
     }
   },
-  "stats": {
-    "kicker": "In numeri",
-    "title": "Cura visibile, anche nei risultati.",
-    "lead": "Quattro riferimenti che uso per tenere il lavoro concreto: volume, relazione, tempi e ciò che il sito fa fare.",
-    "items": [
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Progetti completati"
-      },
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Clienti soddisfatti"
-      },
-      {
-        "value": 12,
-        "prefix": "",
-        "suffix": "h",
-        "label": "Tempo medio di risposta"
-      },
-      {
-        "value": 32,
-        "prefix": "+",
-        "suffix": "%",
-        "label": "Aumento medio delle conversioni"
-      }
-    ]
-  },
   "process": {
     "kicker": "Processo",
     "title": "Tre fasi, nessuna fretta inutile.",
@@ -368,10 +337,6 @@
       {
         "title": "Servizi esterni",
         "text": "LinkedIn e GitHub sono siti di terzi. Se li apri, valgono le loro informative."
-      },
-      {
-        "title": "Recensioni",
-        "text": "Nome, email, voto, testo e progetto della recensione vengono salvati. L'email non compare sul sito. Una recensione nuova resta in attesa finché non la pubblico o la scarto."
       }
     ]
   },
@@ -384,32 +349,5 @@
     "title": "Pagina non trovata",
     "text": "Questo indirizzo non corrisponde a una pagina del sito.",
     "back": "Torna alla home"
-  },
-  "reviews": {
-    "kicker": "Recensioni",
-    "title": "Racconta com'è andata.",
-    "lead": "La recensione resta in attesa finché non la leggo. Poi compare qui, con nome, voto e progetto.",
-    "name": "Nome",
-    "email": "Email",
-    "project": "Progetto",
-    "rating": "Voto",
-    "content": "Recensione",
-    "submit": "Invia la recensione",
-    "sending": "Invio…",
-    "placeholderName": "Il tuo nome",
-    "placeholderEmail": "tu@email.com",
-    "placeholderContent": "Cosa ha funzionato, e cosa resterà.",
-    "projectPlaceholder": "Seleziona un progetto",
-    "empty": "Ancora nessuna recensione pubblicata.",
-    "success": "Grazie. La pubblico dopo averla letta.",
-    "unavailable": "Il salvataggio non è ancora collegato. Scrivimi via email.",
-    "errors": {
-      "name": "Scrivi il tuo nome.",
-      "email": "Inserisci un'email valida.",
-      "project": "Scegli il progetto.",
-      "rating": "Scegli un voto da 1 a 5.",
-      "content": "Scrivi almeno una frase.",
-      "limit": "Troppe recensioni in poco tempo. Riprova più tardi."
-    }
   }
 }

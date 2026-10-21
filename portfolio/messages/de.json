@@ -128,37 +128,6 @@
       }
     }
   },
-  "stats": {
-    "kicker": "In Zahlen",
-    "title": "Sorgfalt, die man sieht — auch in den Ergebnissen.",
-    "lead": "Vier Bezugspunkte, mit denen ich die Arbeit konkret halte: Umfang, Beziehung, Reaktionszeit und das, was die Website auslöst.",
-    "items": [
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Abgeschlossene Projekte"
-      },
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Zufriedene Kundinnen und Kunden"
-      },
-      {
-        "value": 12,
-        "prefix": "",
-        "suffix": "h",
-        "label": "Durchschnittliche Antwortzeit"
-      },
-      {
-        "value": 32,
-        "prefix": "+",
-        "suffix": "%",
-        "label": "Durchschnittlicher Conversion-Zuwachs"
-      }
-    ]
-  },
   "process": {
     "kicker": "Prozess",
     "title": "Drei Phasen, keine unnötige Eile.",
@@ -368,10 +337,6 @@
       {
         "title": "Externe Dienste",
         "text": "LinkedIn und GitHub sind Drittseiten. Wenn Sie sie öffnen, gelten deren Hinweise."
-      },
-      {
-        "title": "Rezensionen",
-        "text": "Name, E-Mail, Bewertung, Text und Projekt werden gespeichert. Die E-Mail erscheint nicht auf der Website. Eine neue Rezension bleibt ausstehend, bis ich sie veröffentliche oder verwerfe."
       }
     ]
   },
@@ -384,32 +349,5 @@
     "title": "Seite nicht gefunden",
     "text": "Diese Adresse gehört zu keiner Seite der Website.",
     "back": "Zur Startseite"
-  },
-  "reviews": {
-    "kicker": "Rezensionen",
-    "title": "Erzählen Sie, wie es gelaufen ist.",
-    "lead": "Eine Rezension bleibt ausstehend, bis ich sie gelesen habe. Danach erscheint sie hier, mit Name, Bewertung und Projekt.",
-    "name": "Name",
-    "email": "E-Mail",
-    "project": "Projekt",
-    "rating": "Bewertung",
-    "content": "Rezension",
-    "submit": "Rezension senden",
-    "sending": "Senden…",
-    "placeholderName": "Ihr Name",
-    "placeholderEmail": "sie@email.com",
-    "placeholderContent": "Was funktioniert hat, und was bleibt.",
-    "projectPlaceholder": "Projekt wählen",
-    "empty": "Noch keine veröffentlichte Rezension.",
-    "success": "Danke. Ich veröffentliche sie nach dem Lesen.",
-    "unavailable": "Das Speichern ist noch nicht verbunden. Schreiben Sie mir per E-Mail.",
-    "errors": {
-      "name": "Bitte nennen Sie Ihren Namen.",
-      "email": "Bitte eine gültige E-Mail eingeben.",
-      "project": "Bitte ein Projekt wählen.",
-      "rating": "Bitte eine Bewertung von 1 bis 5 wählen.",
-      "content": "Bitte mindestens einen Satz schreiben.",
-      "limit": "Zu viele Rezensionen in kurzer Zeit. Bitte später erneut versuchen."
-    }
   }
 }

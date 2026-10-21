@@ -7,7 +7,6 @@ import { Notes } from "@/components/Notes";
 import { Process } from "@/components/Process";
 import { Services } from "@/components/Services";
 import { Skills } from "@/components/Skills";
-import { Stats } from "@/components/Stats";
 import { Work } from "@/components/Work";
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
@@ -20,7 +19,6 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       <Intro />
       <Services />
       <Work />
-      <Stats />
       <Process />
       <Skills />
       <Notes />

@@ -128,37 +128,6 @@
       }
     }
   },
-  "stats": {
-    "kicker": "En cifras",
-    "title": "Cuidado visible, también en los resultados.",
-    "lead": "Cuatro referencias que uso para mantener el trabajo concreto: volumen, relación, tiempos y lo que el sitio hace hacer.",
-    "items": [
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Proyectos completados"
-      },
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Clientes satisfechos"
-      },
-      {
-        "value": 12,
-        "prefix": "",
-        "suffix": "h",
-        "label": "Tiempo medio de respuesta"
-      },
-      {
-        "value": 32,
-        "prefix": "+",
-        "suffix": "%",
-        "label": "Aumento medio de las conversiones"
-      }
-    ]
-  },
   "process": {
     "kicker": "Proceso",
     "title": "Tres fases, sin prisa inútil.",
@@ -368,10 +337,6 @@
       {
         "title": "Servicios externos",
         "text": "LinkedIn y GitHub son sitios de terceros. Si los abres, se aplican sus políticas."
-      },
-      {
-        "title": "Reseñas",
-        "text": "Se guardan nombre, email, nota, texto y proyecto. El email no se muestra en el sitio. Una reseña nueva queda pendiente hasta que la publique o la descarte."
       }
     ]
   },
@@ -384,32 +349,5 @@
     "title": "Página no encontrada",
     "text": "Esta dirección no corresponde a una página del sitio.",
     "back": "Volver al inicio"
-  },
-  "reviews": {
-    "kicker": "Reseñas",
-    "title": "Cuenta cómo fue.",
-    "lead": "La reseña queda pendiente hasta que la lea. Después aparece aquí, con nombre, nota y proyecto.",
-    "name": "Nombre",
-    "email": "Email",
-    "project": "Proyecto",
-    "rating": "Nota",
-    "content": "Reseña",
-    "submit": "Enviar reseña",
-    "sending": "Enviando…",
-    "placeholderName": "Tu nombre",
-    "placeholderEmail": "tu@email.com",
-    "placeholderContent": "Qué funcionó, y qué se queda.",
-    "projectPlaceholder": "Selecciona un proyecto",
-    "empty": "Todavía no hay reseñas publicadas.",
-    "success": "Gracias. La publico después de leerla.",
-    "unavailable": "El guardado aún no está conectado. Escríbeme por email.",
-    "errors": {
-      "name": "Escribe tu nombre.",
-      "email": "Introduce un email válido.",
-      "project": "Elige el proyecto.",
-      "rating": "Elige una nota del 1 al 5.",
-      "content": "Escribe al menos una frase.",
-      "limit": "Demasiadas reseñas en poco tiempo. Inténtalo más tarde."
-    }
   }
 }

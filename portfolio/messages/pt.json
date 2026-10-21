@@ -128,37 +128,6 @@
       }
     }
   },
-  "stats": {
-    "kicker": "Em números",
-    "title": "Cuidado visível, também nos resultados.",
-    "lead": "Quatro referências que uso para manter o trabalho concreto: volume, relação, tempos e o que o site leva as pessoas a fazer.",
-    "items": [
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Projetos concluídos"
-      },
-      {
-        "value": 5,
-        "prefix": "",
-        "suffix": "",
-        "label": "Clientes satisfeitos"
-      },
-      {
-        "value": 12,
-        "prefix": "",
-        "suffix": "h",
-        "label": "Tempo médio de resposta"
-      },
-      {
-        "value": 32,
-        "prefix": "+",
-        "suffix": "%",
-        "label": "Aumento médio das conversões"
-      }
-    ]
-  },
   "process": {
     "kicker": "Processo",
     "title": "Três fases, sem pressa inútil.",
@@ -368,10 +337,6 @@
       {
         "title": "Serviços externos",
         "text": "LinkedIn e GitHub são sites de terceiros. Se os abrires, aplicam-se as políticas deles."
-      },
-      {
-        "title": "Avaliações",
-        "text": "Nome, email, nota, texto e projeto ficam guardados. O email não aparece no site. Uma avaliação nova fica pendente até eu a publicar ou a descartar."
       }
     ]
   },
@@ -384,32 +349,5 @@
     "title": "Página não encontrada",
     "text": "Este endereço não corresponde a uma página do site.",
     "back": "Voltar ao início"
-  },
-  "reviews": {
-    "kicker": "Avaliações",
-    "title": "Conta como correu.",
-    "lead": "A avaliação fica pendente até eu a ler. Depois aparece aqui, com nome, nota e projeto.",
-    "name": "Nome",
-    "email": "Email",
-    "project": "Projeto",
-    "rating": "Nota",
-    "content": "Avaliação",
-    "submit": "Enviar avaliação",
-    "sending": "A enviar…",
-    "placeholderName": "O teu nome",
-    "placeholderEmail": "tu@email.com",
-    "placeholderContent": "O que funcionou, e o que fica.",
-    "projectPlaceholder": "Seleciona um projeto",
-    "empty": "Ainda não há avaliações publicadas.",
-    "success": "Obrigado. Publico depois de a ler.",
-    "unavailable": "A gravação ainda não está ligada. Escreve-me por email.",
-    "errors": {
-      "name": "Escreve o teu nome.",
-      "email": "Introduz um email válido.",
-      "project": "Escolhe o projeto.",
-      "rating": "Escolhe uma nota de 1 a 5.",
-      "content": "Escreve pelo menos uma frase.",
-      "limit": "Demasiadas avaliações num curto período. Tenta mais tarde."
-    }
   }
 }
