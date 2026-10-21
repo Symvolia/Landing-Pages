@@ -63,9 +63,12 @@
   "work": {
     "kicker": "Portfólio",
     "title": "Cinco setores, o mesmo nível de cuidado.",
-    "lead": "Cada cartão é um site publicado. Abre-o, ou lê o caso.",
+    "lead": "Projetos concept: sites demonstrativos que projetei e desenvolvi para setores reais (restauração, hospitalidade, escritórios profissionais, fitness), para mostrar como trabalho da ideia ao código.",
     "all": "Todos",
     "view": "Ver o projeto",
+    "viewDemo": "Ver a demo",
+    "badgeConcept": "Projeto concept",
+    "conceptGoal": "Objetivo do concept",
     "case": "Caso de estudo",
     "close": "Fechar",
     "preview": "Pré-visualização do site",
@@ -85,7 +88,7 @@
           "Reservas online",
           "Menu interativo"
         ],
-        "case": "The Velvet Table traduz a atmosfera de uma sala gastronómica numa interface quieta. Tipografia ampla, fotografia e o ritmo das secções acompanham quem lê o menu e quem quer reservar, sem ruído visual. As reservas estão no fluxo da visita e o site mantém-se claro no telemóvel, onde chegam muitas decisões de última hora. O objetivo era fazer sentir o espaço antes de se entrar."
+        "case": "Concept para restauração gastronómica: tipografia ampla, fotografia e o ritmo das secções acompanham quem lê o menu e quem quer reservar, sem ruído visual. As reservas estão no fluxo da visita e o layout mantém-se claro no telemóvel, onde chegam muitas decisões de última hora. Fazer sentir o espaço antes de se entrar."
       },
       "hotel": {
         "description": "Hospitalidade digital que captura a essência do lugar",
@@ -94,7 +97,7 @@
           "Galeria imersiva",
           "Design responsivo"
         ],
-        "case": "O Hotel Bellavista usa a fotografia do edifício como matéria-prima. Quartos e galeria estão organizados para escolher, o pedido de estadia está acessível em qualquer ponto da página e o layout mantém a mesma calma do telemóvel ao desktop. O site conta uma hospitalidade concreta: luz, materiais, lugar e um passo claro até à reserva."
+        "case": "Concept para hospitalidade: a fotografia do edifício é matéria-prima. Quartos e galeria estão organizados para escolher, o pedido de estadia está acessível em qualquer ponto da página e o layout mantém a mesma calma do telemóvel ao desktop. Contar uma hospitalidade concreta — luz, materiais, lugar — e um passo claro até à reserva."
       },
       "studio": {
         "description": "Autoridade e confiança em cada pixel",
@@ -103,7 +106,7 @@
           "Informação organizada",
           "Formulários de contacto"
         ],
-        "case": "O Studio Legale Rossi tinha de comunicar autoridade sem frieza. A hierarquia põe competência, método e contacto no mesmo olhar. Os formulários são curtos, a informação está agrupada por decisão e o tom mantém-se preciso. Quem chega com um problema percebe logo como começar uma conversa, em vez de encontrar um muro de texto."
+        "case": "Concept para um escritório profissional: comunicar autoridade sem frieza. A hierarquia põe competência, método e contacto no mesmo olhar. Os formulários são curtos, a informação está agrupada por decisão e o tom mantém-se preciso. Quem chega com um problema percebe logo como começar uma conversa, em vez de encontrar um muro de texto."
       },
       "gym": {
         "description": "Energia e motivação, do ecrã ao coração",
@@ -112,7 +115,7 @@
           "Informação de membership",
           "Design responsivo"
         ],
-        "case": "O InShape Gym leva a energia da sala de pesos para a página sem a transformar em ruído. Membership, aula experimental e comunidade leem-se em poucos segundos, com contraste nítido e uma grelha que aguenta em ecrãs pequenos. O site motiva e depois indica o passo seguinte: entrar, experimentar, inscrever-se."
+        "case": "Concept para fitness: levar a energia da sala de pesos para a página sem a transformar em ruído. Membership, aula experimental e comunidade leem-se em poucos segundos, com contraste nítido e uma grelha que aguenta em ecrãs pequenos. Motivar e depois indicar o passo seguinte: entrar, experimentar, inscrever-se."
       },
       "symvolia": {
         "description": "Um espaço onde criatividade e tecnologia dançam juntas",

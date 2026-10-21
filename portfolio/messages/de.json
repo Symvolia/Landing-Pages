@@ -63,9 +63,12 @@
   "work": {
     "kicker": "Portfolio",
     "title": "Fünf Branchen, dieselbe Sorgfalt.",
-    "lead": "Jede Karte ist eine veröffentlichte Website. Öffnen Sie sie, oder lesen Sie den Fall.",
+    "lead": "Konzeptprojekte: Demonstrations-Websites, die ich für reale Branchen (Gastronomie, Hospitality, Kanzleien, Fitness) gestaltet und entwickelt habe — um zu zeigen, wie ich von der Idee zum Code arbeite.",
     "all": "Alle",
     "view": "Projekt ansehen",
+    "viewDemo": "Demo ansehen",
+    "badgeConcept": "Konzeptprojekt",
+    "conceptGoal": "Ziel des Konzepts",
     "case": "Fallstudie",
     "close": "Schließen",
     "preview": "Vorschau der Website",
@@ -85,7 +88,7 @@
           "Online-Reservierung",
           "Interaktives Menü"
         ],
-        "case": "The Velvet Table übersetzt die Atmosphäre eines Gastraums in eine ruhige Oberfläche. Großzügige Typografie, Fotografie und der Rhythmus der Abschnitte begleiten Gäste, die das Menü lesen oder reservieren wollen, ohne visuelles Rauschen. Die Reservierung liegt im Besuch selbst, und die Seite bleibt auf dem Telefon klar, wo viele Entscheidungen in letzter Minute fallen. Ziel war, den Raum spürbar zu machen, bevor man ihn betritt."
+        "case": "Ein Konzept für die gehobene Gastronomie: großzügige Typografie, Fotografie und der Rhythmus der Abschnitte begleiten Gäste, die das Menü lesen oder reservieren wollen, ohne visuelles Rauschen. Die Reservierung liegt im Besuch selbst, und das Layout bleibt auf dem Telefon klar, wo viele Entscheidungen in letzter Minute fallen. Den Raum spürbar machen, bevor man ihn betritt."
       },
       "hotel": {
         "description": "Digitale Gastfreundschaft, die das Wesen des Hauses trifft",
@@ -94,7 +97,7 @@
           "Immersive Galerie",
           "Responsives Design"
         ],
-        "case": "Hotel Bellavista nutzt die Fotografie des Hauses als Material, nicht als Dekor. Zimmer und Galerie sind so geordnet, dass man wählen kann. Eine Aufenthaltsanfrage ist von überall auf der Seite erreichbar, und das Layout bleibt vom Telefon bis zum Desktop ruhig. Die Website erzählt konkrete Gastfreundschaft: Licht, Materialien, Ort und einen klaren Schritt zur Buchung."
+        "case": "Ein Hospitality-Konzept: die Fotografie des Hauses ist Material, nicht Dekor. Zimmer und Galerie sind so geordnet, dass man wählen kann. Eine Aufenthaltsanfrage ist von überall auf der Seite erreichbar, und das Layout bleibt vom Telefon bis zum Desktop ruhig. Konkrete Gastfreundschaft erzählen — Licht, Materialien, Ort — und einen klaren Schritt zur Buchung."
       },
       "studio": {
         "description": "Autorität und Vertrauen in jedem Pixel",
@@ -103,7 +106,7 @@
           "Geordnete Information",
           "Kontaktformulare"
         ],
-        "case": "Studio Legale Rossi sollte Autorität zeigen, ohne kühl zu wirken. Die Hierarchie legt Kompetenz, Methode und Kontakt in einen Blick. Die Formulare sind kurz, Informationen sind nach Entscheidung gruppiert, der Ton bleibt präzise. Wer mit einem Problem ankommt, sieht sofort, wie ein Gespräch beginnt, statt auf eine Textwand zu treffen."
+        "case": "Ein Konzept für eine Kanzlei: Autorität zeigen, ohne kühl zu wirken. Die Hierarchie legt Kompetenz, Methode und Kontakt in einen Blick. Die Formulare sind kurz, Informationen sind nach Entscheidung gruppiert, der Ton bleibt präzise. Wer mit einem Problem ankommt, sieht sofort, wie ein Gespräch beginnt, statt auf eine Textwand zu treffen."
       },
       "gym": {
         "description": "Energie und Motivation, vom Bildschirm ins Herz",
@@ -112,7 +115,7 @@
           "Mitgliedschaft",
           "Responsives Design"
         ],
-        "case": "InShape Gym bringt die Energie des Kraftraums auf die Seite, ohne sie in Lärm zu verwandeln. Mitgliedschaft, Probetraining und Community sind in wenigen Sekunden lesbar, mit klarem Kontrast und einem Raster, das auch auf kleinen Bildschirmen hält. Die Seite motiviert und zeigt dann den nächsten Schritt: kommen, testen, Mitglied werden."
+        "case": "Ein Fitness-Konzept: die Energie des Kraftraums auf die Seite bringen, ohne sie in Lärm zu verwandeln. Mitgliedschaft, Probetraining und Community sind in wenigen Sekunden lesbar, mit klarem Kontrast und einem Raster, das auch auf kleinen Bildschirmen hält. Motivieren und dann den nächsten Schritt zeigen: kommen, testen, Mitglied werden."
       },
       "symvolia": {
         "description": "Ein Raum, in dem Kreativität und Technologie zusammen tanzen",

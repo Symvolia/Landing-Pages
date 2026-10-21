@@ -58,57 +58,69 @@ export function Work() {
         </div>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {visible.map((project, index) => (
-            <Reveal key={project.id} delay={index * 60}>
-              <article className="group h-full overflow-hidden rounded-3xl border-2 border-line bg-mist transition duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-[0_20px_50px_-24px_rgba(0,217,255,0.55)] dark:border-white/10 dark:bg-navy">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={`${t("preview")} ${project.title}`}
-                    fill
-                    sizes="(min-width: 768px) 560px, 100vw"
-                    className="object-cover object-top transition duration-500 group-hover:scale-105"
-                  />
-                  <span className="absolute left-4 top-4 rounded-full bg-navy/90 px-3 py-1 text-xs font-medium text-cyan transition group-hover:bg-cyan group-hover:text-navy">
-                    {t(`categories.${project.category}`)}
-                  </span>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-display text-2xl font-semibold text-purple dark:text-purple-light">{project.title}</h3>
-                  <p className="mt-2 leading-relaxed text-muted dark:text-slate-300">
-                    {t(`projects.${project.id}.description`)}
-                  </p>
-                  <ul className="mt-4 flex flex-wrap gap-2">
-                    {project.tech.map((item) => (
-                      <li
-                        key={item}
-                        className="rounded-full bg-white px-3 py-1 font-mono text-xs text-navy-2 dark:bg-white/10 dark:text-cyan"
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-6 flex flex-wrap gap-3">
-                    <a
-                      href={project.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex h-11 min-h-11 items-center rounded-full bg-lime px-5 text-sm font-semibold text-navy transition duration-300 group-hover:scale-105"
-                    >
-                      {t("view")}
-                    </a>
-                    <button
-                      type="button"
-                      onClick={() => setOpenId(project.id)}
-                      className="inline-flex h-11 min-h-11 items-center rounded-full border border-navy px-5 text-sm font-semibold text-navy transition hover:border-cyan hover:text-purple dark:border-white/15 dark:text-white"
-                    >
-                      {t("case")}
-                    </button>
+          {visible.map((project, index) => {
+            const isConcept = project.type === "concept";
+            const viewLabel = isConcept ? t("viewDemo") : t("view");
+
+            return (
+              <Reveal key={project.id} delay={index * 60}>
+                <article className="group h-full overflow-hidden rounded-3xl border-2 border-line bg-mist transition duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-[0_20px_50px_-24px_rgba(0,217,255,0.55)] dark:border-white/10 dark:bg-navy">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={`${t("preview")} ${project.title}`}
+                      fill
+                      sizes="(min-width: 768px) 560px, 100vw"
+                      className="object-cover object-top transition duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute left-3 right-3 top-3 flex flex-wrap gap-2 sm:left-4 sm:right-4 sm:top-4">
+                      <span className="rounded-full bg-navy/90 px-3 py-1 text-xs font-medium text-cyan transition group-hover:bg-cyan group-hover:text-navy">
+                        {t(`categories.${project.category}`)}
+                      </span>
+                      {isConcept ? (
+                        <span className="rounded-full bg-lime px-3 py-1 text-xs font-semibold text-navy shadow-sm">
+                          {t("badgeConcept")}
+                        </span>
+                      ) : null}
+                    </div>
                   </div>
-                </div>
-              </article>
-            </Reveal>
-          ))}
+                  <div className="p-6">
+                    <h3 className="font-display text-2xl font-semibold text-purple dark:text-purple-light">{project.title}</h3>
+                    <p className="mt-2 leading-relaxed text-muted dark:text-slate-300">
+                      {t(`projects.${project.id}.description`)}
+                    </p>
+                    <ul className="mt-4 flex flex-wrap gap-2">
+                      {project.tech.map((item) => (
+                        <li
+                          key={item}
+                          className="rounded-full bg-white px-3 py-1 font-mono text-xs text-navy-2 dark:bg-white/10 dark:text-cyan"
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-6 flex flex-wrap gap-3">
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex h-11 min-h-11 items-center rounded-full bg-lime px-5 text-sm font-semibold text-navy transition duration-300 group-hover:scale-105"
+                      >
+                        {viewLabel}
+                      </a>
+                      <button
+                        type="button"
+                        onClick={() => setOpenId(project.id)}
+                        className="inline-flex h-11 min-h-11 items-center rounded-full border border-navy px-5 text-sm font-semibold text-navy transition hover:border-cyan hover:text-purple dark:border-white/15 dark:text-white"
+                      >
+                        {t("case")}
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
 
@@ -120,13 +132,25 @@ export function Work() {
       >
         {openProject ? (
           <div className="rounded-3xl bg-paper p-6 text-ink shadow-2xl sm:p-8 dark:bg-[#111c31] dark:text-slate-100">
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan">
-              {t(`categories.${openProject.category}`)}
-            </p>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan">
+                {t(`categories.${openProject.category}`)}
+              </p>
+              {openProject.type === "concept" ? (
+                <span className="rounded-full bg-lime px-3 py-1 text-xs font-semibold text-navy">
+                  {t("badgeConcept")}
+                </span>
+              ) : null}
+            </div>
             <h3 id="case-title" className="mt-3 font-display text-3xl font-semibold text-navy dark:text-white">
               {openProject.title}
             </h3>
-            <p className="mt-4 leading-relaxed">{t(`projects.${openProject.id}.case`)}</p>
+            {openProject.type === "concept" ? (
+              <p className="mt-5 font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("conceptGoal")}</p>
+            ) : null}
+            <p className={`leading-relaxed ${openProject.type === "concept" ? "mt-3" : "mt-4"}`}>
+              {t(`projects.${openProject.id}.case`)}
+            </p>
             <p className="mt-5 font-mono text-xs uppercase tracking-[0.16em] text-purple">{t("highlights")}</p>
             <ul className="mt-3 flex flex-wrap gap-2">
               {(t.raw(`projects.${openProject.id}.highlights`) as string[]).map((item) => (
@@ -142,7 +166,7 @@ export function Work() {
                 rel="noopener noreferrer"
                 className="inline-flex h-11 items-center rounded-full bg-lime px-5 text-sm font-semibold text-navy"
               >
-                {t("view")}
+                {openProject.type === "concept" ? t("viewDemo") : t("view")}
               </a>
               <button
                 type="button"

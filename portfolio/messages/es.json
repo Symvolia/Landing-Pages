@@ -63,9 +63,12 @@
   "work": {
     "kicker": "Portafolio",
     "title": "Cinco sectores, el mismo nivel de cuidado.",
-    "lead": "Cada ficha es un sitio publicado. Ábrelo, o lee el caso.",
+    "lead": "Proyectos concept: sitios demostrativos que diseñé y desarrollé para sectores reales (restauración, hospitalidad, estudios profesionales, fitness), para mostrar cómo trabajo de la idea al código.",
     "all": "Todos",
     "view": "Ver el proyecto",
+    "viewDemo": "Ver la demo",
+    "badgeConcept": "Proyecto concept",
+    "conceptGoal": "Objetivo del concept",
     "case": "Caso de estudio",
     "close": "Cerrar",
     "preview": "Vista previa del sitio",
@@ -85,7 +88,7 @@
           "Reservas online",
           "Menú interactivo"
         ],
-        "case": "The Velvet Table traduce la atmósfera de una sala gastronómica a una interfaz serena. Tipografía amplia, fotografía y el ritmo de las secciones acompañan a quien lee el menú y a quien quiere reservar, sin ruido visual. Las reservas están en el flujo de la visita y el sitio sigue claro en el teléfono, donde llegan muchas decisiones de último momento. El objetivo era hacer sentir el local antes de cruzar la puerta."
+        "case": "Concept para restauración gastronómica: tipografía amplia, fotografía y el ritmo de las secciones acompañan a quien lee el menú y a quien quiere reservar, sin ruido visual. Las reservas están en el flujo de la visita y el diseño sigue claro en el teléfono, donde llegan muchas decisiones de último momento. Hacer sentir el local antes de cruzar la puerta."
       },
       "hotel": {
         "description": "Hospitalidad digital que captura la esencia del lugar",
@@ -94,7 +97,7 @@
           "Galería inmersiva",
           "Diseño responsive"
         ],
-        "case": "Hotel Bellavista usa la fotografía del edificio como materia prima. Habitaciones y galería están organizadas para elegir, la solicitud de estancia se alcanza desde cualquier punto de la página y el diseño mantiene la misma calma del teléfono al escritorio. El sitio cuenta una hospitalidad concreta: luz, materiales, lugar y un paso claro hacia la reserva."
+        "case": "Concept para hospitalidad: la fotografía del edificio es materia prima. Habitaciones y galería están organizadas para elegir, la solicitud de estancia se alcanza desde cualquier punto de la página y el diseño mantiene la misma calma del teléfono al escritorio. Contar una hospitalidad concreta — luz, materiales, lugar — y un paso claro hacia la reserva."
       },
       "studio": {
         "description": "Autoridad y confianza en cada píxel",
@@ -103,7 +106,7 @@
           "Información organizada",
           "Formularios de contacto"
         ],
-        "case": "Studio Legale Rossi debía comunicar autoridad sin frialdad. La jerarquía pone competencia, método y contacto en la misma mirada. Los formularios son breves, la información se agrupa por decisión y el tono se mantiene preciso. Quien llega con un problema ve enseguida cómo empezar una conversación, no un muro de texto."
+        "case": "Concept para un estudio profesional: comunicar autoridad sin frialdad. La jerarquía pone competencia, método y contacto en la misma mirada. Los formularios son breves, la información se agrupa por decisión y el tono se mantiene preciso. Quien llega con un problema ve enseguida cómo empezar una conversación, no un muro de texto."
       },
       "gym": {
         "description": "Energía y motivación, de la pantalla al corazón",
@@ -112,7 +115,7 @@
           "Información de membresía",
           "Diseño responsive"
         ],
-        "case": "InShape Gym lleva la energía de la sala de pesas a la página sin convertirla en ruido. Membresía, prueba y comunidad se leen en pocos segundos, con un contraste nítido y una retícula que aguanta en pantallas pequeñas. El sitio motiva y después indica el siguiente paso: entrar, probar, inscribirse."
+        "case": "Concept para fitness: llevar la energía de la sala de pesas a la página sin convertirla en ruido. Membresía, prueba y comunidad se leen en pocos segundos, con un contraste nítido y una retícula que aguanta en pantallas pequeñas. Motivar y después indicar el siguiente paso: entrar, probar, inscribirse."
       },
       "symvolia": {
         "description": "Un espacio donde creatividad y tecnología bailan juntas",

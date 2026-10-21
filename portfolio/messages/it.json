@@ -63,9 +63,12 @@
   "work": {
     "kicker": "Portfolio",
     "title": "Cinque settori, lo stesso livello di cura.",
-    "lead": "Ogni scheda è un sito pubblicato. Aprilo, oppure leggi il caso.",
+    "lead": "Progetti concept: siti dimostrativi che ho progettato e sviluppato per settori reali (ristorazione, hospitality, studi professionali, fitness), per mostrare come lavoro dall'idea al codice.",
     "all": "Tutti",
-    "view": "Vedi il Progetto",
+    "view": "Vedi il progetto",
+    "viewDemo": "Vedi la demo",
+    "badgeConcept": "Progetto concept",
+    "conceptGoal": "Obiettivo del concept",
     "case": "Caso studio",
     "close": "Chiudi",
     "preview": "Anteprima del sito",
@@ -85,7 +88,7 @@
           "Prenotazioni online",
           "Menu interattivo"
         ],
-        "case": "The Velvet Table traduce l'atmosfera di una sala gastronomica in un'interfaccia quieta. Tipografia ampia, fotografia e ritmo delle sezioni accompagnano chi legge il menu e chi vuole prenotare, senza rumore visivo. Le prenotazioni stanno nel flusso della visita e il sito resta chiaro sul telefono, dove arrivano molte decisioni dell'ultimo momento. L'obiettivo era far sentire il locale prima ancora di varcare la porta."
+        "case": "Concept per la ristorazione gastronomica: tipografia ampia, fotografia e ritmo delle sezioni accompagnano chi legge il menu e chi vuole prenotare, senza rumore visivo. Le prenotazioni stanno nel flusso della visita e il layout resta chiaro sul telefono, dove arrivano molte decisioni dell'ultimo momento. Far sentire il locale prima ancora di varcare la porta."
       },
       "hotel": {
         "description": "Ospitalità digitale che cattura l'essenza della struttura",
@@ -94,7 +97,7 @@
           "Gallery immersiva",
           "Design responsive"
         ],
-        "case": "Hotel Bellavista usa la fotografia della struttura come materia prima. Camere e gallery sono organizzate per far scegliere, la richiesta di soggiorno è raggiungibile da ogni punto della pagina e il layout tiene la stessa calma dal telefono al desktop. Il sito racconta ospitalità concreta: luce, materiali, posizione, e un passo chiaro verso la prenotazione."
+        "case": "Concept per l'hospitality: la fotografia della struttura è materia prima. Camere e gallery sono organizzate per far scegliere, la richiesta di soggiorno è raggiungibile da ogni punto della pagina e il layout tiene la stessa calma dal telefono al desktop. Raccontare ospitalità concreta — luce, materiali, posizione — e un passo chiaro verso la prenotazione."
       },
       "studio": {
         "description": "Autorevolezza e fiducia in ogni pixel",
@@ -103,7 +106,7 @@
           "Informazioni organizzate",
           "Moduli di contatto"
         ],
-        "case": "Studio Legale Rossi doveva comunicare autorevolezza senza freddezza. La gerarchia mette competenze, metodo e contatto nello stesso sguardo. I moduli sono brevi, le informazioni sono raggruppate per decisione e il tono resta preciso. Chi arriva con un problema trova subito come iniziare una conversazione, non un muro di testo."
+        "case": "Concept per uno studio professionale: comunicare autorevolezza senza freddezza. La gerarchia mette competenze, metodo e contatto nello stesso sguardo. I moduli sono brevi, le informazioni sono raggruppate per decisione e il tono resta preciso. Chi arriva con un problema trova subito come iniziare una conversazione, non un muro di testo."
       },
       "gym": {
         "description": "Energia e motivazione, dirette dallo schermo al cuore",
@@ -112,7 +115,7 @@
           "Informazioni membership",
           "Design responsive"
         ],
-        "case": "InShape Gym porta in pagina l'energia della sala pesi senza trasformarla in rumore. Membership, prova e community si leggono in pochi secondi, con un contrasto netto e una griglia che regge anche su schermi piccoli. Il sito motiva, poi indica il passo successivo: entrare, provare, iscriversi."
+        "case": "Concept per il fitness: portare in pagina l'energia della sala pesi senza trasformarla in rumore. Membership, prova e community si leggono in pochi secondi, con un contrasto netto e una griglia che regge anche su schermi piccoli. Motivare, poi indicare il passo successivo: entrare, provare, iscriversi."
       },
       "symvolia": {
         "description": "Uno spazio dove creatività e tecnologia danzano insieme",

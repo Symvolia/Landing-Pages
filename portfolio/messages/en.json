@@ -63,9 +63,12 @@
   "work": {
     "kicker": "Portfolio",
     "title": "Five sectors, the same standard of care.",
-    "lead": "Each card is a published site. Open it, or read the case.",
+    "lead": "Concept projects: demonstration sites I designed and built for real industries (restaurants, hospitality, professional studios, fitness), to show how I work from idea to code.",
     "all": "All",
-    "view": "View Project",
+    "view": "View project",
+    "viewDemo": "View demo",
+    "badgeConcept": "Concept project",
+    "conceptGoal": "Concept goal",
     "case": "Case study",
     "close": "Close",
     "preview": "Website preview",
@@ -85,7 +88,7 @@
           "Online reservations",
           "Interactive menu"
         ],
-        "case": "The Velvet Table turns the atmosphere of a dining room into a quiet interface. Generous type, photography, and section rhythm guide people who are reading the menu and people who want to book, without visual noise. Reservations sit inside the visit, and the site stays clear on a phone, where many last-minute decisions happen. The aim was to let guests feel the room before they walk in."
+        "case": "A concept for fine dining: generous type, photography, and section rhythm guide people who are reading the menu and people who want to book, without visual noise. Reservations sit inside the visit, and the layout stays clear on a phone, where many last-minute decisions happen. Let guests feel the room before they walk in."
       },
       "hotel": {
         "description": "Digital hospitality that captures the character of the property",
@@ -94,7 +97,7 @@
           "Immersive gallery",
           "Responsive design"
         ],
-        "case": "Hotel Bellavista treats photography of the property as raw material. Rooms and the gallery are organised so guests can choose, a stay request is reachable from anywhere on the page, and the layout keeps the same calm from phone to desktop. The site tells a concrete story of hospitality: light, materials, place, and a clear step toward booking."
+        "case": "A hospitality concept: photography of the property is raw material. Rooms and the gallery are organised so visitors can choose, a stay request is reachable from anywhere on the page, and the layout keeps the same calm from phone to desktop. Tell a concrete story of hospitality — light, materials, place — and a clear step toward booking."
       },
       "studio": {
         "description": "Authority and trust in every pixel",
@@ -103,7 +106,7 @@
           "Organised information",
           "Contact forms"
         ],
-        "case": "Studio Legale Rossi had to feel authoritative without feeling cold. The hierarchy puts expertise, method, and contact in the same glance. Forms are short, information is grouped by decision, and the tone stays precise. Someone arriving with a problem can see how to start a conversation, rather than meeting a wall of text."
+        "case": "A concept for a professional studio: authority without coldness. The hierarchy puts expertise, method, and contact in the same glance. Forms are short, information is grouped by decision, and the tone stays precise. Someone arriving with a problem can see how to start a conversation, rather than meeting a wall of text."
       },
       "gym": {
         "description": "Energy and motivation, from the screen to the heart",
@@ -112,7 +115,7 @@
           "Membership info",
           "Responsive design"
         ],
-        "case": "InShape Gym brings the energy of the weight room onto the page without turning it into noise. Membership, a trial, and community read in a few seconds, with sharp contrast and a grid that holds on small screens. The site motivates, then points to the next step: walk in, try it, join."
+        "case": "A fitness concept: bring the energy of the weight room onto the page without turning it into noise. Membership, a trial, and community read in a few seconds, with sharp contrast and a grid that holds on small screens. Motivate, then point to the next step: walk in, try it, join."
       },
       "symvolia": {
         "description": "A space where creativity and technology move together",
