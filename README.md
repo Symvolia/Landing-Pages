@@ -1,25 +1,29 @@
 # Landing Pages
 
-Monorepo con i siti landing sviluppati per clienti e portfolio. Ogni cartella è un progetto indipendente (install, build e deploy separati).
+A collection of production landing sites I designed and built for clients and for my own portfolio. Each folder is an independent project with its own dependencies, build and Vercel deployment.
 
-| Cartella | Progetto | Stack |
-| --- | --- | --- |
-| [`portfolio/`](./portfolio) | Portfolio Nicolò Peruzzi | Next.js, next-intl |
-| [`el-ninho/`](./el-ninho) | The Velvet Table (ristorante) | Next.js, next-intl |
-| [`hotel-bellavista/`](./hotel-bellavista) | Hotel Bellavista | Vite, React |
-| [`inshape-gym/`](./inshape-gym) | InShape Gym | Vite, React |
-| [`studio-moretti/`](./studio-moretti) | Studio legale Moretti | Vite, React |
+| Project | What it is | Stack | Highlights |
+| --- | --- | --- | --- |
+| [`portfolio/`](./portfolio) | My developer portfolio ([npdevelopment.xyz](https://npdevelopment.xyz)) | Next.js, next-intl | Multilingual (IT/EN), case studies |
+| [`el-ninho/`](./el-ninho) | The Velvet Table, restaurant in Chiado, Lisbon | Next.js App Router, Tailwind, next-intl | 4 languages, booking form with validation (react-hook-form + zod) and email (Nodemailer) |
+| [`hotel-bellavista/`](./hotel-bellavista) | Hotel Bellavista | React, Vite, Tailwind | Image carousels (Swiper), scroll animations (AOS) |
+| [`inshape-gym/`](./inshape-gym) | InShape Gym | React, Vite, Framer Motion | Animated sections, contact form via EmailJS |
+| [`studio-moretti/`](./studio-moretti) | Moretti law firm | React, Vite, React Router | Multi-page site with client-side routing |
 
-## Avvio di un progetto
+## Running a project
 
 ```bash
-cd <cartella-progetto>
+cd <project-folder>
 npm install
 npm run dev
 ```
 
-Per i progetti Next.js (`portfolio`, `el-ninho`) copia `.env.example` in `.env.local` se presente.
+For the Next.js projects (`portfolio`, `el-ninho`), copy `.env.example` to `.env.local` when present.
 
-## Deploy
+## Deployment
 
-Ogni sito ha (o può avere) un progetto Vercel dedicato sulla rispettiva cartella root. Non c’è un deploy unico a livello monorepo.
+Every site is deployed as its own Vercel project, with the project folder as root directory. There is no monorepo-level build.
+
+## Author
+
+**Nicolò Peruzzi** — web designer & developer · [npdevelopment.xyz](https://npdevelopment.xyz) · [LinkedIn](https://linkedin.com/in/nicoloperuzzi)
