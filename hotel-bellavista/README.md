@@ -1,6 +1,8 @@
-# Hotel Bellavista
+# Hotel Bella Vista
 
-Landing site for a boutique hotel: rooms, services, gallery and booking contacts.
+Concept project: a landing site for a four-star seaside hotel: rooms, services, gallery and booking contacts.
+
+**Live demo:** https://hotel-bellavista-umber.vercel.app/ · Part of my portfolio at [npdevelopment.xyz](https://npdevelopment.xyz)
 
 **Stack:** React · Vite · Tailwind CSS · Swiper (carousels) · AOS (scroll animations) · Lucide icons
 

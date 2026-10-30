@@ -9,7 +9,7 @@ export const site = {
   role: "Web Designer & Developer",
   email: "neecoproduction@gmail.com",
   linkedin: "https://www.linkedin.com/in/nicolo-peruzzi",
-  github: "https://github.com/nicoloperuzzi",
+  github: "https://github.com/Symvolia",
   url: SITE_URL,
 };
 

@@ -1,10 +1,12 @@
 # The Velvet Table
 
-Sito del ristorante The Velvet Table, nel Chiado a Lisbona. Next.js (App Router), Tailwind CSS e `next-intl` per italiano, inglese, portoghese e spagnolo.
+Concept project: a fine-dining restaurant site set in Chiado, Lisbon. Built with Next.js (App Router), Tailwind CSS and `next-intl` in Italian, English, Portuguese and Spanish.
 
-I testi, i premi e i contatti sono contenuti dimostrativi. Le fotografie arrivano da Unsplash.
+**Live demo:** https://the-velvet-table-symvolia.vercel.app/en · Part of my portfolio at [npdevelopment.xyz](https://npdevelopment.xyz)
 
-## Avvio
+Texts, awards and contacts are demo content. Photos are from Unsplash.
+
+## Run locally
 
 ```bash
 npm install
@@ -12,35 +14,30 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Apri `http://localhost:3000`: il proxy reindirizza alla lingua predefinita, `/it`.
+Open `http://localhost:3000`: the proxy redirects to the default locale, `/it`.
 
-## Pagine
+## Pages
 
-- `/[locale]` home, con hero, casa, menu in sintesi, esperienze, galleria, team e prenotazione
-- `/[locale]/menu` degustazione, à la carte e vini, con scheda di dettaglio
-- `/[locale]/experiences` cene private, menu di stagione, wine pairing
-- `/[locale]/about` storia, stella Michelin e team
-- `/[locale]/gallery` griglia con lightbox
-- `/[locale]/reservations` modulo con validazione
-- `/[locale]/contact` indirizzo, orari, telefono e mappa
-- `/[locale]/privacy` e `/[locale]/terms`
+- `/[locale]` — home: hero, the house, menu preview, experiences, gallery, team and reservations
+- `/[locale]/menu` — tasting, à la carte and wine list, with dish detail
+- `/[locale]/experiences` — private dining, seasonal menus, wine pairing
+- `/[locale]/about` — story, Michelin star and team
+- `/[locale]/gallery` — grid with lightbox
+- `/[locale]/reservations` — booking form with validation
+- `/[locale]/contact` — address, hours, phone and map
+- `/[locale]/privacy`, `/[locale]/terms`
 
-## Moduli e email
+## Forms and email
 
-`POST /api/bookings` e `POST /api/newsletter` validano il corpo con Zod. Se le variabili SMTP di `.env.example` sono compilate, Nodemailer invia una mail alla sala e, per le prenotazioni, una conferma all’ospite. Senza SMTP la richiesta resta valida e l’interfaccia conferma la ricezione: non c’è un database.
+`POST /api/bookings` and `POST /api/newsletter` validate the request body with Zod. When the SMTP variables in `.env.example` are set, Nodemailer emails the restaurant and, for bookings, sends a confirmation to the guest. Without SMTP the request is still accepted and the UI confirms receipt; there is no database.
 
-## Deploy su Vercel
+## Deploy
 
-```bash
-chmod +x scripts/deploy.sh
-./scripts/deploy.sh
-```
+Import the `el-ninho` folder as a Vercel project and set the same environment variables (or run `scripts/deploy.sh`). No extra configuration is needed for Next.js.
 
-In alternativa, importa la cartella `el-ninho` su Vercel e imposta le stesse variabili d’ambiente. Il framework è Next.js, non serve una configurazione aggiuntiva.
+## Implementation notes
 
-## Note
-
-- La navbar è fissa e diventa opaca allo scroll sulla home.
-- Le immagini remote passano da `next/image` (AVIF/WebP).
-- Analytics e Hotjar si caricano solo se gli identificatori in ambiente sono nel formato atteso.
-- La mappa è un embed di OpenStreetMap, senza chiave API.
+- Fixed navbar that turns opaque on scroll on the home page.
+- Remote images served through `next/image` (AVIF/WebP).
+- Analytics and Hotjar load only when their IDs in the environment have the expected format.
+- Map embedded from OpenStreetMap, no API key required.

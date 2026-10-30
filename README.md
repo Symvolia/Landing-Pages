@@ -1,14 +1,18 @@
 # Landing Pages
 
-A collection of production landing sites I designed and built for clients and for my own portfolio. Each folder is an independent project with its own dependencies, build and Vercel deployment.
+Websites I designed and built, collected in one repository. The four industry sites are **concept projects**: complete, deployed demo sites for real sectors (restaurants, hospitality, professional studios, fitness) that show how I work from brief to launch. Each folder is an independent project with its own dependencies, build and Vercel deployment.
 
-| Project | What it is | Stack | Highlights |
-| --- | --- | --- | --- |
-| [`portfolio/`](./portfolio) | My developer portfolio ([npdevelopment.xyz](https://npdevelopment.xyz)) | Next.js, next-intl | Multilingual (IT/EN), case studies |
-| [`el-ninho/`](./el-ninho) | The Velvet Table, restaurant in Chiado, Lisbon | Next.js App Router, Tailwind, next-intl | 4 languages, booking form with validation (react-hook-form + zod) and email (Nodemailer) |
-| [`hotel-bellavista/`](./hotel-bellavista) | Hotel Bellavista | React, Vite, Tailwind | Image carousels (Swiper), scroll animations (AOS) |
-| [`inshape-gym/`](./inshape-gym) | InShape Gym | React, Vite, Framer Motion | Animated sections, contact form via EmailJS |
-| [`studio-moretti/`](./studio-moretti) | Moretti law firm | React, Vite, React Router | Multi-page site with client-side routing |
+Portfolio and case studies: **[npdevelopment.xyz](https://npdevelopment.xyz)**
+
+| Project | Live | What it is | Stack | Highlights |
+| --- | --- | --- | --- | --- |
+| [`portfolio/`](./portfolio) | [npdevelopment.xyz](https://npdevelopment.xyz) | My web designer & developer portfolio | Next.js, TypeScript, Tailwind, next-intl | 5 languages, case studies, dark/light theme, SEO (sitemap, hreflang, JSON-LD) |
+| [`el-ninho/`](./el-ninho) | [Demo](https://the-velvet-table-symvolia.vercel.app/en) | The Velvet Table — fine-dining restaurant concept | Next.js App Router, Tailwind, next-intl | 4 languages, reservation form with validation (react-hook-form + zod) and email (Nodemailer) |
+| [`hotel-bellavista/`](./hotel-bellavista) | [Demo](https://hotel-bellavista-umber.vercel.app/) | Hotel Bella Vista — hospitality concept | React, Vite, Tailwind | Room presentation, immersive gallery (Swiper), scroll animations (AOS) |
+| [`studio-moretti/`](./studio-moretti) | [Demo](https://studio-legale-rossi-taupe.vercel.app/) | Studio Legale Rossi — law firm concept | React, Vite, React Router | 5 languages, 9 routed pages, structured data for local SEO |
+| [`inshape-gym/`](./inshape-gym) | [Demo](https://inshape-gym-ruddy.vercel.app/) | InShape Gym — fitness concept | React, Vite, Tailwind, Framer Motion | 4 languages, animated sections, contact form via EmailJS |
+
+Other projects featured in the portfolio: [symvolia-platform](https://github.com/Symvolia/symvolia-platform) (immersive artist website) and Into the Void (spatial audio synthesizer, [live demo](https://spatial-synth-symvolia.vercel.app/synth)).
 
 ## Running a project
 
@@ -26,4 +30,4 @@ Every site is deployed as its own Vercel project, with the project folder as roo
 
 ## Author
 
-**Nicolò Peruzzi** — web designer & developer · [npdevelopment.xyz](https://npdevelopment.xyz) · [LinkedIn](https://linkedin.com/in/nicoloperuzzi)
+**Nicolò Peruzzi** — web designer & developer · [npdevelopment.xyz](https://npdevelopment.xyz)
