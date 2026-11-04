@@ -88,27 +88,27 @@ export const experiences = [
 // Home "Explore our menu": dishes grouped by where they come from. Hovering a group swaps the photo.
 export const menuGroups = [
   { id: "sea", dishes: ["oyster", "urchin", "turbot", "prawn", "octopus"], image: photo("photo-1467003909585-2f8a72700288", 1800) },
-  { id: "garden", dishes: ["egg", "burrata", "risotto"], image: photo("photo-1559339352-11d035aa65de", 1800) },
+  { id: "garden", dishes: ["egg", "burrata", "risotto"], image: photo("photo-1551218808-94e220e084d2", 1800) },
   { id: "land", dishes: ["lamb", "duck"], image: photo("photo-1414235077428-338989a2e8c0", 1800) },
   { id: "sweet", dishes: ["chocolate", "lemon"], image: photo("photo-1488477181946-6428a0291777", 1800) },
   { id: "cellar", dishes: ["bairrada", "encruzado", "douro", "barolo", "champagne"], image: photo("photo-1510812431401-41d2bd2722f3", 1800) },
 ] as const;
 
 export const homeImages = {
-  reserved: photo("photo-1550966871-3ed3cdb5ed0c", 2000),
-  privateRoom: photo("photo-1517248135467-4c7edcad34c4", 1800),
-  privateWine: photo("photo-1510812431401-41d2bd2722f3", 1800),
-  closing: photo("photo-1424847651672-bf20a4b0982b", 2400),
+  reserved: photo("photo-1414235077428-338989a2e8c0", 2000),
+  privateRoom: photo("photo-1550966871-3ed3cdb5ed0c", 1800),
+  privateWine: photo("photo-1467003909585-2f8a72700288", 1800),
+  closing: photo("photo-1510812431401-41d2bd2722f3", 2400),
   // small tiles mixed into the reviews wall
   tiles: [
     photo("photo-1467003909585-2f8a72700288", 700),
     photo("photo-1488477181946-6428a0291777", 700),
     photo("photo-1551218808-94e220e084d2", 700),
-    photo("photo-1559339352-11d035aa65de", 700),
+    photo("photo-1510812431401-41d2bd2722f3", 700),
   ],
 };
 
-export const heroImage = photo("photo-1414235077428-338989a2e8c0", 2200);
+export const heroImage = photo("photo-1517248135467-4c7edcad34c4", 2200);
 export const aboutImages = {
   chef: photo("photo-1577219491135-ce391730fb2c", 1200),
   kitchen: photo("photo-1556910103-1c02745aae4d", 1200),
