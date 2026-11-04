@@ -26,6 +26,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Lenis takes over smooth scrolling when it is active */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+html.lenis {
+  scroll-behavior: auto;
+}
+
 body {
   background: var(--color-cream);
   color: var(--color-text);
@@ -77,56 +86,6 @@ body {
   color: var(--color-ink);
   border-color: var(--color-paper);
 }
-}
-
-.reveal {
-  animation: rise 700ms ease both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 22%;
-}
-
-/* Panel that slides in from the right as it enters the viewport (menu split) */
-.slide-in {
-  animation: slide 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
-}
-
-/* Closing photo pushes in as it scrolls into view */
-.zoom-in-view {
-  animation: zoom-in linear both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 70%;
-}
-@keyframes zoom-in {
-  from {
-    transform: scale(1.22);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes slide {
-  from {
-    opacity: 0;
-    transform: translateX(60px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
 }
 
 /* Reviews wall: columns drifting vertically, alternating direction */
@@ -185,9 +144,6 @@ body {
     scroll-behavior: auto;
   }
 
-  .reveal,
-  .slide-in,
-  .zoom-in-view,
   .drift,
   .drift-reverse {
     animation: none;

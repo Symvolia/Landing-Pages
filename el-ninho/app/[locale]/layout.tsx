@@ -7,6 +7,7 @@ import { isLocale, routing } from "@/i18n/routing";
 import { Analytics } from "@/components/Analytics";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { ScrollAnimations, SmoothScroll } from "@/components/Motion";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -41,6 +42,8 @@ export default async function LocaleLayout({
           <main id="main">{children}</main>
           <Footer />
           <Analytics />
+          <SmoothScroll />
+          <ScrollAnimations />
         </NextIntlClientProvider>
       </body>
     </html>

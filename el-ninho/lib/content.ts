@@ -96,9 +96,11 @@ export const menuGroups = [
 
 export const homeImages = {
   reserved: photo("photo-1414235077428-338989a2e8c0", 2000),
-  privateRoom: photo("photo-1550966871-3ed3cdb5ed0c", 1800),
+  privateRoom: photo("photo-1517248135467-4c7edcad34c4", 1800),
   privateWine: photo("photo-1467003909585-2f8a72700288", 1800),
-  closing: photo("photo-1510812431401-41d2bd2722f3", 2400),
+  // Lisbon street with the tram: outside the door, used by the intro and the closing
+  street: photo("photo-1585208798174-6cedd86e019a", 2400),
+  closing: photo("photo-1585208798174-6cedd86e019a", 2400),
   // small tiles mixed into the reviews wall
   tiles: [
     photo("photo-1467003909585-2f8a72700288", 700),
@@ -108,7 +110,8 @@ export const homeImages = {
   ],
 };
 
-export const heroImage = photo("photo-1517248135467-4c7edcad34c4", 2200);
+// Dark dining room seen "through the door" in the intro
+export const heroImage = photo("photo-1578474846511-04ba529f0b88", 2200);
 export const aboutImages = {
   chef: photo("photo-1577219491135-ce391730fb2c", 1200),
   kitchen: photo("photo-1556910103-1c02745aae4d", 1200),

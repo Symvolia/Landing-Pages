@@ -48,21 +48,21 @@ export async function StoryBlock({ locale }: { locale: Locale }) {
 export async function PrivateDining({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "home" });
   const cardBase =
-    "sticky mx-auto flex w-full max-w-[1100px] overflow-hidden rounded-3xl shadow-[0_30px_80px_-30px_rgba(34,17,15,0.45)]";
+    "sticky mx-auto flex origin-top w-full max-w-[1100px] overflow-hidden rounded-3xl shadow-[0_30px_80px_-30px_rgba(34,17,15,0.45)]";
 
   return (
     <section className="bg-paper pb-24 pt-20 md:pb-32 md:pt-28">
       <p className="text-center text-[0.66rem] font-medium uppercase tracking-[0.3em] text-copper">{t("privateKicker")}</p>
-      <div className="mt-10 flex flex-col gap-[28vh] px-4 md:px-8">
+      <div className="mt-10 flex flex-col gap-[14vh] px-4 md:gap-[26vh] md:px-8">
         {/* 1 — the room */}
-        <article className={`${cardBase} top-24 isolate aspect-[4/5] items-start justify-center bg-ink text-cream sm:aspect-[16/10]`}>
+        <article data-stack className={`${cardBase} top-24 isolate aspect-[4/5] origin-top items-start justify-center bg-ink text-cream sm:aspect-[16/10]`}>
           <Image src={homeImages.privateRoom} alt="" fill sizes="(min-width: 1100px) 1100px, 100vw" className="-z-10 object-cover" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/60 via-ink/10 to-ink/40" />
           <h3 className="mt-10 max-w-3xl px-6 text-center font-serif text-5xl leading-[0.95] md:mt-14 md:text-7xl">{t("privateCard1")}</h3>
         </article>
 
         {/* 2 — the numbers */}
-        <article className={`${cardBase} top-28 aspect-[4/5] flex-col justify-between bg-wine p-8 text-cream sm:aspect-[16/10] md:p-14`}>
+        <article data-stack className={`${cardBase} top-28 min-h-[62svh] flex-col justify-between gap-10 bg-wine p-8 text-cream sm:aspect-[16/10] sm:min-h-0 md:p-14`}>
           <h3 className="text-center font-serif text-6xl leading-none md:text-8xl">{t("privateCard2Title")}</h3>
           <div className="max-w-xl">
             <p className="text-sm leading-relaxed text-cream/85 md:text-base">{t("privateCard2Text")}</p>
@@ -73,7 +73,7 @@ export async function PrivateDining({ locale }: { locale: Locale }) {
         </article>
 
         {/* 3 — the cellar */}
-        <article className={`${cardBase} top-32 isolate aspect-[4/5] items-end bg-ink p-8 text-cream sm:aspect-[16/10] md:p-14`}>
+        <article data-stack className={`${cardBase} top-32 isolate aspect-[4/5] origin-top items-end bg-ink p-8 text-cream sm:aspect-[16/10] md:p-14`}>
           <Image src={homeImages.privateWine} alt="" fill sizes="(min-width: 1100px) 1100px, 100vw" className="-z-10 object-cover" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
           <div className="flex w-full flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
