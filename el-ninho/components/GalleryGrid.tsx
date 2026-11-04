@@ -54,7 +54,7 @@ export function GalleryGrid({ preview = false }: { preview?: boolean }) {
               <button
                 type="button"
                 onClick={() => open(imageIndex)}
-                className="group relative block w-full overflow-hidden bg-ink"
+                className="group relative block w-full overflow-hidden rounded-xl bg-ink"
                 aria-label={t("open", { label })}
               >
                 <Image

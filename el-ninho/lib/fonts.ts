@@ -1,10 +1,11 @@
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Instrument_Serif, Inter } from "next/font/google";
 
-export const cormorant = Cormorant_Garamond({
+// Display serif: high contrast, tight, with a true italic for the editorial words ("Reservado.").
+export const display = Instrument_Serif({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: "400",
   style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  variable: "--font-display",
   display: "swap",
 });
 

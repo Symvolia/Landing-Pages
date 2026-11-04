@@ -6,61 +6,60 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { heroImage } from "@/lib/content";
 
+/**
+ * Full-bleed hero: the room photo slowly pushes in as you scroll (the "walk through the door"
+ * move from the reference), headline sits bottom-left in the display serif.
+ */
 export function Hero() {
   const t = useTranslations("hero");
+  const h = useTranslations("home");
   const media = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const node = media.current;
     if (!node) return;
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    const onScroll = () => {
-      node.style.transform = `translate3d(0, ${window.scrollY * 0.18}px, 0)`;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const progress = Math.min(window.scrollY / window.innerHeight, 1);
+      node.style.transform = `scale(${1.04 + progress * 0.16}) translate3d(0, ${progress * 4}%, 0)`;
     };
-    onScroll();
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(frame);
+    };
   }, []);
 
   return (
     <section className="relative isolate min-h-[100svh] overflow-hidden bg-ink text-cream">
-      <div ref={media} className="absolute inset-0 scale-110">
-        <Image
-          src={heroImage}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+      <div ref={media} className="absolute inset-0 origin-center will-change-transform" style={{ transform: "scale(1.04)" }}>
+        <Image src={heroImage} alt="" fill priority sizes="100vw" className="object-cover" />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/45 to-ink/75" />
-      <div className="relative mx-auto flex min-h-[100svh] max-w-[1200px] flex-col items-center justify-end px-6 pb-24 pt-32 text-center md:pb-28 md:pt-36">
-        <p className="text-[0.72rem] font-medium uppercase tracking-[0.32em] text-gold">{t("kicker")}</p>
-        <h1 className="mt-6 max-w-4xl font-serif text-5xl font-medium leading-[0.95] tracking-[0.02em] sm:text-7xl lg:text-8xl">
-          {t("title")}
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/50 via-ink/10 to-ink/80" />
+
+      <div className="relative mx-auto flex min-h-[100svh] max-w-[1440px] flex-col justify-end px-5 pb-10 pt-32 md:px-8 md:pb-14">
+        <p className="text-[0.66rem] font-medium uppercase tracking-[0.32em] text-gold">{t("kicker")}</p>
+        <h1 className="mt-4 max-w-5xl font-serif text-[3.4rem] leading-[0.92] tracking-[-0.015em] sm:text-7xl lg:text-[7.5rem]">
+          {h("heroTitle")}
         </h1>
-        <p className="mt-5 font-serif text-2xl italic text-cream/95 sm:text-3xl">{t("headline")}</p>
-        <p className="mt-6 max-w-xl text-base font-light leading-relaxed text-cream/85 sm:text-lg">{t("subtitle")}</p>
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-          <Link
-            href="/reservations"
-            className="inline-flex h-12 items-center justify-center bg-cream px-8 text-[0.72rem] font-medium uppercase tracking-[0.22em] text-ink transition duration-300 hover:bg-gold"
-          >
-            {t("book")}
-          </Link>
-          <Link
-            href="/menu"
-            className="inline-flex h-12 items-center justify-center border border-cream/80 px-8 text-[0.72rem] font-medium uppercase tracking-[0.22em] transition duration-300 hover:bg-cream hover:text-ink"
-          >
-            {t("discover")}
-          </Link>
+        <div className="mt-8 flex flex-col gap-6 border-t border-cream/25 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="max-w-md text-sm leading-relaxed text-cream/80 sm:text-base">{t("subtitle")}</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <Link href="/reservations" className="pill pill-blush">
+              {t("book")}
+            </Link>
+            <Link href="/menu" className="pill pill-line">
+              {t("discover")}
+            </Link>
+          </div>
         </div>
-        <a href="#casa" className="mt-14 text-[0.68rem] uppercase tracking-[0.28em] text-cream/70">
-          {t("scroll")}
-        </a>
       </div>
     </section>
   );

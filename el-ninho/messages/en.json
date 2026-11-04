@@ -331,5 +331,61 @@
     "bookingGuestSubject": "We received your request — The Velvet Table",
     "bookingGuestBody": "Dear {name},\n\nwe have received a request for {guests} on {date} at {time}.\n\nThis email does not yet confirm the table. The restaurant will reply shortly.\n\nThe Velvet Table\nRua Garrett 88, Lisboa\n+351 21 342 1180",
     "newsletterSubject": "New newsletter subscription — The Velvet Table"
+  },
+  "home": {
+    "heroTitle": "Atlantic cooking in Chiado, since 2016.",
+    "reserved": "Reservado.",
+    "reservedText": "A quiet table, low light and a short menu that changes with the tides.",
+    "menuTitle": "Explore our menu",
+    "menuNote": "Tasting menu · seven courses · €195 per person",
+    "menuLink": "Full menu",
+    "groups": {
+      "sea": "From the sea",
+      "garden": "From the garden",
+      "land": "From the land",
+      "sweet": "To finish",
+      "cellar": "The cellar"
+    },
+    "since": "Open since",
+    "privateKicker": "Private dining",
+    "privateCard1": "An intimate room in Chiado",
+    "privateCard2Title": "Up to 14 guests",
+    "privateCard2Text": "Business dinners, family celebrations, a birthday that deserves a closed door. The private room has its own service, a menu agreed in advance and the evening runs at your pace.",
+    "privateCta": "Enquire about private dining",
+    "privateCard3": "Five glasses, one Atlantic cellar",
+    "pairingLink": "Wine pairing",
+    "reviewsKicker": "What our guests say",
+    "reviewsCount": "862",
+    "reviewsRating": "4.8 · reviews on Tripadvisor",
+    "reviewsLink": "Read them on Tripadvisor",
+    "reviewsNote": "Concept project: reviews are illustrative.",
+    "reviews": [
+      {
+        "quote": "The turbot alone is worth the trip to Lisbon. Service so quiet you forget it is there.",
+        "author": "Claire, London"
+      },
+      {
+        "quote": "We booked the private room for my father's seventieth. Every detail was handled before we asked.",
+        "author": "Miguel, Porto"
+      },
+      {
+        "quote": "Low light, soft music and a wine pairing that actually surprised us.",
+        "author": "Anna, Milan"
+      },
+      {
+        "quote": "Seven courses that feel like one story. The oyster to start is unforgettable.",
+        "author": "James, New York"
+      },
+      {
+        "quote": "Small room, big kitchen. Sofia made us feel like regulars on our first visit.",
+        "author": "Inês, Lisbon"
+      },
+      {
+        "quote": "The chocolate with new oil and salt. That's all I'll say.",
+        "author": "Lucas, Madrid"
+      }
+    ],
+    "closingTitle": "See you on Rua Garrett.",
+    "closingHours": "Tue–Sat 19:00–23:30 · Sun 12:30–15:30"
   }
 }

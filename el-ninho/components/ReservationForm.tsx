@@ -170,7 +170,7 @@ export function ReservationForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="mt-2 h-12 bg-ink px-6 text-[0.72rem] font-medium uppercase tracking-[0.22em] text-cream transition duration-300 hover:bg-copper disabled:opacity-60"
+        className="mt-2 h-12 rounded-full bg-wine px-7 text-[0.72rem] font-medium uppercase tracking-[0.22em] text-cream transition duration-300 hover:bg-ink disabled:opacity-60"
       >
         {isSubmitting ? t("sending") : t("submit")}
       </button>

@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { cormorant, inter } from "@/lib/fonts";
+import { display, inter } from "@/lib/fonts";
 import { isLocale, routing } from "@/i18n/routing";
 import { Analytics } from "@/components/Analytics";
 import { Footer } from "@/components/Footer";
@@ -28,7 +28,7 @@ export default async function LocaleLayout({
   const t = await getTranslations("nav");
 
   return (
-    <html lang={locale} className={`${cormorant.variable} ${inter.variable} h-full antialiased`}>
+    <html lang={locale} className={`${display.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full bg-cream font-sans text-text">
         <NextIntlClientProvider messages={messages}>
           <a

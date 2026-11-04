@@ -39,8 +39,8 @@ export function MenuExplorer() {
                 role="tab"
                 aria-selected={selected}
                 className={cn(
-                  "h-11 border px-4 text-[0.72rem] uppercase tracking-[0.16em] transition duration-300",
-                  selected ? "border-ink bg-ink text-cream" : "border-line bg-transparent hover:border-copper",
+                  "h-11 rounded-full border px-5 text-[0.72rem] uppercase tracking-[0.16em] transition duration-300",
+                  selected ? "border-wine bg-wine text-cream" : "border-line bg-transparent hover:border-copper",
                 )}
                 onClick={() => setCategory(item)}
               >
@@ -67,7 +67,7 @@ export function MenuExplorer() {
             <button
               type="button"
               onClick={() => openItem(item)}
-              className="group flex h-full w-full flex-col border border-line bg-paper p-6 text-left transition duration-300 hover:-translate-y-1 hover:border-copper hover:shadow-[0_18px_40px_rgba(26,26,26,0.06)]"
+              className="group flex h-full w-full flex-col rounded-2xl border border-line bg-paper p-6 text-left transition duration-300 hover:-translate-y-1 hover:border-copper hover:shadow-[0_18px_40px_rgba(26,26,26,0.06)]"
             >
               <span className="flex items-start justify-between gap-4">
                 <span className="font-serif text-2xl leading-tight">{dishes(`${item.id}.name`)}</span>
@@ -115,7 +115,7 @@ export function MenuExplorer() {
             <button
               type="button"
               onClick={close}
-              className="mt-8 h-11 border border-ink px-5 text-[0.72rem] uppercase tracking-[0.18em] hover:bg-ink hover:text-cream"
+              className="mt-8 h-11 rounded-full border border-ink px-5 text-[0.72rem] uppercase tracking-[0.18em] hover:bg-ink hover:text-cream"
             >
               {t("close")}
             </button>

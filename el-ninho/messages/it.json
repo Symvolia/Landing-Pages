@@ -331,5 +331,61 @@
     "bookingGuestSubject": "Abbiamo ricevuto la vostra richiesta — The Velvet Table",
     "bookingGuestBody": "Gentile {name},\n\nabbiamo ricevuto la richiesta per {guests} persone, il {date} alle {time}.\n\nQuesta email non conferma ancora il tavolo: la sala vi risponde a breve.\n\nThe Velvet Table\nRua Garrett 88, Lisboa\n+351 21 342 1180",
     "newsletterSubject": "Nuova iscrizione alla lettera — The Velvet Table"
+  },
+  "home": {
+    "heroTitle": "Cucina atlantica nel Chiado, dal 2016.",
+    "reserved": "Reservado.",
+    "reservedText": "Un tavolo tranquillo, luce bassa e un menu breve che cambia con le maree.",
+    "menuTitle": "Scopri il menu",
+    "menuNote": "Menu degustazione · sette portate · 195 € a persona",
+    "menuLink": "Menu completo",
+    "groups": {
+      "sea": "Dal mare",
+      "garden": "Dall'orto",
+      "land": "Dalla terra",
+      "sweet": "Per finire",
+      "cellar": "La cantina"
+    },
+    "since": "Aperto dal",
+    "privateKicker": "Sala privata",
+    "privateCard1": "Una sala intima nel Chiado",
+    "privateCard2Title": "Fino a 14 ospiti",
+    "privateCard2Text": "Cene di lavoro, feste di famiglia, un compleanno che merita una porta chiusa. La sala privata ha un servizio dedicato, un menu concordato prima e la serata va al vostro ritmo.",
+    "privateCta": "Richiedi la sala privata",
+    "privateCard3": "Cinque calici, una cantina atlantica",
+    "pairingLink": "Abbinamento vini",
+    "reviewsKicker": "Cosa dicono i nostri ospiti",
+    "reviewsCount": "862",
+    "reviewsRating": "4,8 · recensioni su Tripadvisor",
+    "reviewsLink": "Leggile su Tripadvisor",
+    "reviewsNote": "Progetto concept: le recensioni sono illustrative.",
+    "reviews": [
+      {
+        "quote": "Il rombo da solo vale il viaggio a Lisbona. Un servizio così discreto che ti dimentichi che c'è.",
+        "author": "Claire, Londra"
+      },
+      {
+        "quote": "Abbiamo prenotato la sala privata per i settant'anni di mio padre. Ogni dettaglio era pronto prima di chiederlo.",
+        "author": "Miguel, Porto"
+      },
+      {
+        "quote": "Luce bassa, musica morbida e un abbinamento vini che ci ha davvero sorpresi.",
+        "author": "Anna, Milano"
+      },
+      {
+        "quote": "Sette portate che sembrano un'unica storia. L'ostrica in apertura è indimenticabile.",
+        "author": "James, New York"
+      },
+      {
+        "quote": "Sala piccola, cucina grande. Sofia ci ha fatti sentire di casa alla prima visita.",
+        "author": "Inês, Lisbona"
+      },
+      {
+        "quote": "Il cioccolato con olio nuovo e sale. Non aggiungo altro.",
+        "author": "Lucas, Madrid"
+      }
+    ],
+    "closingTitle": "Ci vediamo in Rua Garrett.",
+    "closingHours": "Mar–Sab 19:00–23:30 · Dom 12:30–15:30"
   }
 }
