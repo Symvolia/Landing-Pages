@@ -81,8 +81,9 @@ export function Hero() {
     <section ref={section} className={scene ? "relative h-[260svh] bg-ink" : "relative h-[100svh] bg-ink"}>
       <div className="sticky top-0 h-[100svh] overflow-hidden text-cream">
         {/* Outside: the street */}
-        <div ref={street} className="absolute inset-0 origin-[50%_62%]" aria-hidden={!scene}>
-          {scene ? <Image src={homeImages.street} alt="" fill priority sizes="100vw" className="object-cover" /> : null}
+        {/* Rendered from the first paint (hidden under the room until the scene starts) so it is already loaded. */}
+        <div ref={street} className="absolute inset-0 origin-[50%_62%]" aria-hidden>
+          <Image src={homeImages.street} alt="" fill priority sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-ink/45" />
         </div>
 
