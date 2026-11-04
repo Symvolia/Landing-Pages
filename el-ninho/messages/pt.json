@@ -331,5 +331,62 @@
     "bookingGuestSubject": "Recebemos o seu pedido — The Velvet Table",
     "bookingGuestBody": "Caro/a {name},\n\nrecebemos o pedido para {guests}, no dia {date} às {time}.\n\nEste email ainda não confirma a mesa. A sala responde em breve.\n\nThe Velvet Table\nRua Garrett 88, Lisboa\n+351 21 342 1180",
     "newsletterSubject": "Nova inscrição na carta — The Velvet Table"
+  },
+  "home": {
+    "heroTitle": "Cozinha atlântica no Chiado, desde 2016.",
+    "reserved": "Reservado.",
+    "reservedText": "Uma mesa tranquila, luz baixa e um menu curto que muda com as marés.",
+    "menuTitle": "Explore o menu",
+    "menuNote": "Menu de degustação · sete momentos · 195 € por pessoa",
+    "menuLink": "Menu completo",
+    "groups": {
+      "sea": "Do mar",
+      "garden": "Da horta",
+      "land": "Da terra",
+      "sweet": "Para terminar",
+      "cellar": "A garrafeira"
+    },
+    "since": "Aberto desde",
+    "privateKicker": "Sala privada",
+    "privateCard1": "Uma sala íntima no Chiado",
+    "privateCard2Title": "Até 14 convidados",
+    "privateCard2Text": "Jantares de negócios, celebrações de família, um aniversário que merece porta fechada. A sala privada tem serviço próprio, um menu combinado antes e a noite segue o vosso ritmo.",
+    "privateCta": "Pedir a sala privada",
+    "privateCard3": "Cinco copos, uma garrafeira atlântica",
+    "pairingLink": "Harmonização de vinhos",
+    "reviewsKicker": "O que dizem os nossos clientes",
+    "reviewsCount": "862",
+    "reviewsRating": "4,8 · avaliações no Tripadvisor",
+    "reviewsLink": "Ler no Tripadvisor",
+    "reviewsNote": "Projeto conceito: as avaliações são ilustrativas.",
+    "reviews": [
+      {
+        "quote": "Só o pregado vale a viagem a Lisboa. Um serviço tão discreto que nos esquecemos dele.",
+        "author": "Claire, Londres"
+      },
+      {
+        "quote": "Reservámos a sala privada para os setenta anos do meu pai. Tudo estava tratado antes de pedirmos.",
+        "author": "Miguel, Porto"
+      },
+      {
+        "quote": "Luz baixa, música suave e uma harmonização que nos surpreendeu mesmo.",
+        "author": "Anna, Milão"
+      },
+      {
+        "quote": "Sete momentos que parecem uma só história. A ostra de abertura é inesquecível.",
+        "author": "James, Nova Iorque"
+      },
+      {
+        "quote": "Sala pequena, cozinha grande. A Sofia fez-nos sentir clientes da casa à primeira visita.",
+        "author": "Inês, Lisboa"
+      },
+      {
+        "quote": "O chocolate com azeite novo e sal. Não digo mais nada.",
+        "author": "Lucas, Madrid"
+      }
+    ],
+    "closingTitle": "Até já, na Rua Garrett.",
+    "closingHours": "Ter–Sáb 19:00–23:30 · Dom 12:30–15:30",
+    "enter": "Deslize para entrar"
   }
 }

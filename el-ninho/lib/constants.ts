@@ -25,6 +25,15 @@ export const navItems = [
   { href: "/contact", key: "contact" },
 ] as const;
 
+// Desktop bar: four short links on the left, as in the reference layout. "2016" is the opening year → story page.
+export const primaryNav: { href: string; key: (typeof navItems)[number]["key"]; label?: string }[] = [
+  { href: "/menu", key: "menu" },
+  { href: "/about", key: "about", label: "2016" },
+  { href: "/experiences", key: "experiences" },
+  { href: "/gallery", key: "gallery" },
+  { href: "/contact", key: "contact" },
+];
+
 export const locales = [
   { code: "it", label: "Italiano" },
   { code: "en", label: "English" },

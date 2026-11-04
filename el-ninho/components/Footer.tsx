@@ -9,10 +9,10 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink text-cream">
+    <footer className="bg-wine-deep text-cream">
       <div className="mx-auto grid max-w-[1200px] gap-14 px-6 py-16 md:grid-cols-12 md:px-10 md:py-20">
         <div className="md:col-span-4">
-          <p className="font-serif text-4xl leading-tight">The Velvet Table</p>
+          <p className="font-serif text-4xl uppercase leading-tight tracking-[0.12em]">The Velvet Table</p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/75">{t("newsletterText")}</p>
         </div>
         <div className="md:col-span-4">

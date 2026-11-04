@@ -11,7 +11,7 @@ export async function TeamGrid() {
         const name = t(`${member.id}.name`);
         return (
           <li key={member.id} className="reveal">
-            <div className="relative aspect-[3/4] overflow-hidden bg-ink">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-ink">
               <Image src={member.image} alt={name} fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-cover" />
             </div>
             <h3 className="mt-5 font-serif text-3xl">{name}</h3>

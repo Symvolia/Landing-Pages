@@ -2,11 +2,12 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { cormorant, inter } from "@/lib/fonts";
+import { display, inter } from "@/lib/fonts";
 import { isLocale, routing } from "@/i18n/routing";
 import { Analytics } from "@/components/Analytics";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { ScrollAnimations, SmoothScroll } from "@/components/Motion";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -28,7 +29,7 @@ export default async function LocaleLayout({
   const t = await getTranslations("nav");
 
   return (
-    <html lang={locale} className={`${cormorant.variable} ${inter.variable} h-full antialiased`}>
+    <html lang={locale} className={`${display.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full bg-cream font-sans text-text">
         <NextIntlClientProvider messages={messages}>
           <a
@@ -41,6 +42,8 @@ export default async function LocaleLayout({
           <main id="main">{children}</main>
           <Footer />
           <Analytics />
+          <SmoothScroll />
+          <ScrollAnimations />
         </NextIntlClientProvider>
       </body>
     </html>
