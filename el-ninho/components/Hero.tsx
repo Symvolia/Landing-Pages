@@ -90,7 +90,8 @@ export function Hero() {
         {/* Inside: the room, clipped by the doorway */}
         <div ref={door} className="absolute inset-0 overflow-hidden will-change-[clip-path]">
           <div ref={room} className="absolute inset-0 will-change-transform">
-            <Image src={heroImage} alt="" fill priority sizes="100vw" className="object-cover" />
+            {/* Portrait photo: keep the laid tables in frame rather than the curtains above them */}
+            <Image src={heroImage} alt="" fill priority sizes="100vw" className="object-cover object-[50%_78%]" />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-ink/50 via-ink/10 to-ink/85" />
         </div>
