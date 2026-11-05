@@ -84,6 +84,12 @@ export const areas = [
 // Text for the journey, per language. Area keys match `areas[].id`.
 export const journeyCopy = {
   it: {
+    start: 'Inizia il tour',
+    skip: 'Salta alle camere',
+    keys: 'Usa ← → per cambiare area',
+    exploreTitle: 'Esplora il resort',
+    exploreIntro: 'Sette luoghi, dall\u2019arrivo al tramonto. Scegli da dove cominciare.',
+    sections: 'Il sito',
     explore: 'Esplora',
     hint: 'Scorri per entrare nel resort',
     of: 'di',
@@ -103,6 +109,12 @@ export const journeyCopy = {
     },
   },
   en: {
+    start: 'Start the tour',
+    skip: 'Skip to rooms',
+    keys: 'Use ← → to change area',
+    exploreTitle: 'Explore the resort',
+    exploreIntro: 'Seven places, from arrival to sunset. Choose where to begin.',
+    sections: 'The site',
     explore: 'Explore',
     hint: 'Scroll to step into the resort',
     of: 'of',
@@ -122,6 +134,12 @@ export const journeyCopy = {
     },
   },
   pt: {
+    start: 'Começar o passeio',
+    skip: 'Saltar para os quartos',
+    keys: 'Use ← → para mudar de área',
+    exploreTitle: 'Explorar o resort',
+    exploreIntro: 'Sete lugares, da chegada ao pôr do sol. Escolha por onde começar.',
+    sections: 'O site',
     explore: 'Explorar',
     hint: 'Deslize para entrar no resort',
     of: 'de',

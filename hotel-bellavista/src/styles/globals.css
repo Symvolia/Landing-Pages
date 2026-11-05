@@ -109,3 +109,97 @@ button {
 .swiper-pagination-bullet-active {
   background: #a68445 !important;
 }
+
+/* ---- Journey & navbar (immersive redesign) ---- */
+.pill {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.2em];
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.pill-gold {
+  @apply bg-gold text-ink hover:bg-white;
+}
+.pill-glass {
+  @apply border border-white/50 bg-white/10 text-white backdrop-blur-md hover:bg-white hover:text-ink;
+}
+.pill-ink {
+  @apply bg-ink text-cream hover:bg-gold hover:text-ink;
+}
+.pill-line-dark {
+  @apply border border-ink/25 text-ink hover:border-ink hover:bg-ink hover:text-cream;
+}
+
+/* title words slide up from a mask, intro lines rise in */
+.journey-word {
+  animation: journey-word 1.1s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+}
+.journey-rise {
+  animation: journey-rise 1s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+}
+@keyframes journey-word {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes journey-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* mouse with a moving wheel dot */
+.scroll-cue {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 34px;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+}
+.scroll-cue::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  width: 3px;
+  height: 7px;
+  margin-left: -1.5px;
+  border-radius: 2px;
+  background: #f3d9a4;
+  animation: scroll-cue 1.8s ease-in-out infinite;
+}
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+/* mobile menu entrance */
+.menu-in {
+  animation: journey-rise 0.6s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-word,
+  .journey-rise,
+  .menu-in,
+  .scroll-cue::after {
+    animation: none;
+  }
+}
