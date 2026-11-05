@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import AOS from 'aos'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
+import Journey from './components/Journey'
+import { startSmoothScroll } from './smooth'
 import Rooms from './components/Rooms'
 import Services from './components/Services'
 import Gallery from './components/Gallery'
@@ -17,6 +17,7 @@ export default function App() {
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true, offset: 80 })
+    return startSmoothScroll()
   }, [])
 
   const openBooking = (room = '') => {
@@ -29,8 +30,7 @@ export default function App() {
     <>
       <Navbar onBook={() => openBooking()} />
       <main>
-        <Hero onBook={() => openBooking()} />
-        <About />
+        <Journey onBook={() => openBooking()} />
         <Rooms onBook={openBooking} />
         <Services />
         <Gallery />

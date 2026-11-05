@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import BrandMark from './BrandMark'
 import { useI18n } from '../i18n'
+import { journeyCopy } from '../journey'
 
 function Flag({ children }) {
   return (
@@ -49,7 +50,7 @@ const languages = [
   },
 ]
 
-function LanguageSwitch() {
+function LanguageSwitch({ light }) {
   const { lang, setLang, t } = useI18n()
 
   return (
@@ -61,8 +62,10 @@ function LanguageSwitch() {
           onClick={() => setLang(language.id)}
           aria-label={language.label}
           aria-pressed={lang === language.id}
-          className={`border border-black/15 overflow-hidden leading-none ${
-            lang === language.id ? 'ring-1 ring-ink ring-offset-2' : 'opacity-55 hover:opacity-100'
+          className={`border overflow-hidden leading-none ${light ? 'border-white/30' : 'border-black/15'} ${
+            lang === language.id
+              ? `ring-1 ring-offset-2 ${light ? 'ring-white ring-offset-transparent' : 'ring-ink'}`
+              : 'opacity-55 hover:opacity-100'
           }`}
         >
           {language.flag}
@@ -73,12 +76,29 @@ function LanguageSwitch() {
 }
 
 export default function Navbar({ onBook }) {
-  const { t } = useI18n()
+  const { t, lang } = useI18n()
   const [isOpen, setIsOpen] = useState(false)
+  // Over the immersive journey the bar is transparent with light text.
+  const [overJourney, setOverJourney] = useState(true)
+
+  useEffect(() => {
+    const check = () => {
+      const journey = document.getElementById('journey')
+      setOverJourney(Boolean(journey) && journey.getBoundingClientRect().bottom > 80)
+    }
+    check()
+    window.addEventListener('scroll', check, { passive: true })
+    window.addEventListener('resize', check)
+    return () => {
+      window.removeEventListener('scroll', check)
+      window.removeEventListener('resize', check)
+    }
+  }, [])
+
+  const light = overJourney && !isOpen
 
   const navLinks = [
-    { name: t.nav.home, href: '#hero' },
-    { name: t.nav.about, href: '#about' },
+    { name: journeyCopy[lang].explore, href: '#journey' },
     { name: t.nav.rooms, href: '#rooms' },
     { name: t.nav.services, href: '#services' },
     { name: t.nav.gallery, href: '#gallery' },
@@ -91,10 +111,16 @@ export default function Navbar({ onBook }) {
   }
 
   return (
-    <nav className="fixed w-full bg-cream/90 backdrop-blur-xl z-50 border-b border-black/5">
+    <nav
+      className={`fixed w-full z-50 border-b transition-colors duration-500 ${
+        light
+          ? 'bg-gradient-to-b from-black/45 to-transparent border-transparent'
+          : 'bg-cream/90 backdrop-blur-xl border-black/5'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-5 lg:px-8 h-[4.5rem] flex justify-between items-center gap-6">
-        <a href="#hero" className="shrink min-w-0" aria-label={`${t.hero.title}, ${t.brandStars}`}>
-          <BrandMark />
+        <a href="#journey" className="shrink min-w-0" aria-label={`${t.hero.title}, ${t.brandStars}`}>
+          <BrandMark light={light} />
         </a>
 
         <div className="flex items-center gap-4 lg:gap-8">
@@ -103,21 +129,21 @@ export default function Navbar({ onBook }) {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-ink/70 hover:text-ink text-[11px] uppercase tracking-[0.18em] font-medium"
+                className={`${light ? 'text-white/80 hover:text-white' : 'text-ink/70 hover:text-ink'} text-[11px] uppercase tracking-[0.18em] font-medium`}
               >
                 {link.name}
               </a>
             ))}
-            <button type="button" onClick={handleBook} className="btn-ink !px-5 !py-2.5">
+            <button type="button" onClick={handleBook} className={`${light ? 'btn-gold' : 'btn-ink'} !px-5 !py-2.5`}>
               {t.nav.book}
             </button>
           </div>
 
-          <LanguageSwitch />
+          <LanguageSwitch light={light} />
 
           <button
             type="button"
-            className="lg:hidden text-ink"
+            className={`lg:hidden ${light ? 'text-white' : 'text-ink'}`}
             aria-label={isOpen ? t.nav.closeMenu : t.nav.openMenu}
             onClick={() => setIsOpen(!isOpen)}
           >

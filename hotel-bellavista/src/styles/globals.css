@@ -10,9 +10,22 @@
 
 html {
   scroll-behavior: smooth;
+  /* the gallery carousel's off-screen slides used to widen the layout on phones (page zoomed out) */
+  overflow-x: clip;
+}
+
+/* Lenis takes over smooth scrolling when active */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+html.lenis {
+  scroll-behavior: auto;
 }
 
 body {
+  /* clip (not hidden) so position: sticky keeps working; stops carousel slides widening the page on phones */
+  overflow-x: clip;
   font-family: 'Poppins', sans-serif;
   color: #3a342c;
   line-height: 1.7;
