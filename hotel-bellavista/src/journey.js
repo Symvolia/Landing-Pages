@@ -16,7 +16,7 @@ export const areas = [
     image: 'photo-1540541338287-41700207dee6', // aerial: resort pool over the sea
     focus: [42, 70],
     details: [
-      { kind: 'img', image: 'photo-1566073771259-6a8506099945', x: -30, y: -6, d: 0.55, w: 25 },
+      { kind: 'img', image: 'photo-1566073771259-6a8506099945', x: -34, y: -6, d: 0.55, w: 35 },
       { kind: 'fact', fact: 0, x: 27, y: 14, d: 0.42 },
     ],
   },
@@ -25,7 +25,7 @@ export const areas = [
     image: 'photo-1564501049412-61c2a3083791', // white facade with pool
     focus: [50, 58],
     details: [
-      { kind: 'img', image: 'photo-1542314831-068cd1dbfeeb', x: 30, y: -8, d: 0.5, w: 23 },
+      { kind: 'img', image: 'photo-1542314831-068cd1dbfeeb', x: 34, y: -8, d: 0.5, w: 32 },
       { kind: 'fact', fact: 0, x: -28, y: 12, d: 0.4 },
       { kind: 'fact', fact: 1, x: -24, y: -16, d: 0.68 },
     ],
@@ -35,7 +35,7 @@ export const areas = [
     image: 'photo-1584132967334-10e028bd69f7', // infinity pool deck over the sea
     focus: [40, 52],
     details: [
-      { kind: 'img', image: 'photo-1445019980597-93fa8acb246c', x: -30, y: 8, d: 0.48, w: 23 },
+      { kind: 'img', image: 'photo-1445019980597-93fa8acb246c', x: -34, y: 8, d: 0.48, w: 32 },
       { kind: 'fact', fact: 0, x: 28, y: -12, d: 0.4 },
       { kind: 'fact', fact: 1, x: 24, y: 16, d: 0.66 },
     ],
@@ -45,8 +45,8 @@ export const areas = [
     image: 'photo-1566665797739-1674de7a421a', // dark elegant room
     focus: [50, 62],
     details: [
-      { kind: 'img', image: 'photo-1631049307264-da0ec9d70304', x: 30, y: -6, d: 0.45, w: 24 },
-      { kind: 'img', image: 'photo-1590490360182-c33d57733427', x: -31, y: 10, d: 0.66, w: 21 },
+      { kind: 'img', image: 'photo-1631049307264-da0ec9d70304', x: 34, y: -6, d: 0.45, w: 34 },
+      { kind: 'img', image: 'photo-1590490360182-c33d57733427', x: -34, y: 10, d: 0.66, w: 29 },
       { kind: 'fact', fact: 0, x: -26, y: -16, d: 0.38 },
     ],
   },
@@ -55,7 +55,7 @@ export const areas = [
     image: 'photo-1507652313519-d4e9174996dd', // stone bathtub with palm
     focus: [36, 70],
     details: [
-      { kind: 'img', image: 'photo-1600334129128-685c5582fd35', x: 29, y: -8, d: 0.5, w: 23 },
+      { kind: 'img', image: 'photo-1600334129128-685c5582fd35', x: 34, y: -8, d: 0.5, w: 32 },
       { kind: 'fact', fact: 0, x: -27, y: 12, d: 0.42 },
       { kind: 'fact', fact: 1, x: 24, y: 16, d: 0.68 },
     ],
@@ -65,7 +65,7 @@ export const areas = [
     image: 'photo-1578474846511-04ba529f0b88', // dark dining room
     focus: [50, 74],
     details: [
-      { kind: 'img', image: 'photo-1414235077428-338989a2e8c0', x: -30, y: -4, d: 0.5, w: 24 },
+      { kind: 'img', image: 'photo-1414235077428-338989a2e8c0', x: -34, y: -4, d: 0.5, w: 34 },
       { kind: 'fact', fact: 0, x: 28, y: 12, d: 0.4 },
       { kind: 'fact', fact: 1, x: 26, y: -16, d: 0.66 },
     ],
@@ -75,7 +75,7 @@ export const areas = [
     image: 'photo-1561501900-3701fa6a0864', // resort at sunset, pink sky
     focus: [50, 50],
     details: [
-      { kind: 'img', image: 'photo-1551882547-ff40c63fe5fa', x: 30, y: -8, d: 0.45, w: 23 },
+      { kind: 'img', image: 'photo-1551882547-ff40c63fe5fa', x: 34, y: -8, d: 0.45, w: 32 },
       { kind: 'fact', fact: 0, x: -27, y: 10, d: 0.38 },
     ],
   },

@@ -450,8 +450,8 @@ function Item({ it, copy }) {
   }
   if (it.kind === 'img') {
     return (
-      <div className="overflow-hidden rounded-md border border-white/40 shadow-[0_30px_80px_rgba(0,0,0,0.55)]" style={{ width: `${it.w}vw`, minWidth: 170 }}>
-        <img {...photo(it.image)} sizes="25vw" alt="" loading="lazy" decoding="async" className="aspect-[4/5] w-full object-cover" />
+      <div className="overflow-hidden rounded-md border border-white/40 shadow-[0_30px_80px_rgba(0,0,0,0.55)]" style={{ width: `${it.w}vw`, minWidth: 230 }}>
+        <img {...photo(it.image)} sizes="(min-width: 768px) 36vw, 60vw" alt="" loading="lazy" decoding="async" className="aspect-[4/5] w-full object-cover" />
       </div>
     )
   }
