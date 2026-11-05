@@ -8,7 +8,7 @@ export const projects = [
     title: "The Velvet Table",
     href: "https://the-velvet-table-symvolia.vercel.app/en",
     image: "/work/velvet.jpg",
-    tech: ["Next.js", "React", "Tailwind"],
+    tech: ["Next.js", "GSAP", "Tailwind"],
   },
   {
     id: "hotel",
@@ -17,7 +17,7 @@ export const projects = [
     title: "Hotel Bellavista",
     href: "https://hotel-bellavista-umber.vercel.app/",
     image: "/work/hotel.jpg",
-    tech: ["React", "Tailwind", "Vite"],
+    tech: ["React", "GSAP", "Tailwind", "Vite"],
   },
   {
     id: "studio",

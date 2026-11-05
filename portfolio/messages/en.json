@@ -117,13 +117,13 @@
         "case": "A concept for fine dining: generous type, photography, and section rhythm guide people who are reading the menu and people who want to book, without visual noise. Reservations sit inside the visit, and the layout stays clear on a phone, where many last-minute decisions happen. Let guests feel the room before they walk in."
       },
       "hotel": {
-        "description": "Digital hospitality that captures the character of the property",
+        "description": "An immersive walk through the resort, from scroll to booking",
         "highlights": [
+          "3D scroll tour",
           "Booking system",
-          "Immersive gallery",
           "Responsive design"
         ],
-        "case": "A hospitality concept: photography of the property is raw material. Rooms and the gallery are organised so visitors can choose, a stay request is reachable from anywhere on the page, and the layout keeps the same calm from phone to desktop. Tell a concrete story of hospitality — light, materials, place — and a clear step toward booking."
+        "case": "A hospitality concept: the site opens with a walk through the resort. As you scroll, the camera moves through seven areas — arrival, house, pool, rooms, spa, restaurant, terrace — while names, photos and details float in 3D depth. Then rooms and gallery to choose from, with a stay request reachable from anywhere. It works on phones too and, with “reduce motion”, becomes a plain list."
       },
       "studio": {
         "description": "Authority and trust in every pixel",

@@ -117,13 +117,13 @@
         "case": "Ein Konzept für die gehobene Gastronomie: großzügige Typografie, Fotografie und der Rhythmus der Abschnitte begleiten Gäste, die das Menü lesen oder reservieren wollen, ohne visuelles Rauschen. Die Reservierung liegt im Besuch selbst, und das Layout bleibt auf dem Telefon klar, wo viele Entscheidungen in letzter Minute fallen. Den Raum spürbar machen, bevor man ihn betritt."
       },
       "hotel": {
-        "description": "Digitale Gastfreundschaft, die das Wesen des Hauses trifft",
+        "description": "Ein immersiver Rundgang durch das Resort, vom Scrollen bis zur Buchung",
         "highlights": [
+          "3D-Scroll-Rundgang",
           "Buchungssystem",
-          "Immersive Galerie",
           "Responsives Design"
         ],
-        "case": "Ein Hospitality-Konzept: die Fotografie des Hauses ist Material, nicht Dekor. Zimmer und Galerie sind so geordnet, dass man wählen kann. Eine Aufenthaltsanfrage ist von überall auf der Seite erreichbar, und das Layout bleibt vom Telefon bis zum Desktop ruhig. Konkrete Gastfreundschaft erzählen — Licht, Materialien, Ort — und einen klaren Schritt zur Buchung."
+        "case": "Ein Hospitality-Konzept: Die Seite beginnt mit einem Rundgang durch das Resort. Beim Scrollen bewegt sich die Kamera durch sieben Bereiche — Ankunft, Haus, Pool, Zimmer, Spa, Restaurant, Terrasse —, während Namen, Fotos und Details in 3D-Tiefe schweben. Danach Zimmer und Galerie zur Auswahl, die Aufenthaltsanfrage ist von überall erreichbar. Funktioniert auch auf dem Telefon und wird mit „Bewegung reduzieren“ zu einer einfachen Liste."
       },
       "studio": {
         "description": "Autorität und Vertrauen in jedem Pixel",

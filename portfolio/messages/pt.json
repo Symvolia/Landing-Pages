@@ -117,13 +117,13 @@
         "case": "Concept para restauração gastronómica: tipografia ampla, fotografia e o ritmo das secções acompanham quem lê o menu e quem quer reservar, sem ruído visual. As reservas estão no fluxo da visita e o layout mantém-se claro no telemóvel, onde chegam muitas decisões de última hora. Fazer sentir o espaço antes de se entrar."
       },
       "hotel": {
-        "description": "Hospitalidade digital que captura a essência do lugar",
+        "description": "Um passeio imersivo pelo resort, do scroll à reserva",
         "highlights": [
+          "Tour 3D com scroll",
           "Sistema de reservas",
-          "Galeria imersiva",
           "Design responsivo"
         ],
-        "case": "Concept para hospitalidade: a fotografia do edifício é matéria-prima. Quartos e galeria estão organizados para escolher, o pedido de estadia está acessível em qualquer ponto da página e o layout mantém a mesma calma do telemóvel ao desktop. Contar uma hospitalidade concreta — luz, materiais, lugar — e um passo claro até à reserva."
+        "case": "Concept para hospitalidade: o site abre com um passeio pelo resort. Ao deslizar, a câmara avança por sete áreas — chegada, casa, piscina, quartos, spa, restaurante, terraço — enquanto nomes, fotos e detalhes flutuam em profundidade 3D. Depois, quartos e galeria para escolher, com o pedido de estadia acessível em qualquer ponto. Funciona também no telemóvel e, com “reduzir movimento”, torna-se uma lista simples."
       },
       "studio": {
         "description": "Autoridade e confiança em cada pixel",
