@@ -173,6 +173,31 @@
           "Añadir en cada voz latina de la órbita un `aria-label` (y/o glosa / tooltip) en el idioma primario de la página, para que la identidad se mantenga pero lectores de pantalla y quienes no leen latín sepan el destino antes de entrar.",
           "Completar el SEO social: Open Graph, Twitter Card y quizá JSON-LD Person/MusicGroup — hoy el share depende casi solo de title + description."
         ]
+      },
+      "blackmoth": {
+        "description": "Tienda online de plugins de audio espacial y sample packs de percusión con modelado físico.",
+        "highlights": [
+          "Vanilla JS + Web Audio",
+          "Escucha antes de comprar",
+          "Checkout con Paddle",
+          "Vercel Functions"
+        ],
+        "case": "Black Moth Audio es mi propio sello y tienda de instrumentos, efectos y sample packs de audio espacial — “Drawn to the light of sound”.",
+        "what": "Black Moth Audio (blackmothaudio.com) vende plugins de audio espacial (VST3, AU, CLAP) y sample packs libres de royalties: el sintetizador Into the Void (en preventa, se puede tocar gratis en el navegador), los efectos Luna y Urania (próximamente) y la serie Ancestral Drums de percusiones del mundo con modelado físico.",
+        "why": "Convertir mis herramientas de audio en productos reales: un solo lugar para escuchar cada instrumento antes de comprarlo, unirse a la lista de lanzamientos y reservar a precio early-bird.",
+        "role": "Proyecto personal: marca, diseño de producto, diseño sonoro, front-end y configuración del e-commerce.",
+        "stack": "HTML/CSS/JS estático con demos y previews Web Audio en la página, Vercel Functions para previews y descargas, Paddle para el pago (tarjetas, PayPal, Apple Pay) y Kit para la suscripción por email. Alojado en Vercel con el dominio blackmothaudio.com.",
+        "techChoices": [
+          "Escucha antes de comprar: cada producto tiene previews que se pueden tocar e Into the Void funciona directamente en el navegador.",
+          "Sin framework ni build: un sitio estático ligero y rápido, con lógica de servidor solo donde hace falta (previews y descargas).",
+          "Pagos e impuestos gestionados por Paddle como merchant of record, para vender en todo el mundo desde el primer día."
+        ],
+        "challenges": [
+          "Presentar plugins, efectos y sample packs en distintas fases (disponible, preventa, próximamente, en desarrollo) en un único catálogo claro."
+        ],
+        "wouldRedo": [
+          "Añadir imágenes Open Graph para que las páginas de producto se vean bien al compartirlas."
+        ]
       }
     },
     "caseWhat": "Qué es",

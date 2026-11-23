@@ -173,6 +173,31 @@
           "Auf jedem lateinischen Orbit-Link ein `aria-label` (und/oder Gloss / Tooltip) in der Primärsprache der Seite — Identität bleibt, Screenreader und Nicht-Latein-Leser kennen das Ziel vor dem Eintritt.",
           "Social-SEO vervollständigen: Open Graph, Twitter Card und ggf. Person/MusicGroup JSON-LD — Sharing stützt sich heute fast nur auf Title + Description."
         ]
+      },
+      "blackmoth": {
+        "description": "Onlineshop für Spatial-Audio-Plugins und physikalisch modellierte Drum-Sample-Packs.",
+        "highlights": [
+          "Vanilla JS + Web Audio",
+          "Erst hören, dann kaufen",
+          "Paddle-Checkout",
+          "Vercel Functions"
+        ],
+        "case": "Black Moth Audio ist mein eigenes Label und mein Shop für Spatial-Audio-Instrumente, Effekte und Sample-Packs — „Drawn to the light of sound“.",
+        "what": "Black Moth Audio (blackmothaudio.com) verkauft Spatial-Audio-Plugins (VST3, AU, CLAP) und lizenzfreie Sample-Packs: den Synth Into the Void (Vorbestellung, kostenlos im Browser spielbar), die Effekte Luna und Urania (in Kürze) und die Serie Ancestral Drums mit physikalisch modellierten Trommeln aus aller Welt.",
+        "why": "Um meine Audio-Tools zu echten Produkten zu machen: ein Ort, an dem man jedes Instrument vor dem Kauf hören, sich für Releases eintragen und zum Early-Bird-Preis vorbestellen kann.",
+        "role": "Eigenes Projekt: Marke, Produktdesign, Sounddesign, Frontend und E-Commerce-Setup.",
+        "stack": "Statisches HTML/CSS/JS mit Web-Audio-Demos und Vorschauen auf der Seite, Vercel Functions für Vorschau und Download, Paddle für den Checkout (Karten, PayPal, Apple Pay) und Kit für die E-Mail-Anmeldung. Gehostet auf Vercel mit der Domain blackmothaudio.com.",
+        "techChoices": [
+          "Erst hören, dann kaufen: Jedes Produkt hat spielbare Vorschauen, und Into the Void läuft direkt im Browser.",
+          "Kein Framework, kein Build: eine leichte, schnelle statische Seite, Serverlogik nur dort, wo sie nötig ist (Vorschau und Download).",
+          "Zahlungen und Steuern übernimmt Paddle als Merchant of Record, damit der Shop vom ersten Tag an weltweit verkaufen kann."
+        ],
+        "challenges": [
+          "Plugins, Effekte und Sample-Packs in unterschiedlichen Phasen (verfügbar, Vorbestellung, in Kürze, in Arbeit) in einem klaren Katalog zeigen."
+        ],
+        "wouldRedo": [
+          "Open-Graph-Bilder ergänzen, damit Produktseiten beim Teilen gut aussehen."
+        ]
       }
     },
     "caseWhat": "Was es ist",

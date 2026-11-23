@@ -173,6 +173,31 @@
           "Add an `aria-label` (and/or gloss / tooltip) on every Latin orbit item in the page’s primary language, so identity stays but screen readers and non-Latin readers know the destination before entering.",
           "Finish social SEO: Open Graph, Twitter Card, and maybe Person/MusicGroup JSON-LD — today sharing leans almost only on title + description."
         ]
+      },
+      "blackmoth": {
+        "description": "Online store for spatial audio plugins and physically modelled drum sample packs.",
+        "highlights": [
+          "Vanilla JS + Web Audio",
+          "Listen before you buy",
+          "Paddle checkout",
+          "Vercel Functions"
+        ],
+        "case": "Black Moth Audio is my own label and shop for spatial audio instruments, effects, and sample packs — “Drawn to the light of sound”.",
+        "what": "Black Moth Audio (blackmothaudio.com) sells spatial audio plugins (VST3, AU, CLAP) and royalty-free sample packs: the Into the Void synth (pre-order, playable free in the browser), the Luna and Urania effects (coming soon), and the Ancestral Drums series of physically modelled world drums.",
+        "why": "To turn my audio tools into real products: one place where people can hear every instrument before buying, join the release list, and pre-order at early-bird prices.",
+        "role": "Personal project: brand, product design, sound design, front-end, and e-commerce setup.",
+        "stack": "Static HTML/CSS/JS with in-page Web Audio demos and previews, Vercel Functions for preview and download endpoints, Paddle for checkout (cards, PayPal, Apple Pay), and Kit for the release-list email signup. Hosted on Vercel with the custom domain blackmothaudio.com.",
+        "techChoices": [
+          "Listen-before-you-buy: every product has playable previews, and Into the Void runs right in the browser.",
+          "No framework or build step: a light, fast static site, with server logic only where it is needed (preview and download).",
+          "Payments and tax handled by Paddle as merchant of record, so the shop can sell worldwide from day one."
+        ],
+        "challenges": [
+          "Presenting plugins, effects, and sample packs in different stages (live, pre-order, coming soon, in build) in one clear catalogue."
+        ],
+        "wouldRedo": [
+          "Add Open Graph images so product pages look good when shared."
+        ]
       }
     },
     "caseWhat": "What it is",
