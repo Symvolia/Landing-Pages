@@ -173,6 +173,31 @@
           "Aggiungere su ogni voce latina dell'orbita un `aria-label` (e/o gloss / tooltip) nella lingua primaria della pagina, così l'identità resta ma lo screen reader e chi non legge il latino capiscono la destinazione prima di entrare.",
           "Completare la SEO social: Open Graph, Twitter Card e magari JSON-LD Person/MusicGroup — oggi lo share dipende quasi solo da title + description."
         ]
+      },
+      "blackmoth": {
+        "description": "Negozio online di plugin audio spaziali e sample pack di percussioni a modellazione fisica.",
+        "highlights": [
+          "Vanilla JS + Web Audio",
+          "Ascolta prima di comprare",
+          "Checkout Paddle",
+          "Vercel Functions"
+        ],
+        "case": "Black Moth Audio è la mia etichetta e il mio shop di strumenti, effetti e sample pack per l'audio spaziale — “Drawn to the light of sound”.",
+        "what": "Black Moth Audio (blackmothaudio.com) vende plugin audio spaziali (VST3, AU, CLAP) e sample pack royalty-free: il synth Into the Void (in pre-ordine, suonabile gratis nel browser), gli effetti Luna e Urania (in arrivo) e la serie Ancestral Drums di percussioni del mondo a modellazione fisica.",
+        "why": "Trasformare i miei strumenti audio in prodotti veri: un unico posto dove ascoltare ogni strumento prima di comprarlo, iscriversi alla lista delle uscite e pre-ordinare a prezzo early-bird.",
+        "role": "Progetto personale: brand, design di prodotto, sound design, front-end e configurazione e-commerce.",
+        "stack": "HTML/CSS/JS statico con demo e anteprime Web Audio nella pagina, Vercel Functions per anteprime e download, Paddle per il checkout (carte, PayPal, Apple Pay) e Kit per l'iscrizione via email alle uscite. Hosting su Vercel con dominio blackmothaudio.com.",
+        "techChoices": [
+          "Ascolta prima di comprare: ogni prodotto ha anteprime suonabili e Into the Void gira direttamente nel browser.",
+          "Niente framework né build: sito statico leggero e veloce, con logica server solo dove serve (anteprime e download).",
+          "Pagamenti e tasse gestiti da Paddle come merchant of record, per vendere in tutto il mondo dal primo giorno."
+        ],
+        "challenges": [
+          "Presentare plugin, effetti e sample pack in fasi diverse (disponibile, pre-ordine, in arrivo, in sviluppo) in un unico catalogo chiaro."
+        ],
+        "wouldRedo": [
+          "Aggiungere immagini Open Graph perché le pagine prodotto si vedano bene quando vengono condivise."
+        ]
       }
     },
     "caseWhat": "Cos'è",

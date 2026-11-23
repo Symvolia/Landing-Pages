@@ -55,6 +55,15 @@ export const projects = [
     image: "/work/synth.png",
     tech: ["Web Audio", "AudioWorklet", "Canvas", "React"],
   },
+  {
+    id: "blackmoth",
+    category: "creative",
+    type: "personal",
+    title: "Black Moth Audio",
+    href: "https://blackmothaudio.com",
+    image: "/work/blackmoth.jpg",
+    tech: ["HTML/CSS/JS", "Web Audio", "Paddle", "Vercel"],
+  },
 ] as const satisfies ReadonlyArray<{
   id: string;
   category: string;
